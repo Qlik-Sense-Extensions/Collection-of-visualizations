@@ -1,0 +1,9 @@
+{
+    "name": "GeoAnalytics Heatmap Layer",
+    "description": "A heatmap layer for GeoAnalytics.",
+    "preview": "heatmaplayericon-preview.png",
+    "type": "visualization",
+    "version": "1.0",
+    "author": "Qlik",
+    "icon": "map icon-idevio-heatmaplayer"
+}

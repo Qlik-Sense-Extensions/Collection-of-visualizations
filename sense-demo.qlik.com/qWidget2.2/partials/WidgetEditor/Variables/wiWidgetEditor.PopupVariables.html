@@ -1,0 +1,38 @@
+<qv-modal-dialog
+        qv-id="wiWidgetEditor_PopupVariables"
+        qv-cancel="closeView()"
+        >
+    <header class="dm-header">Insert Variables</header>
+    <main class="dm-main">
+            <div class="tableContainer">
+                <select class="wui-select"
+                        ng-options="c.name for c in categories"
+                        ng-model="selected">
+                </select>
+                <table class="wiTable" style="margin-top:10px;">
+                    <thead>
+                    <tr>
+                        <th>Key</th>
+                        <th>Value</th>
+                        <th colspan="2" class="wiTextAlignCenter">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-model="data"
+                        ng-repeat="obj in data | filter: selectedCategoryFilter">
+
+                        <td style="font-family:monospace;white-space:nowrap;">{{obj.key}}</td>
+                        <td style="min-width:150px;">{{obj.val}}</td>
+                        <td style="width:75px;white-space:nowrap;"><a href="javascript:void(0);" title="Insert binding within properties" qva-activate="insert('{{obj.key}}', false)">Insert</a>
+                        </td>
+                        <td style="width:75px;white-space:nowrap;"><a href="javascript:void(0);" title="Insert binding" qva-activate="insert('{{obj.key}}', true)"><span ng-non-bindable>Insert {{x}}</span></a></td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+    </main>
+    <footer class="dm-footer">
+        <button class="wui-button" name="cancel" ng-click="closeView()">Close</button>
+    </footer>
+</qv-modal-dialog>

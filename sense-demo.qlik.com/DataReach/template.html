@@ -1,0 +1,52 @@
+
+<div qv-extension style="height: 90%; position: relative; overflow: auto;" class="bootstrap_inside ng-scope">
+
+  <div class="collapse" id="collapseExample">
+    <div class="well">
+      <h1>{{Table.ObjName | limitTo: 40}}{{Table.ObjName.length > 40 ? '...' : ''}}</h1>
+       <dl ng-repeat="(k,v) in AddInfo" class="dl-horizontal">
+        <dt class="bold">{{k}}</dt>
+        <dd>{{v| limitTo: 80}}{{v.length > 80 ? '...' : ''}}</dd>
+      </dl>   
+    </div>
+  </div>
+
+  <svg id="Line" width="100%" height="100%">
+    <g ng-repeat="arrow in arrowPosition">
+      <line class="linkBetweenObj"  ng-x1="{{arrow[0]}}" ng-y1="{{arrow[1]}}" 
+                                    ng-x2="{{arrow[2]}}" ng-y2="{{arrow[3]}}"  
+                                    marker-end="url(#freccia)"
+                                    stroke-width="1.5" stroke="{{arrow[6]}}"/>
+    </g>
+
+    <marker id="freccia" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#afafaf" />
+    </marker>
+
+    <g ng-repeat="ele in elePosition">
+     <rect ng-attr-x="{{ele.wBox}}" 
+           ng-attr-y="{{ele.hBox}}" 
+           ng-attr-width="{{ele.TextWidth}}" 
+           height=30 
+           style="fill:white;" 
+           rx="10" ry="10" />
+    </g>
+
+    <g ng-repeat="ele in elePosition">
+     <image xlink:href="{{ele.icon}}"   
+            ng-x="{{ele.wPos}}" ng-y="{{ele.hPos}}" 
+            height="30px" width="30px" 
+            ng-mouseover="writeTable(this)" 
+            ng-mouseout="cleanTable(this)"
+            ng-click="makeASelection(this)"/> 
+
+     <text ng-x="{{ele.wPos}} + 40" 
+           ng-y="{{ele.hPos}} + 20"
+           ng-mouseover="writeTable(this)" 
+           ng-mouseout="cleanTable(this)"
+           ng-attr-fill="{{ele.TextColor}}">
+         {{ele.Title}}
+     </text>
+    </g>
+  </svg>  
+</div>

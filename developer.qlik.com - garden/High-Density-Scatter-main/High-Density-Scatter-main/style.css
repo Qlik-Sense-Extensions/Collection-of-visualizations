@@ -1,0 +1,52 @@
+div.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+
+}
+
+g.plotly, rect.cursor-ew-resize, g.cursor-move {
+  cursor: auto !important;
+}
+
+a.modebar-btn {
+  font-size: 18px !important;
+}
+
+/*.modebar-group {
+  background: orange !important;
+}*/
+
+
+
+div.render-highdensity {
+  position: relative; /* Sit on top of the page content */
+  /*display: none;*/ /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  /*top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;*/
+  background-color: #fff; /* Black background with opacity */
+  opacity: 85%;
+  z-index: 2; 
+}
+
+div.render-message {
+  pointer-events: auto;
+  color: rgb(123, 122, 120);
+  font-style: italic;
+  font-size: 13px;
+}
+
+div.hd-limited-msg {
+  position: absolute;
+  bottom: 6px;
+  font-style: italic;
+  font-size: 10px;
+}

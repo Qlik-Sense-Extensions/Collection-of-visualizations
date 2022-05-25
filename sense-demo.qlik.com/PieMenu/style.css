@@ -1,0 +1,35 @@
+#menu {
+	display: block;
+	margin: 0 auto;
+	overflow: visible; /* uncomment this if you are using bouncing animations*/
+}
+
+a {
+	outline: none;
+}
+
+.item .sector {
+	transition: all .1s linear;
+	fill: #0ad;
+	stroke: #111;
+	pointer-events: hover;
+	transform: scale 99%;
+}
+
+.item:hover .sector {
+	fill: #0cd;
+}
+
+.item .sector.active {
+	fill: #0ce;
+}
+
+.item:hover .sector.active {
+	fill: #0de;
+}
+
+
+
+symbol {
+	overflow: visible; /* KEEP THIS so that text will not get cut off it it is wider than the icon width */
+}

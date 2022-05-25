@@ -1,0 +1,33 @@
+<div>
+	<!-- Server is online and required authentication -->
+	<div ng-if="Main.SelectedRepository.type === 'ws'
+	 			&& Main.SelectedOnlineRepository.isOnline === true
+				&& Main.SelectedOnlineRepository.authentication.isAuthenticated === false"
+			style="margin-left:20px;">
+
+		<span class="wiBold wiRed">Login is required</span><br/>
+		<a href="javascript:void(0)" qva-activate="Main.Authentication.LocalAuthentication.show()" title="Login to {{Main.SelectedOnlineRepository.authentication.authenticationUrl}}">Login or Register</a>
+	</div>
+
+	<!-- Logged in but account is not verified -->
+	<div ng-if="Main.SelectedRepository.type === 'ws'
+	 			&& Main.SelectedOnlineRepository.isOnline === true
+				&& Main.SelectedOnlineRepository.authentication.isAuthenticated === true
+				&& Main.SelectedOnlineRepository.authentication.isVerified === false
+				"
+			style="margin-left:20px;">
+		<span class="wiBold wiRed">Account is not verified yet</span><br/>
+		<span>Please verify the account by clicking on the link in the eMail you have received.</span><br/><br/>
+		<a href="javascript:void(0)" qva-activate="Main.Authentication.checkAuth()">Refresh here after verification</a>
+	</div>
+
+	<!-- Server is not available -->
+	<div ng-if="Main.SelectedRepository.type === 'ws'
+				&& Main.SelectedOnlineRepository.isOnline === false
+				&& Main.SelectedOnlineRepository.authentication.isAuthenticated === false"
+			style="margin-left:20px;"
+			>
+			<span class="wiRed wiBold">Server is not available!</span><br/>
+			<span class="wiRed">Please select another repository or <a href="javascript:void(0);" qva-activate="WidgetLoader.loadWidgets(true);">try again</a> ...</span>
+	</div>
+</div>

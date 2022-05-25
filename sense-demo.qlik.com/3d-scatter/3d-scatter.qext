@@ -1,0 +1,9 @@
+{
+    "name": "3d-scatter",
+    "description": "3d-scatter chart using CanvasXpress",
+    "icon": "scatter-chart",
+    "type": "visualization",
+    "version": "1.0",
+    "preview": "bar",
+    "author": "Stephen Redmond"
+}

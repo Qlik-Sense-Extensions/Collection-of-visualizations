@@ -1,0 +1,22 @@
+<!--Todo: Rename "container" -->
+<div class="wiEditor_Container">
+    <div ng-if="Main.editMode == 'load'">
+
+        <!-- WidgetLoader: Header with Toolbar -->
+        <div data-ng-include data-src="'/extensions/qwidget/partials/WidgetLoader/wiWidgetLoader.Toolbar.html'"></div>
+
+        <!-- WidgetLoader: List -->
+        <div data-ng-include data-src="'/extensions/qwidget/partials/WidgetLoader/wiWidgetLoader.WidgetList.html'"></div>
+
+
+        <!-- WidgetLoader: Preview-Pane -->
+        <div data-ng-include data-src="'/extensions/qwidget/partials/WidgetLoader/wiWidgetLoader.PreviewPane.html'"></div>
+
+        <!-- WidgetLoader: Login Required or Server not reachable -->
+        <div data-ng-include data-src="'/extensions/qwidget/partials/WidgetLoader/wiWidgetLoader.LoginRequired.html'"></div>
+
+        <!-- WidgetLoader: Popup Data -->
+        <!--<div data-ng-include data-src="'/extensions/qwidget/partials/wiWidgetLoader.PopupData.html'"></div>-->
+
+    </div>
+</div>

@@ -1,0 +1,8 @@
+{
+    "name": "Cluster Bar Chart",
+    "description": "Cluster Bar Chart",
+    "icon": "extension",
+    "type": "visualization",
+    "version": "0.1",
+    "author": "Qlik"
+}

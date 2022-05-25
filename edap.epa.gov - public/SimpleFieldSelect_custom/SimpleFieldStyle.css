@@ -1,0 +1,399 @@
+/* CSS */
+
+.qv-object-SimpleFieldSelect_custom .dropdownsel {
+	width:100%;
+}
+.qv-object-SimpleFieldSelect_custom .ddmulti {
+	height:98%;
+}
+.qv-object-SimpleFieldSelect_custom .ddmulti option {
+	padding:2px;
+}
+.qv-object-SimpleFieldSelect_custom .ui-datepicker-trigger {
+	cursor:pointer;
+}
+
+.qv-object-SimpleFieldSelect_custom div.qv-object-content-container {
+	overflow-y: auto;
+	text-overflow:ellipsis;
+	overflow-x: hidden;
+}
+.qv-object-SimpleFieldSelect_custom input :checked{
+	font-weight:bold;
+}
+.qv-object-SimpleFieldSelect_custom .sfsc label{
+	padding-right:5px;
+	text-overflow: ellipsis;
+	display: inline-block;
+	padding-left:2px;
+	padding-top:2px;
+}
+.qv-object-SimpleFieldSelect_custom .sfsc {
+	height:100%;
+}
+.qv-object-SimpleFieldSelect_custom .sfsbtn {
+	display: inline-block;
+	padding:4px;
+}
+.qv-object-SimpleFieldSelect_custom .chkcont {
+	display:inline;
+}
+.qv-object-SimpleFieldSelect_custom label,.qv-object-SimpleFieldSelect_custom input,.qv-object-SimpleFieldSelect_custom li {
+	cursor:pointer;
+}
+
+.qv-object-SimpleFieldSelect_custom ul {
+	list-style: none;
+	width:100%;
+}
+.qv-object-SimpleFieldSelect_custom .ulastable{
+	display:table;
+}
+
+.qv-object-SimpleFieldSelect_custom li.data {
+	padding-left: 3px;
+	border-bottom: 1px solid #e5e5e5;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.qv-object-SimpleFieldSelect_custom .vlist li {
+	line-height: 30px;
+}
+
+.qv-object-SimpleFieldSelect_custom ul.horizontal li {
+	display:inline-block;
+	border: 1px solid #ddd;
+	padding: 3px;
+	margin-right:1px;
+	padding-left:5px; padding-right:5px;
+
+}
+.qv-object-SimpleFieldSelect_custom ul.ulastable li{
+	display:table-cell;
+}
+.qv-object-SimpleFieldSelect_custom ul.rcorners li {
+	border-radius:3px;
+}
+.qv-object-SimpleFieldSelect_custom ul.rmargin0 li {margin-right:0px; border-left:0px;}
+.qv-object-SimpleFieldSelect_custom ul.rmargin0 li:first-child {border-left:1px solid #ddd;}
+.qv-object-SimpleFieldSelect_custom ul.rmargin1 li {margin-right:1px;}
+.qv-object-SimpleFieldSelect_custom ul.rmargin2 li {margin-right:2px;}
+.qv-object-SimpleFieldSelect_custom ul.rmargin3 li {margin-right:3px;}
+.qv-object-SimpleFieldSelect_custom ul.rmargin4 li {margin-right:4px;}
+.qv-object-SimpleFieldSelect_custom ul.rmargin5 li {margin-right:5px;}
+.qv-object-SimpleFieldSelect_custom ul.rmargin6 li {margin-right:6px;}
+.qv-object-SimpleFieldSelect_custom ul.rmargin7 li {margin-right:7px;}
+.qv-object-SimpleFieldSelect_custom ul.rmargin8 li {margin-right:8px;}
+.qv-object-SimpleFieldSelect_custom li.stateO {
+	background-color:#fff;
+}
+.qv-object-SimpleFieldSelect_custom li.stateS, .qv-object-SimpleFieldSelect_custom li.stateL, .qv-object-SimpleFieldSelect_custom input.stateS, .qv-object-SimpleFieldSelect_custom input.stateL, .qv-object-SimpleFieldSelect_custom .ddmulti option.stateL, .qv-object-SimpleFieldSelect_custom .ddmulti option.stateS {
+    background-color: #009845;
+    border-bottom-color: #0aaf54;
+    color: #fff;
+}
+.qv-object-SimpleFieldSelect_custom.qv-selections-active li.selected,.qv-object-SimpleFieldSelect_custom.qv-selections-active li.selected, .qv-object-SimpleFieldSelect_custom li.select2-selection__choice {
+	background-color: #009845;
+    border-bottom-color: #0aaf54;
+    color: #fff;
+}
+
+.qv-object-SimpleFieldSelect_custom li.stateX, .qv-object-SimpleFieldSelect_custom li.stateXL, .qv-object-SimpleFieldSelect_custom li.stateXS, .qv-object-SimpleFieldSelect_custom .ddmulti option.stateXS {
+	background-color: #A9A9A9;
+	color: #fff;
+}
+
+.qv-object-SimpleFieldSelect_custom li.stateA, .qv-object-SimpleFieldSelect_custom .ddmulti option.stateA {
+	background-image: none;
+	background-color: #ddd;
+	color: #000;
+}
+/
+.qv-object-SimpleFieldSelect_custom.qv-selections-active li {
+	background-image: none;
+	background-color: #ddd;
+	color: #000;
+}
+
+
+.qv-object-SimpleFieldSelect_custom .disableBGimage {
+	background-image: none !important;
+}
+.qv-object-SimpleFieldSelect_custom .sfs_helptxt {
+	padding-left:5px;
+	font-style:italic;
+	font-size:90%;
+	border-radius:3px;
+	background-color:#fcfcfc;
+	text-overflow: ellipsis;
+	color:#808080;
+	margin-top:2px;
+}
+.qv-object-SimpleFieldSelect_custom .inlinelabeldiv {
+	margin-right:5px;
+	text-overflow: ellipsis;
+	color:#808080;
+	font-weight:bold;
+	white-space:nowrap;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+.qv-object-SimpleFieldSelect_custom .inlinelabeldivInline {
+	float:left;
+	padding-right:5px;
+	padding-top:3px;
+}
+.qv-object-SimpleFieldSelect_custom .inlinelabel {
+	text-overflow: ellipsis;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	overflow-y:scroll;
+}
+.qv-object-SimpleFieldSelect_custom .qv-object-nav {
+  display: none;
+}
+.qv-object-SimpleFieldSelect_custom ul.sfsrmenu {
+	width:130px;
+	z-index: 1001;
+}
+.qv-object-SimpleFieldSelect_custom.sfsrmenu {
+	display: none;
+	z-index: 1100;
+	position: fixed;
+	overflow: hidden;
+	border: 1px solid #CCC;
+	white-space: nowrap;
+	background: #FFF;
+	color: #333;
+	border-radius: 5px;
+}
+
+.qv-object-SimpleFieldSelect_custom.sfsrmenu li {
+	padding: 6px 8px;
+	cursor: pointer;
+
+}
+
+.qv-object-SimpleFieldSelect_custom.sfsrmenu li:hover {
+	background-color: #009845; /*#DEE;*/
+	color:#fafafa;
+}
+.qv-object-SimpleFieldSelect_custom .htmlin {
+	padding:3px;
+}
+.qv-object-SimpleFieldSelect_custom  input.htmlin{
+	width:80%;
+}
+.qv-object-SimpleFieldSelect_custom  input[type=number].htmlin {
+	
+}
+.qv-object-SimpleFieldSelect_custom  input[type=range].htmlin {
+	float:left;
+}
+.qv-object-SimpleFieldSelect_custom .rangval {
+	margin-left:3px;
+}
+.qv-object-SimpleFieldSelect_custom .rangvaltooltip {
+	padding:3px;
+	border-radius: 3px;
+	background-color: #eee;
+	border:1px solid #ddd;
+}
+.qv-object-SimpleFieldSelect_custom .sfssearchdiv {
+	display:none;
+	width:100%;
+}
+.qv-object-SimpleFieldSelect_custom .sfssearchonlydiv {
+	width:100%;
+	height:100%;
+}
+.qv-object-SimpleFieldSelect_custom .sfssearching {
+	cursor: wait;
+}
+
+
+.qv-object-SimpleFieldSelect_custom .sfssearchIcon {
+	position:absolute;
+	top:3px;
+	right:5px;
+	border-radius:3px;
+	padding:4px;
+	z-index: 101;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+.qv-object-SimpleFieldSelect_custom .sfssearchicon2 {
+	height:calc(100% - 4px);
+	margin-left:4px;
+	margin-top:4px;
+}
+.qv-object-SimpleFieldSelect_custom .sfssearchIconWfullscrn {
+	right:35px;
+}
+.qv-object-SimpleFieldSelect_custom .sfssearchDivWfullscrn {
+	width:calc(100% - 30px);
+}
+.qv-object-SimpleFieldSelect_custom .sfssearchinput_clear, .qv-object-SimpleFieldSelect_custom .sfssearchonlyinput_clear {
+	margin-right:4px;
+	height:calc(100% - 4px);
+	margin-top:4px;
+}
+.qv-object-SimpleFieldSelect_custom .sfssearchonlyinput_clear {
+	margin-right: 28px;
+}
+.qv-object-SimpleFieldSelect_custom .sfssearchIcon:hover, .qv-object-SimpleFieldSelect_custom .sfssearchinput_clear:hover, .qv-object-SimpleFieldSelect_custom .sfssearchonlyinput_clear:hover{
+	cursor:pointer;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.qv-object-SimpleFieldSelect_custom .sfssearchstat {
+	color: #767676;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	position:absolute;
+	right:5px;
+	bottom:5px;
+}
+.qv-object-SimpleFieldSelect_custom .sfssearchcountbar {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:2px;
+}
+.qv-object-SimpleFieldSelect_custom .contextmenulaunch{
+	position:absolute;
+	top:0px;
+	right:5px;
+	border-radius:3px;
+	padding:4px;
+	z-index: 102;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+.qv-object-SimpleFieldSelect_custom .contextmenulaunchwithsearch{
+	top:25px;
+}
+.qv-object-SimpleFieldSelect_custom .contextmenulaunch:hover{
+	cursor:pointer;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.qv-object-SimpleFieldSelect_custom .sfssearchinput {
+	margin-left:4px;
+}
+.qv-object-SimpleFieldSelect_custom .searchHide {
+	display: none!important;
+}
+/* select2 fixes */
+.qv-object-SimpleFieldSelect_custom .select2-container--default {
+	width:98%;
+}
+.qv-object-SimpleFieldSelect_custom .select2-selection__choice__remove{}
+.qv-object-SimpleFieldSelect_custom .select2-selection__clear {
+	font-size:120%;
+}
+.qv-object-SimpleFieldSelect_custom .sfs_lui {
+	padding-left:5px;
+	padding-top:5px;
+	height: calc(100% - 5px);
+}
+.qv-object-SimpleFieldSelect_custom .sfs_lui .lui-switch {
+	margin-bottom:4px;
+	margin-top:4px;
+	
+}
+.qv-object-SimpleFieldSelect_custom .sfs_lui .lui-checkbox {
+	margin-bottom:5px;
+}
+.qv-object-SimpleFieldSelect_custom .sfs_lui .lui-checkbox:hover,.qv-object-SimpleFieldSelect_custom .sfs_lui .lui-switch:hover {
+	font-weight:bold;
+}
+.qv-object-SimpleFieldSelect_custom .sfs_lui .lui-switch .lui-switch_txt{
+	position:absolute; 
+	left:50px; top:2px;
+	white-space: nowrap;
+}
+.qv-object-SimpleFieldSelect_custom .txtonly {
+	
+}
+
+.qv-object-SimpleFieldSelect_custom .flexboxcont {
+	display:flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: space-between;
+}
+.qv-object-SimpleFieldSelect_custom .flexboxcont .sfe {
+	margin-bottom: 2px;
+}
+
+#sfsgetselurl {
+	display: none;
+	width:50%;
+	padding:20px;
+	border:1px solid silver;
+	border-radius: 5px;
+	position: fixed;
+	top:10%;
+	left:10%;
+	background-color: #fff;
+	z-index: 1200;
+}
+#sfsgetselurl input {
+	width:100%;
+}
+#sfsSelBartxt.qv-object-SimpleFieldSelect_custom {
+	width:unset; max-width:220px; cursor:default;padding-left:5px;padding-right:15px;
+	white-space: normal;
+	line-height: normal;
+	background: transparent;
+    color: #404040;
+    border-bottom: 1px solid #d9d9d9;
+    text-overflow: ellipsis;
+}
+#sfsSelBartxt.qv-object-SimpleFieldSelect_custom.selbarqlikstyle {
+	    font-weight: 700;
+	    white-space: nowrap;
+	    line-height: 37px;
+}
+#sfstoolbartxt {
+	height: 30px;
+    overflow: auto;
+    width:100%;
+}
+.qv-object-SimpleFieldSelect_custom .sfsoverlay {
+	width:100%; height:100%;
+	position: absolute; top: 0; left: 0;
+	z-index:1201;
+	text-align: center;
+vertical-align: middle;
+opacity: 0.75;filter:alpha(opacity=75);-moz-opacity:.75;
+
+}
+.qv-object-SimpleFieldSelect_custom  .sfsoverlaycont {
+	font-size:200%;
+	margin: 0 auto;
+}
+/* Old Pre february 2019 colors. Uncomment below */
+/*
+.qv-object-SimpleFieldSelect_custom.qv-selections-active li.selected,.qv-object-SimpleFieldSelect_custom.qv-selections-active li.selected, .qv-object-SimpleFieldSelect_custom li.select2-selection__choice {
+	background-image: linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -o-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -moz-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -webkit-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -ms-linear-gradient(top, #52cc52, #4dc04d);
+	color: #fff;
+}
+
+.qv-object-SimpleFieldSelect_custom li.stateS, .qv-object-SimpleFieldSelect_custom li.stateL, .qv-object-SimpleFieldSelect_custom input.stateS, .qv-object-SimpleFieldSelect_custom input.stateL, .qv-object-SimpleFieldSelect_custom .ddmulti option.stateL, .qv-object-SimpleFieldSelect_custom .ddmulti option.stateS {
+	background-image: linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -o-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -moz-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -webkit-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -ms-linear-gradient(top, #52cc52, #4dc04d);
+	color: #fff;
+}
+*/

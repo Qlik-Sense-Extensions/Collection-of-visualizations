@@ -1,0 +1,13 @@
+{
+	"name" : "Menu Sistel V2",
+	"description" : "Menu configurable para las APPs de Qlik Sense.",
+	"icon" : "",
+	"type" : "visualization",
+	"version": "2.1.0",
+	"license": "MIT",
+	"preview" : "",
+	"author": "Jordi Ferrer",
+	"meta": {
+    	"type": "navigation"
+  	}
+}

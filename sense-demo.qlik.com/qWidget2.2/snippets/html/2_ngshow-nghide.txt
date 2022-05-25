@@ -1,0 +1,22 @@
+<!--
+    Snippet: Show-/Hide-Condition
+    ~~
+    DESCRIPTION:
+    Basic example how to create show- & hide-conditions.
+    ~~
+    USAGE:
+    Replace the parameters within ng-show and ng-hide with dynamic properties.
+    ~~
+    DOCUMENTATION:
+    See https://docs.angularjs.org/api/ng/directive/ngShow
+-->
+
+<!-- Will be shown if the condition is true -->
+<div ng-show="true"> <!-- Replace here with your property -->
+    The condition has been evaluated to TRUE
+</div>
+
+<!-- Will be hidden if the condition is true -->
+<div ng-hide="true"> <!-- Replace here with your property -->
+    The condition has been evaluated to FALSE
+</div>

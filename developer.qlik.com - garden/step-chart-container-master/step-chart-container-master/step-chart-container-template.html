@@ -1,0 +1,48 @@
+<div qv-extension class="qv-object-step-chart-container-spectre qv-object-step-chart-container-container" elemready="firstRenderCall()">
+	<div ng-if="layout.props.navigation" class="qv-object-step-chart-prev-btn qv-object-step-chart-nav-btn" style="top: {{layout.props.show ? '40px' : '20px'}}">
+		<button class="lui-button" ng-disabled="currentStep == 0" ng-click="prev()">
+			<span class="lui-icon lui-icon--previous lui-button__icon"></span>
+		</button>
+	</div>
+	<div ng-if="layout.props.navigation" class="qv-object-step-chart-next-btn qv-object-step-chart-nav-btn" style="top: {{layout.props.show ? '40px' : '20px'}}">
+		<button class="lui-button" ng-disabled="lastStep == 0" ng-click="next()">
+			<span class="lui-icon lui-icon--next lui-button__icon"></span>
+		</button>
+	</div>
+	<div class="columns col-12 qv-object-step-chart-container-header" style="{{headerMinHeight()}}">		
+		<div class="columns col-12 text-center" ng-show="layout.props.show">								
+			<div class="qv-object-step-chart-container-top-avatar" ng-repeat="x in [].constructor(totalSteps()) track by $index" >
+				<figure steps="stepMasterItem({{$index}})" class="avatar avatar-lg" id="{{avatarId}}-{{$index}}">				
+					<div><img src="{{layout.listItems[$index].props.avatar.location}}" alt="PI"></div>
+				</figure>				
+			</div>				
+		</div>
+		<div class="columns col-12">
+			<div class="column col-12 text-center">
+				<ul class="step qv-object-step-chart-container-animated qv-object-step-chart-container-fadeInRight">
+					<li class="step-item" id="{{liClass}}-{{$index}}" ng-repeat="x in [].constructor(totalSteps()) track by $index" data-step="{{$index}}">
+						<a steps="stepMasterItem({{$index}})" href="" class="tooltip tooltip-right" data-tooltip="{{layout.listItems[$index].props.label ? layout.listItems[$index].props.label : 'Step-'+$index+1}}">
+							<div class="qv-object-step-chart-container-animated qv-object-step-chart-container-fadeInRight"> 
+								{{layout.listItems[$index].props.label ? layout.listItems[$index].props.label : "Step-"+$index+1}}
+							</div>
+							<div class="qv-object-step-chart-container-expression qv-object-step-chart-container-animated qv-object-step-chart-container-fadeInRight">
+								{{layout.listItems[$index].props.expression}}
+							</div
+						></a>
+					</li>				
+				</ul>
+			</div>
+		</div>		
+	</div>
+	<div ng-show="layout.props.MasterItem" class="columns qv-object-step-chart-container-body">		
+		<div class="column col-12 text-center" style="height: 100%;">			
+			<div class="qv-object-step-chart-container-micontainer" id="{{extId}}">				
+				<div id="{{textId}}" class="text-center p-centered qv-object-step-chart-container-display-text"></div>
+			</div>
+		<button ng-show="showExport" id="qv-object-step-chart-export-btn" steps="" class="lui-button qv-object-step-chart-export-btn" style="top: {{layout.props.show ? '130px' : '75px'}}">
+				<span class="lui-icon lui-icon--export"></span>
+			</button>					
+		</div>
+		
+	</div>	
+</div>

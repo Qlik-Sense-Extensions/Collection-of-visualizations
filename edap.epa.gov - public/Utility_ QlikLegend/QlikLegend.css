@@ -1,0 +1,20 @@
+.legend .column {
+  min-width: 300px;
+  display: inline-block;
+  text-align: left;
+  height : 20px;
+}
+.legend .column .box {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top; 
+}
+
+.legend .column .line {
+  width: 40px;
+  height: 10px;
+ 
+  display: inline-block;
+}

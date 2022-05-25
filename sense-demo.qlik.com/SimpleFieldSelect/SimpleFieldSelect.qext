@@ -1,0 +1,15 @@
+{
+    "name": "SimpleFieldSelect",
+    "description": "Simple field selector",
+    "type": "visualization",
+    "version": "1.0.4",
+    "icon": "list",
+    "author": "Matti Punkeri / Mediassar Oy",
+    "homepage": "",
+    "keywords": "qlik-sense, visualization",
+    "license": "",
+    "repository": "",
+    "dependencies": {
+        "qlik-sense": ">=3.0.x"
+    }
+}

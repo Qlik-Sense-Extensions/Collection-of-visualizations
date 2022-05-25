@@ -1,0 +1,16 @@
+<qv-modal-dialog
+        id="wiWidgetEditor_PopupHelp"
+        qv-cancel="closeView()">
+    <header class="dm-header">
+        qWidget Help
+    </header>
+    <main class="dm-main" style="height:400px;width:700px;">
+        <iframe
+                ng-src="{{src}}"
+                class="iframe_help">
+        </iframe>
+    </main>
+    <footer class="dm-footer">
+        <button class="wui-button" name="cancel" qva-activate="closeView()">Close</button>
+    </footer>
+</qv-modal-dialog>

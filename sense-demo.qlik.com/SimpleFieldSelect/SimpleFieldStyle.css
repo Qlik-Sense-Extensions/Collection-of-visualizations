@@ -1,0 +1,81 @@
+/* CSS */
+
+.qv-object-SimpleFieldSelect .dropdownsel {
+	width:100%;
+}
+.qv-object-SimpleFieldSelect .qv-object-header {
+	height:22px !important;
+	padding-bottom:4px !important;
+}
+.qv-object-SimpleFieldSelect .qv-object-title{
+	padding-top:4px !important;
+}
+.qv-object-SimpleFieldSelect div.qv-object-content-container {
+	overflow: auto;
+}
+.qv-object-SimpleFieldSelect input :checked{
+	font-weight:bold;
+}
+.qv-object-SimpleFieldSelect label{
+	padding-right:5px;
+}
+.qv-object-SimpleFieldSelect .chkcont {
+	display:inline;
+}
+.qv-object-SimpleFieldSelect label,.qv-object-SimpleFieldSelect input,.qv-object-SimpleFieldSelect li {
+	cursor:pointer;
+}
+
+.qv-object-SimpleFieldSelect ul {
+	list-style: none;
+}
+
+.qv-object-SimpleFieldSelect li.data {
+	padding: 3px;
+	border-bottom: 1px solid #ddd;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.qv-object-SimpleFieldSelect ul.horizontal li {
+	display:inline-block;
+	border: 1px solid #ddd;
+	margin-right:1px;
+	border-radius:3px;
+	padding-left:5px; padding-right:5px;
+}
+
+.qv-object-SimpleFieldSelect li.stateS, .qv-object-SimpleFieldSelect li.stateL, .qv-object-SimpleFieldSelect input.stateS, .qv-object-SimpleFieldSelect input.stateL {
+	background-image: linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -o-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -moz-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -webkit-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -ms-linear-gradient(top, #52cc52, #4dc04d);
+	color: #fff;
+}
+
+.qv-object-SimpleFieldSelect li.stateX, .qv-object-SimpleFieldSelect li.stateXL, .qv-object-SimpleFieldSelect li.stateXS {
+	background-color: #A9A9A9;
+	color: #fff;
+}
+
+.qv-object-SimpleFieldSelect li.stateA {
+	background-image: none;
+	background-color: #ddd;
+	color: #000;
+}
+/
+.qv-object-SimpleFieldSelect.qv-selections-active li {
+	background-image: none;
+	background-color: #ddd;
+	color: #000;
+}
+
+.qv-object-SimpleFieldSelect.qv-selections-active li.selected,.qv-object-SimpleFieldSelect.qv-selections-active li.selected {
+	background-image: linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -o-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -moz-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -webkit-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -ms-linear-gradient(top, #52cc52, #4dc04d);
+	color: #fff;
+}

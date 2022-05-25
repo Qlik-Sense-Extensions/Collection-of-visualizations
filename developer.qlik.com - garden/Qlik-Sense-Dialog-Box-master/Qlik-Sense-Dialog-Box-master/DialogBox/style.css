@@ -1,0 +1,7 @@
+/* CSS */
+.qv-object-X-Popup .qv-object-nav > a{
+	display:none;
+}
+.qv-object-X-Popup ~ .qv-object-nav > a{
+	display:none;
+}

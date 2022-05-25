@@ -1,0 +1,7 @@
+<wi-progressbar>
+    <progress>
+        <bar value="20" design="danger">20%</bar>
+        <bar value="10" design="success">10%</bar>
+        <bar value="60" design="info">60%</bar>
+    </progress>
+</wi-progressbar>

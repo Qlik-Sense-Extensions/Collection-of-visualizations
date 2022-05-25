@@ -1,0 +1,9 @@
+{
+    "name": "Dynamic table",
+    "description": "Table with dynamic sort",
+    "icon": "table",
+    "type": "visualization",
+    "version": "1.0",
+    "preview": "table",
+    "author": "Erik Wetterberg"
+}

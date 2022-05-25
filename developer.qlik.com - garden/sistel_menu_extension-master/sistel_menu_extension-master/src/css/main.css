@@ -1,0 +1,119 @@
+.qv-object-menu_sistel_v2 .qv-inner-object{
+    overflow: visible !important;
+    z-index: 2147483629;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-sistel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    transition: all 0.3s ease;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.menu-sistel-brand{
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.menu-sistel .lui-icon{
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+}
+
+.menu-sistel-list{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+.menu-sistel-list li {
+    padding: 0;
+    cursor: pointer;
+}
+
+.menu-sistel-list a {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.7rem;
+}
+
+.dropdown-option {
+    position: relative;
+    display: block;
+}
+
+.dropdown-link::after{
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+.sistel-dropdown-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: max-content;
+    min-width: 100%;
+    z-index: 100;
+}
+
+.sistel-dropdown-menu li{
+    display: flex;
+    width: 100%;
+}
+
+.sistel-dropdown-menu li a {
+    display: block;
+    width: inherit;
+    padding: .35rem 0.7rem;
+    clear: both;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.dropdown-menu li{
+    padding: 8px 20px !important;
+}
+
+.dropdown-menu li a, .nav-link a i {
+    pointer-events: none;
+    background: transparent !important;
+}
+
+.hover-effected{
+    transition: all 0.35s ease;
+}

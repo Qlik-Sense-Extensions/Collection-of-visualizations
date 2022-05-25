@@ -1,0 +1,67 @@
+﻿[
+  {
+    "name": "Object Metadata",
+    "author": {
+      "full_name": "Stefan Walther"
+    },
+    "_id": "objectmetadata",
+    "CategoryName": "System Objects",
+    "description": "Displays a bunch of meta-data for the current object.",
+    "enabled": true
+  },
+  {
+    "name": "Simple Table",
+    "author": {
+      "full_name": "Stefan Walther"
+    },
+    "_id": "simpletable",
+    "CategoryName": "System Objects",
+    "description": "Display a simple table with all the data defined for this object.",
+    "enabled": true
+  },
+  {
+    "name": "Measure, Status and Trend",
+    "author": {
+      "full_name": "Stefan Walther"
+    },
+    "_id": "measurestatustrend",
+    "CategoryName": "KPI Tiles",
+    "description": "Simple tile with a measure, a status and a trend-icon.",
+    "enabled": true
+  },
+  {
+    "name": "Simple Tile",
+    "author": {
+      "full_name": "Stefan Walther"
+    },
+    "_id": "simpletile",
+    "CategoryName": "KPI Tiles",
+    "description": "Simple tile for displaying a measure and changes + color coding.",
+    "enabled": true
+  },
+  {
+    "name": "KPI Tile 1",
+    "author": {
+      "full_name": "Stefan Walther"
+    },
+    "_id": "kpi-tile1",
+    "CategoryName": "Tiles",
+    "description": "KPI tile to measures from one period with another.",
+    "themes": [
+      "default",
+      "green",
+      "blue"
+    ],
+    "enabled": true
+  },
+  {
+    "name": "KPI Tile 2",
+    "author": {
+      "full_name": "Stefan Walther"
+    },
+    "_id": "kpi-tile2",
+    "CategoryName": "Tiles",
+    "description": "KPI tile with icon, measure, subtitle and footer.",
+    "enabled": true
+  }
+]

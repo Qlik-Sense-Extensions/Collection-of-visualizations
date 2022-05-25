@@ -1,0 +1,9 @@
+{
+    "name": "GeoAnalytics Line Layer",
+    "description": "A line layer for GeoAnalytics.",
+    "preview": "linelayericon-preview.png",
+    "type": "visualization",
+    "version": "1.0",
+    "author": "Qlik",
+    "icon": "map icon-idevio-linelayer"
+}

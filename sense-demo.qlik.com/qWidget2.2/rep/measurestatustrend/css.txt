@@ -1,0 +1,35 @@
+﻿.wiSC-table {
+    width:100%;
+    border-color:#ccc;
+    border-style:solid;
+    border-width:1px;
+}
+.wiSC-table .wiSC-col {
+    width:33%;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.wiSC-table .wiSC-fig {
+    font-weight:bold;
+    font-size:xx-large;
+}
+
+.wiSC-table .wiSC-status {
+    padding:10px;
+    background-color:#ccc;
+    color:white;
+    font-weight:bold;
+    font-size:large;
+}
+.wiSC-table .wiSC-bgred {
+    background-color:#990000 !important;
+}
+.wiSC-table .wiSC-bggreen {
+    background-color:darkgreen !important;
+}
+.wiSC-table .wiSC-bgorange {
+    background-color:orange !important;
+    color:#666 !important;
+}

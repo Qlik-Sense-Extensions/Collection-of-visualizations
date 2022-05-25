@@ -1,0 +1,15 @@
+{
+    "name": "SingleSelection",
+    "description": "Allow single dimension value selection",
+    "icon": "list",
+    "type": "visualization",
+    "version": "1.0.0",
+    "author": "msorel@acssi.fr",
+    "homepage": "www.acssi.fr",
+    "keywords": "qlik-sense, visualization, list",
+    "license": "",
+    "repository": "",
+    "dependencies": {
+        "qlik-sense": ">=1.0.x"
+    }
+}

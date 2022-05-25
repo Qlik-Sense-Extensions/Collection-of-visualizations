@@ -1,0 +1,15 @@
+.qsvd__btn {
+    cursor: pointer;
+    margin-left: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;    
+}
+
+.qsvd__btn svg {
+    height: 100%;
+}
+
+.qsvd__hidden {
+    display: none;
+}
+

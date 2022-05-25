@@ -1,0 +1,7 @@
+{
+    "name": "data export",
+    "description": "Extension to export data from qlik",
+    "type": "visualization",
+    "version": 0.1,
+    "author": "Bryan Chastain"
+}

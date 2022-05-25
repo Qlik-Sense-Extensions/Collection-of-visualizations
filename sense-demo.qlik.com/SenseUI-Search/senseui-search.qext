@@ -1,0 +1,9 @@
+{
+    "name": "SenseUI-Search",
+    "description": "A Simple Search that shows results as you type",
+    "icon": "text-image",
+    "type": "visualization",
+    "version": "1.0",
+    "preview": "text-image",
+    "author": "Yianni Ververis"
+}

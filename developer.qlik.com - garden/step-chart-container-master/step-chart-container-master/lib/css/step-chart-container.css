@@ -1,0 +1,121 @@
+.qv-object-step-chart-container-container {
+    height: 100%;
+    width: 100%;
+    position: relative; 
+    overflow: hidden;
+}
+
+.qv-object-step-chart-container-spectre .avatar {
+    background: transparent !important;
+}
+
+.qv-object-step-chart-container-select {
+    opacity: 1;
+}
+
+.qv-object-step-chart-container-not-select {
+    opacity: 0.2;
+}
+
+.qv-object-step-chart-container-spectre .step .step-item {
+    -ms-flex: auto;
+}
+
+.qv-object-step-chart-container-top-avatar {
+    flex: 1 0 auto;
+    padding-left: 10px;
+}
+
+.qv-object-step-chart-container-micontainer {
+    height: 100%;
+}
+
+.qv-inner-object{
+    height:100% !important;
+}
+
+.qv-object-step-chart-container-header{
+    /* min-height: 110px; */
+    height: auto !important;
+    /* height: 20%; */
+}
+
+.qv-object-step-chart-container-body{
+    height: 80%;
+}
+
+.qv-object-step-chart-container-expression{
+    font-weight: 700;
+}
+
+.qv-object-step-chart-container-display-text {
+    height: 100%;
+}
+
+.qv-object-step-chart-container-animated {
+	-webkit-animation-duration: 0.75s;
+	animation-duration: 0.75s;	
+}
+
+.qv-object-step-chart-prev-btn {
+    position: absolute;
+    left: 0px;
+    top: 40px;        
+    z-index: 9999;
+}
+
+.qv-object-step-chart-next-btn {
+    position: absolute;
+    right: 0px;    
+    top: 40px;       
+    z-index: 9999;    
+}
+
+.qv-object-step-chart-nav-btn button{
+    padding: 0 !important;
+}
+
+.qv-object-step-chart-export-btn {
+    position: absolute;
+    right: 20px;
+    top: 130px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 9999;
+    padding: 0 !important;
+}
+
+.qv-object-step-chart-container-micontainer:hover + .qv-object-step-chart-export-btn {
+    opacity: 1;
+}
+
+.qv-object-step-chart-export-btn:hover{
+    opacity: 1;
+}
+
+@-webkit-keyframes qv-object-step-chart-container-fadeInRight {
+    0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes qv-object-step-chart-container-fadeInRight {
+    0% {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.qv-object-step-chart-container-fadeInRight {
+    -webkit-animation-name: qv-object-step-chart-container-fadeInRight;
+    animation-name: qv-object-step-chart-container-fadeInRight;
+}

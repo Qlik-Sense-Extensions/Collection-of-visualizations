@@ -1,0 +1,22 @@
+{
+	"name": "EasyTooltip",
+	"description": "A tooltip object",
+	"type": "visualization",
+	"version": "1.0.0",
+	"icon": "text",
+	"author": "Sébastien GUNTHER (SGU)",
+	"company": "EasyNeo",
+	"homepage": "www.easyneo.fr",
+	"keywords": "qlik-sense, visualization",
+	"license": "Copyright EasyNeo, no changes allowed, free to use",
+	"repository": "",
+	"dependencies": {
+		"qlik-sense": ">=3.0.x"
+	},
+	"preview": "easy-tooltip-preview.png",
+	"bundle": {
+        "id": "easyneo-extensions",
+        "name": "EasyNeo Extensions",
+        "description": "EasyNeo extensions package. Learn more at www.easyneo.fr."
+    }
+}

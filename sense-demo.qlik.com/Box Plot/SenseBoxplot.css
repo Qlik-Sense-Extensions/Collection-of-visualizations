@@ -1,0 +1,41 @@
+.qv-object-SenseBoxplot body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.qv-object-SenseBoxplot .box {
+  font: 10px sans-serif;
+}
+
+.qv-object-SenseBoxplot .box line,
+.qv-object-SenseBoxplot .box rect,
+.qv-object-SenseBoxplot .box circle {
+  fill: steelblue;
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+.qv-object-SenseBoxplot .box .center {
+  stroke-dasharray: 3,3;
+}
+
+.qv-object-SenseBoxplot .box .outlier {
+  fill: none;
+  stroke: #000;
+}
+
+.qv-object-SenseBoxplot .axis {
+  font: 12px sans-serif;
+}
+ 
+.qv-object-SenseBoxplot .axis path,
+.qv-object-SenseBoxplot .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+ 
+.qv-object-SenseBoxplot .x.axis path { 
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

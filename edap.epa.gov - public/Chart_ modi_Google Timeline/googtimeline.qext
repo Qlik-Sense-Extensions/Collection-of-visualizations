@@ -1,0 +1,10 @@
+{
+    "name": "Chart: modi_Google Timeline",
+    "description": "modi_Google Timeline",
+    "icon": "bar-chart-vertical",
+    "type": "visualization",
+    "version": "1.0",
+    "preview": "bar",
+    "homepage": "http://branch.qlik.com/#!/project/5a9987d324c6aa484f158acf",
+    "author": "Kai Hilton-Jones"
+}

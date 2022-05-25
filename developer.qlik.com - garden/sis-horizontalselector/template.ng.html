@@ -1,0 +1,46 @@
+<div qv-extension class="dim-container" ng-init="getFields()">
+    <div class="dim-item" ng-class="{labelUp: dimension.labelPos == 'UP', labelLeft: dimension.labelPos == 'LEFT'}"
+        ng-repeat="dimension in dimData">
+        <div ng-if="dimension.showLabel && dimension.fieldType != 'DROPDOWN'" class="item-label dim-label"
+            ng-class="{isLabelLeft: dimension.labelPos == 'LEFT'}">
+            <span ng-style="{'font-weight': layout.settings.labels.fontWeight, 'font-size': layout.settings.labels.fontSize}">{{dimension.label}}</span>
+        </div>
+        <!-- LIST -->
+        <div ng-if="dimension.fieldType == 'LIST'" class="lui-buttongroup">
+            <button class="lui-button lui-buttongroup__button {{qValue.state}}" ng-repeat="qValue in dimension.values"
+                data-value="{{qValue.value}}" data-dim="{{dimension.name}}" data-qNum="{{qValue.qNum}}" data-qIndex="{{qValue.index}}"
+                ng-click="onClickButton($event)" cl-swipestart="onSwipeStart($event)"
+                cl-swipeupdate="onSwipeUpdate($event)" cl-swipe="onSwipe($event)">
+                <span ng-style="{'font-weight': layout.settings.values.fontWeight, 'font-size': layout.settings.values.fontSize}">{{qValue.value}}</span>
+            </button>
+        </div>
+        <!-- DROPDOWN -->
+        <div ng-if="dimension.fieldType == 'DROPDOWN'" class="dropdown-list">
+            <!-- TOGGLE -->
+            <button class="dropdown-toggle lui-button" ng-click="onDropdownToggleClick($event)">
+                <span ng-if="dimension.showLabel" ng-style="{'font-weight': layout.settings.labels.fontWeight, 'font-size': layout.settings.labels.fontSize}">{{dimension.label}}</span>
+                <i class="lui-icon lui-icon--triangle-bottom rm-pointer-events"></i>
+            </button>
+            <!-- DROPDOWN OPTIONS -->
+            <ul class="popover lui-popover lui-list">
+                <div class="dropdown-header" id="test">
+                    <div class="lui-search">
+                        <span class="lui-icon  lui-icon--search  lui-search__search-icon"></span>
+                        <input class="lui-search__input" maxlength="255" type="text" placeholder="Search" ng-model="dropdownSearch" ng-change="filterOptions()"/>
+                        <button class="lui-search__clear-button">
+                          <span class="lui-icon  lui-icon--small  lui-icon--close"></span>
+                        </button>
+                    </div>
+                    <button id="cancel-sel-button" class="lui-button  lui-button--danger" ng-click="onCancelDropdownSelection($event)" data-dim="{{dimension.name}}"><i class="lui-icon lui-icon--close rm-pointer-events"></i></button>
+                    <button id="confirm-sel-button" class="lui-button  lui-button--success" ng-click="onConfirmDropdownSelection($event)"><i class="lui-icon lui-icon--tick rm-pointer-events"></i></button>
+                </div>
+                <li class="lui-list__item {{qValue.state}}" ng-repeat="qValue in dimension.activeValues"
+                    data-value="{{qValue.value}}" data-dim="{{dimension.name}}" data-qIndex="{{qValue.index}}"
+                    cl-swipestart="onSwipeStart($event)" cl-swipeupdate="onSwipeUpdate($event)"
+                    cl-swipe="onDropdownSwipe($event)" ng-click="onDropdownOptionClick($event)">
+                    <span>{{qValue.value}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

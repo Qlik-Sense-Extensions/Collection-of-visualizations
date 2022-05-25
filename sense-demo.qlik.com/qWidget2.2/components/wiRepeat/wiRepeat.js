@@ -1,0 +1,1 @@
+define(["jquery","qvangular"],function(a,b){"use strict";b.directive("ngRepeatRange",function(){return{scope:{from:"=",to:"=",step:"="},link:function(a,b,c){function d(a,b,c){for(var d=[];b>=a+c;)d[d.length]=a+=c;return d}var e=a.from||0,f=a.step||1,g=a.to||c.ngRepeatRange,h=d(e,g,f).join(",");b.attr("ng-repeat","n in ["+h+"]"),b.removeAttr("ngRepeatRange")}}})});

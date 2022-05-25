@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost.ttf');
+    /* IE9 Compat Modes */
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.ttf');
+    /* IE9 Compat Modes */
+}
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('../fonts/OpenSans-Light.ttf');
+    /* IE9 Compat Modes */
+}
+@font-face {
+    font-family: 'OpenSans-Semi';
+    src: url('../fonts/OpenSans-SemiBold.ttf');
+    /* IE9 Compat Modes */
+}
+@font-face {
+    font-family: 'erasdust';
+    src: url('../fonts/erasdust.ttf');
+    /* IE9 Compat Modes */
+}
+.SimpleGauge-box{
+    /*padding:40px 40px 20px 40px;*/
+    /*background:transparent;*/
+    border-color:var(--my-border-color);
+    border-style:solid;
+    border-width:var(--my-border-width);
+    width: 100%;
+    height: 100%;
+}
+.SimpleGauge-container-line{
+    width: 100%;
+    background-color: #ddd;
+    /*padding:40px 0 0 0;*/
+}
+.SimpleGauge-container-circle{
+  /*margin: 20px;*/
+  /*width: 100%;*/
+  height: 100%;
+  max-width: 668px;
+  max-height: 668px;
+  position: relative;
+}
+.SimpleGauge {
+    text-align: right;
+    padding: 0px;
+    /*color: white;*/
+    height:3px; 
+}
+@keyframes achievement {
+    from{width:0}
+    to{width:var(--my-anime-width)}
+}
+.SimpleGauge-color {    
+    background: var(--my-color-var);
+    animation-fill-mode: forwards;
+    animation-name: achievement;
+    animation-duration: var(--my-anime-secs);
+}
+
+.SimpleGauge-color:after {/* small ball*/
+    content: "";
+    position: absolute;
+    top: 37px;
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    background: var(--my-color-var);
+    /*animation-fill-mode: forwards;
+    animation-name: achievement;
+    animation-duration: var(--my-anime-secs);*/
+}
+
+.SimpleGauge-color:before {/* square*/
+    content: "";
+    position: absolute;
+    margin-left:var(--my-margin-left);
+    top: 0px;
+    width:100%;
+    max-width: var(--my-max-width);
+    height: 30px;
+    z-index:1;
+    border-radius: var(--my-border-radius);
+    background: var(--my-color-var);
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+@keyframes growing {
+    from{font-size:0px;}
+    to{font-size:17px;}
+}
+@keyframes appearing {
+    from{opacity:0;}
+    to{opacity:1;}
+}
+.SimpleGauge-a{
+    position: absolute;
+    margin-left: var(--my-a-margin-left);
+    top: 6px;
+    z-index:2;
+    animation-fill-mode: forwards;
+    animation-name: appearing;
+    animation-duration: var(--my-anime-secs);    
+}
+
+.SimpleGauge-content {
+    margin:20px 0 0;
+}
+
+.SimpleGauge-title{
+    color: var(--my-color-var);
+    font-weight: 400; 
+    /*font-size:20px;*/
+}
+
+.SimpleGauge-cursor-sheet{
+    cursor:pointer;
+}
+.SimpleGauge-cursor-url{
+    cursor:pointer;
+}
+/*font sizes*/
+.SimpleGauge-font-xxs{
+    font-size:14px;
+}
+.SimpleGauge-font-xs{
+    font-size:15px;
+}
+.SimpleGauge-font-s{
+    font-size:16px;
+}
+.SimpleGauge-font-m{
+    font-size:17px;
+}
+.SimpleGauge-font-ml{
+    font-size:20px;
+}
+.SimpleGauge-font-l{
+    font-size:24px;
+}
+.SimpleGauge-font-xl{
+    font-size:28px;
+}
+.SimpleGauge-font-xxl{
+    font-size:32px;
+}
+.SimpleGauge-font-xxxl{
+    font-size:42px;
+}
+.SimpleGauge-font-xxxxl{
+    font-size:52px;
+}
+
+/* table */
+.SimpleGauge-table{
+    margin-top: 10px;
+}
+.SimpleGauge-table td {
+    padding:3px 8px!important;
+}
+.tr-first{
+    font-size:var(--my-first-size);
+    /*color:var(--my-first-color);*/
+}
+.tr-second{
+    font-size:var(--my-second-size);
+    /*color:var(--my-second-color);*/
+}
+.SimpleGauge-footer {
+    font-weight: 100;
+    margin: 20px 0 0; 
+    line-height: 20px;
+    letter-spacing:1;
+}
+.SimpleGauge-division{
+    width:100%;
+    height:1px;
+    background:#ccc;
+    margin-top: 5px;
+}
+@media screen and (max-width:1920px){
+    .SimpleGauge-font-xxs{
+        font-size:14px;
+    }
+    .SimpleGauge-font-xs{
+        font-size:15px;
+    }
+    .SimpleGauge-font-s{
+        font-size:16px;
+    }
+    .SimpleGauge-font-m{
+        font-size:17px;
+    }
+    .SimpleGauge-font-ml{
+        font-size:20px;
+    }
+    .SimpleGauge-font-l{
+        font-size:24px;
+    }
+    .SimpleGauge-font-xl{
+        font-size:28px;
+    }
+    .SimpleGauge-font-xxl{
+        font-size:32px;
+    }
+    .SimpleGauge-font-xxxl{
+        font-size:42px;
+    }
+    .SimpleGauge-font-xxxxl{
+        font-size:52px;
+    }
+}
+@media screen and (max-width:1680px){
+    .SimpleGauge-font-xxs{
+        font-size:13px;
+    }
+    .SimpleGauge-font-xs{
+        font-size:14px;
+    }
+    .SimpleGauge-font-s{
+        font-size:15px;
+    }
+    .SimpleGauge-font-m{
+        font-size:16px;
+    }
+    .SimpleGauge-font-ml{
+        font-size:19px;
+    }
+    .SimpleGauge-font-l{
+        font-size:23px;
+    }
+    .SimpleGauge-font-xl{
+        font-size:26px;
+    }
+    .SimpleGauge-font-xxl{
+        font-size:39px;
+    }
+    .SimpleGauge-font-xxxl{
+        font-size:40px;
+    }
+    .SimpleGauge-font-xxxxl{
+        font-size:50px;
+    }
+}
+@media screen and (max-width:1600px){
+    .SimpleGauge-font-xxs{
+        font-size:12px;
+    }
+    .SimpleGauge-font-xs{
+        font-size:13px;
+    }
+    .SimpleGauge-font-s{
+        font-size:14px;
+    }
+    .SimpleGauge-font-m{
+        font-size:15.5px;
+    }
+    .SimpleGauge-font-ml{
+        font-size:17px;
+    }
+    .SimpleGauge-font-l{
+        font-size:21px;
+    }
+    .SimpleGauge-font-xl{
+        font-size:24px;
+    }
+    .SimpleGauge-font-xxl{
+        font-size:37px;
+    }
+    .SimpleGauge-font-xxxl{
+        font-size:39px;
+    }
+    .SimpleGauge-font-xxxxl{
+        font-size:47px;
+    }
+}
+@media screen and (max-width:1440px){
+    .SimpleGauge-font-xxs{
+        font-size:11.5px;
+    }
+    .SimpleGauge-font-xs{
+        font-size:12.5px;
+    }
+    .SimpleGauge-font-s{
+        font-size:13.5px;
+    }
+    .SimpleGauge-font-m{
+        font-size:15px;
+    }
+    .SimpleGauge-font-ml{
+        font-size:16.5px;
+    }
+    .SimpleGauge-font-l{
+        font-size:20px;
+    }
+    .SimpleGauge-font-xl{
+        font-size:23px;
+    }
+    .SimpleGauge-font-xxl{
+        font-size:36px;
+    }
+    .SimpleGauge-font-xxxl{
+        font-size:38px;
+    }
+    .SimpleGauge-font-xxxxl{
+        font-size:46px;
+    }
+}
+@media screen and (max-width:1366px){
+    .SimpleGauge-font-xxs{
+        font-size:11px;
+    }
+    .SimpleGauge-font-xs{
+        font-size:12px;
+    }
+    .SimpleGauge-font-s{
+        font-size:13px;
+    }
+    .SimpleGauge-font-m{
+        font-size:15px;
+    }
+    .SimpleGauge-font-ml{
+        font-size:16px;
+    }
+    .SimpleGauge-font-l{
+        font-size:19px;
+    }
+    .SimpleGauge-font-xl{
+        font-size:22px;
+    }
+    .SimpleGauge-font-xxl{
+        font-size:35px;
+    }
+    .SimpleGauge-font-xxxl{
+        font-size:37px;
+    }
+    .SimpleGauge-font-xxxxl{
+        font-size:45px;
+    }
+}
+@media screen and (max-width:1280px){
+    .SimpleGauge-font-xxs{
+        font-size:10.5px;
+    }
+    .SimpleGauge-font-xs{
+        font-size:11.5px;
+    }
+    .SimpleGauge-font-s{
+        font-size:12.5px;
+    }
+    .SimpleGauge-font-m{
+        font-size:14.5px;
+    }
+    .SimpleGauge-font-ml{
+        font-size:15.5px;
+    }
+    .SimpleGauge-font-l{
+        font-size:18.5px;
+    }
+    .SimpleGauge-font-xl{
+        font-size:21px;
+    }
+    .SimpleGauge-font-xxl{
+        font-size:34px;
+    }
+    .SimpleGauge-font-xxxl{
+        font-size:36px;
+    }
+    .SimpleGauge-font-xxxxl{
+        font-size:44px;
+    } 
+}
+@media screen and (max-width:1024px){
+    .SimpleGauge-font-xxs{
+        font-size:10px;
+    }
+    .SimpleGauge-font-xs{
+        font-size:11px;
+    }
+    .SimpleGauge-font-s{
+        font-size:12px;
+    }
+    .SimpleGauge-font-m{
+        font-size:14px;
+    }
+    .SimpleGauge-font-ml{
+        font-size:15px;
+    }
+    .SimpleGauge-font-l{
+        font-size:18px;
+    }
+    .SimpleGauge-font-xl{
+        font-size:20px;
+    }
+    .SimpleGauge-font-xxl{
+        font-size:33px;
+    }
+    .SimpleGauge-font-xxxl{
+        font-size:35px;
+    }
+    .SimpleGauge-font-xxxxl{
+        font-size:42px;
+    }   
+    .SimpleGauge-box{
+        line-height:1.1;
+    }
+}

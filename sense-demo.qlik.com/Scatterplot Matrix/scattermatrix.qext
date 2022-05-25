@@ -1,0 +1,9 @@
+{
+    "name": "Scatterplot Matrix",
+    "description": "A scatter plot; each cell in the matrix is a scatterplot",
+    "icon": "scatter-chart",
+    "type": "visualization",
+    "version": "1.0",
+    "preview": "ScatterMatrix.png",
+    "author": "Juan Gerardo"
+}

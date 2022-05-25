@@ -1,0 +1,608 @@
+.qv-object-d3-vis-library .d3vl_area {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_area .axis path,
+.qv-object-d3-vis-library .d3vl_area .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-d3-vis-library .d3vl_area .area {
+  fill: steelblue;
+}
+
+.qv-object-d3-vis-library .d3vl_bar .bar {
+  fill: steelblue;
+}
+
+.qv-object-d3-vis-library .d3vl_bar .bar:hover {
+  fill: brown;
+}
+
+.qv-object-d3-vis-library .d3vl_bar .axis {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_bar .axis path,
+.qv-object-d3-vis-library .d3vl_bar .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-d3-vis-library .d3vl_bar .x.axis path {
+  display: none;
+}
+
+.qv-object-d3-vis-library .d3vl_stacked_bar {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_stacked_bar .axis path,
+.qv-object-d3-vis-library .d3vl_stacked_bar .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-d3-vis-library .d3vl_stacked_bar .bar {
+  fill: steelblue;
+}
+
+.qv-object-d3-vis-library .d3vl_stacked_bar .x.axis path {
+  display: none;
+}
+
+.qv-object-d3-vis-library .d3vl_normalized_stacked_bar {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_normalized_stacked_bar .axis path,
+.qv-object-d3-vis-library .d3vl_normalized_stacked_bar .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-d3-vis-library .d3vl_normalized_stacked_bar .bar {
+  fill: steelblue;
+}
+
+.qv-object-d3-vis-library .d3vl_normalized_stacked_bar .x.axis path {
+  display: none;
+}
+
+.qv-object-d3-vis-library .d3vl_normalized_stacked_bar .legend line {
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-d3-vis-library .d3vl_grouped_bar {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_grouped_bar .axis path,
+.qv-object-d3-vis-library .d3vl_grouped_bar .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-d3-vis-library .d3vl_grouped_bar .bar {
+  fill: steelblue;
+}
+
+.qv-object-d3-vis-library .d3vl_grouped_bar .x.axis path {
+  display: none;
+}
+
+.qv-object-d3-vis-library .d3vl_treemap  {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  position: relative;
+}
+
+.qv-object-d3-vis-library .d3vl_treemap .node {
+  border: solid 1px white;
+  font: 10px sans-serif;
+  line-height: 12px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 2px;
+}
+
+.qv-object-d3-vis-library .d3vl_cluster_dendogram .node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.qv-object-d3-vis-library .d3vl_cluster_dendogram .node {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_cluster_dendogram .link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+.qv-object-d3-vis-library .d3vl_radial_tree .node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.qv-object-d3-vis-library .d3vl_radial_tree .node {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_radial_tree .link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+.qv-object-d3-vis-library .d3vl_zoomable_circle_packing .node {
+  cursor: pointer;
+}
+
+.qv-object-d3-vis-library .d3vl_zoomable_circle_packing .node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.qv-object-d3-vis-library .d3vl_zoomable_circle_packing .node--leaf {
+  //fill: white;
+}
+
+.qv-object-d3-vis-library .d3vl_zoomable_circle_packing .label {
+  font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.qv-object-d3-vis-library .d3vl_zoomable_circle_packing .label,
+.qv-object-d3-vis-library .d3vl_zoomable_circle_packing .node--root,
+.qv-object-d3-vis-library .d3vl_zoomable_circle_packing .node--leaf {
+  pointer-events: none;
+}
+
+.qv-object-d3-vis-library .d3vl_zoomable_circle_packing circle {
+  fill: #ccc;
+  stroke: #999;
+  pointer-events: all;
+}
+
+.qv-object-d3-vis-library .d3vl_zoomable_circle_packing circle.node--root,
+.qv-object-d3-vis-library .d3vl_zoomable_circle_packing circle.node
+ {
+  fill: #1f77b4;
+  fill-opacity: .1;
+  stroke: steelblue;
+}
+
+.qv-object-d3-vis-library .d3vl_zoomable_circle_packing circle.node--root:hover,
+.qv-object-d3-vis-library .d3vl_zoomable_circle_packing circle.node:hover {
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.qv-object-d3-vis-library .d3vl_zoomable_circle_packing circle.node--leaf {
+  pointer-events: none;
+}
+
+.qv-object-d3-vis-library .d3vl_collapsible_force circle.node {
+  cursor: pointer;
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+.qv-object-d3-vis-library .d3vl_collapsible_force line.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1.5px;
+}
+
+.qv-object-d3-vis-library .d3vl_zoom_partition .chart {
+  display: block;
+  margin: auto;
+  font-size: 11px;
+}
+
+.qv-object-d3-vis-library .d3vl_zoom_partition rect {
+  stroke: #eee;
+  fill: #aaa;
+  fill-opacity: .8;
+}
+
+.qv-object-d3-vis-library .d3vl_zoom_partition rect.parent {
+  cursor: pointer;
+  fill: steelblue;
+}
+
+.qv-object-d3-vis-library .d3vl_zoom_partition text {
+  pointer-events: none;
+}
+
+.qv-object-d3-vis-library .d3vl_collapse_indented_tree .node rect {
+  cursor: pointer;
+  fill: #fff;
+  fill-opacity: .5;
+  stroke: #3182bd;
+  stroke-width: 1.5px;
+}
+
+.qv-object-d3-vis-library .d3vl_collapse_indented_tree .node text {
+  font: 10px sans-serif;
+  pointer-events: none;
+}
+
+.qv-object-d3-vis-library .d3vl_collapse_indented_tree path.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1.5px;
+}
+
+.qv-object-d3-vis-library .d3vl_line {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_line .axis path,
+.qv-object-d3-vis-library .d3vl_line .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-d3-vis-library .d3vl_line .x.axis path {
+  display: none;
+}
+
+.qv-object-d3-vis-library .d3vl_line .line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.qv-object-d3-vis-library .d3vl_multi_line {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_multi_line .axis path,
+.qv-object-d3-vis-library .d3vl_multi_line .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-d3-vis-library .d3vl_multi_line .x.axis path {
+  display: none;
+}
+
+.qv-object-d3-vis-library .d3vl_multi_line .line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.qv-object-d3-vis-library .d3vl_stacked_area {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_stacked_area .axis path,
+.qv-object-d3-vis-library .d3vl_stacked_area .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-d3-vis-library .d3vl_stacked_area .browser text {
+  text-anchor: end;
+}
+
+.qv-object-d3-vis-library .d3vl_donut {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_donut .arc path {
+  stroke: #fff;
+}
+
+.qv-object-d3-vis-library .d3vl_pie {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_pie .arc path {
+  stroke: #fff;
+}
+
+.qv-object-d3-vis-library .d3vl_donut_multiples {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_donut_multiples svg {
+  padding: 10px 0 0 10px;
+}
+
+.qv-object-d3-vis-library .d3vl_donut_multiples .arc {
+  stroke: #fff;
+}
+
+.qv-object-d3-vis-library .d3vl_two_dim_scatter {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_two_dim_scatter .axis path,
+.qv-object-d3-vis-library .d3vl_two_dim_scatter .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-d3-vis-library .d3vl_two_dim_scatter .dot {
+  stroke: #000;
+}
+
+.qv-object-d3-vis-library .d3vl_box_plot {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_box_plot .box {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_box_plot .box line,
+.qv-object-d3-vis-library .d3vl_box_plot .box rect,
+.qv-object-d3-vis-library .d3vl_box_plot .box circle {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.qv-object-d3-vis-library .d3vl_box_plot .box .center {
+  stroke-dasharray: 3,3;
+}
+
+.qv-object-d3-vis-library .d3vl_box_plot .box .outlier {
+  fill: none;
+  stroke: #ccc;
+}
+
+.qv-object-d3-vis-library .d3vl_box_plot .title {
+  font-size: 12px;
+}
+
+.qv-object-d3-vis-library .d3vl_difference {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_difference .axis path,
+.qv-object-d3-vis-library .d3vl_difference .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-d3-vis-library .d3vl_difference .x.axis path {
+  display: none;
+}
+
+.qv-object-d3-vis-library .d3vl_difference .area.above {
+  fill: rgb(252,141,89);
+}
+
+.qv-object-d3-vis-library .d3vl_difference .area.below {
+  fill: rgb(145,207,96);
+}
+
+.qv-object-d3-vis-library .d3vl_difference .line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.qv-object-d3-vis-library .d3vl_aster {
+  font: 10px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_aster .axis path,
+.qv-object-d3-vis-library .d3vl_aster .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-d3-vis-library .d3vl_aster .bar {
+  fill: orange;
+}
+
+.qv-object-d3-vis-library .d3vl_aster .solidArc:hover {
+  fill: orangered ;
+}
+
+.qv-object-d3-vis-library .d3vl_aster .solidArc {
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.qv-object-d3-vis-library .d3vl_aster .x.axis path {
+  display: none;
+}
+
+.qv-object-d3-vis-library .d3vl_aster .aster-score { 
+  line-height: 1;
+  font-weight: bold;
+  font-size: 500%;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.d3-tip td {
+  padding: 5px 10px;
+}
+
+.qv-object-d3-vis-library .d3vl_slope {
+  font: 12px sans-serif;
+}
+
+.qv-object-d3-vis-library .d3vl_slope .slope {
+  fill:none;
+  stroke: #000;
+  stroke-width: 1px;
+  stroke-opacity:.5;
+}
+
+.qv-object-d3-vis-library .d3vl_slope .label-left {
+  text-anchor:end;
+}
+
+.qv-object-d3-vis-library .d3vl_slope .label-right {
+  text-anchor:start;
+}
+
+.qv-object-d3-vis-library .d3vl_slope .title {
+  font-size:14px;
+}
+
+.qv-object-d3-vis-library .d3vl_heatmap .square {
+  stroke: #E6E6E6;
+  stroke-width:2px;  
+}
+
+.qv-object-d3-vis-library .d3vl_heatmap .axis path {
+  display: none;
+}
+
+.qv-object-d3-vis-library .d3vl_radar .radar-chart .level {
+  stroke: grey;
+  stroke-width: 0.5;
+}
+
+.qv-object-d3-vis-library .d3vl_radar .axis line {
+  stroke: grey;
+  stroke-width: 1;
+}
+.qv-object-d3-vis-library .d3vl_radar .axis .legend {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+.qv-object-d3-vis-library .d3vl_radar .axis .legend.top {
+  dy:1em;
+}
+.qv-object-d3-vis-library .d3vl_radar .axis .legend.left {
+  text-anchor: start;
+}
+.qv-object-d3-vis-library .d3vl_radar .axis .legend.middle {
+  text-anchor: middle;
+}
+.qv-object-d3-vis-library .d3vl_radar .axis .legend.right {
+  text-anchor: end;
+}
+
+.qv-object-d3-vis-library .d3vl_radar .tooltip {
+  font-family: sans-serif;
+  font-size: 13px;
+  transition: opacity 200ms;
+  opacity: 0;
+}
+.qv-object-d3-vis-library .d3vl_radar .tooltip.visible {
+  opacity: 1;
+}
+
+/* area transition when hovering */
+.qv-object-d3-vis-library .d3vl_radar .area {
+  stroke-width: 2;
+  fill-opacity: 0.3;
+}
+.qv-object-d3-vis-library .d3vl_radar .radar-chart.focus .area {
+  fill-opacity: 0.1;
+}
+.qv-object-d3-vis-library .d3vl_radar .radar-chart.focus .area.focused {
+  fill-opacity: 0.7;
+}
+
+.qv-object-d3-vis-library .d3vl_radar .radar-chart .circle {
+  fill-opacity: 0.9;
+}
+
+/* transitions */
+.qv-object-d3-vis-library .d3vl_radar .radar-chart .area, .radar-chart .circle {
+  transition: opacity 500ms, fill-opacity 400ms;
+  opacity: 1;
+}
+.qv-object-d3-vis-library .d3vl_radar .radar-chart .d3-enter, .radar-chart .d3-exit {
+  opacity: 0;
+}
+
+
+.qv-object-d3-vis-library .d3vl_zoom_treemap .chart {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.qv-object-d3-vis-library .d3vl_zoom_treemap text {
+  font-size: 11px;
+}
+
+.qv-object-d3-vis-library .d3vl_zoom_treemap rect {
+  fill: none;
+}
+
+.qv-object-d3-vis-library .d3vl_zoom_sunburst {
+  overflow: auto;
+}
+.qv-object-d3-vis-library .d3vl_zoom_sunburst td, th {
+  border-top: 0px solid #fff;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  cursor: default;
+  font-size: 12px;
+}
+.qv-object-d3-vis-library .d3vl_zoom_sunburst td.numeric {
+  text-align: right;
+}
+.qv-object-d3-vis-library .d3vl_zoom_sunburst button {
+  width: 100%;
+}
+
+.qv-object-d3-vis-library .d3vl_zoom_sunburst path {
+  stroke: #fff;
+  fill-rule: evenodd;
+}

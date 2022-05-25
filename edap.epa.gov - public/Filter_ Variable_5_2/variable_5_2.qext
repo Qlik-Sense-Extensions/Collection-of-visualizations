@@ -1,0 +1,14 @@
+{
+    "name": "Filter: Variable_5_2",
+    "description": "Variable extension ** Zuco Note ** This is a later version from the \"Variable\" extension which is 3.1. Very good filter type extension that uses variables to set multiple button groupings or use of dropdown or slider.",
+    "version": "5.2.1",
+    "type": "visualization",
+    "preview": "qsVariableM.png",
+    "author": "Erik Wetterberg upper88.com",
+    "contributors": [
+        "Brett Farley contextbi.com"
+    ],
+    "src": "/extensions/variable_5_2/qsVariableM.png",
+    "homepage": "http://branch.qlik.com/#!/project/56728f52d1e497241ae697f8",
+    "repository": "https://github.com/erikwett/qsVariable"
+}

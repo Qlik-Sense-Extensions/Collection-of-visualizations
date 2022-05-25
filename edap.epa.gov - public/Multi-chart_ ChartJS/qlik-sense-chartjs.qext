@@ -1,0 +1,12 @@
+{
+    "name": "Multi-chart: ChartJS",
+    "description": "Qlik Sense Extension using Chart.js(http://www.chartjs.org/). This modified version hides the chart areas gridlines by modifying gridLines:{display:!0,color:rgba(0, 0, 0, 0.1) in the soruce file lib/js/Chart.js. ** Zuco Note ** Good multichart extension particularly because multiple values can be displayed in the tooltip in stacked bar charts. EPA customized this extension also available in the devhub with the suffix \"EPA\"",
+    "icon": "extension",
+    "type": "visualization",
+    "version": "0.2.1",
+    "preview": "./lib/images/chartjs.png",
+    "author": "Masaki Hamano",
+    "src": "/extensions/qlik-sense-chartjs/./lib/images/chartjs.png",
+    "repository": "https://github.com/mhamano/Qilk-Sense-Chartjs",
+    "homepage": "http://branch.qlik.com/#!/project/576bab2754cc348900aeb122"
+}

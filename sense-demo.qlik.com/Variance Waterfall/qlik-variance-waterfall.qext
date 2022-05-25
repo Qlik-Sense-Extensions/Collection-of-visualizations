@@ -1,0 +1,16 @@
+{
+    "name": "Variance Waterfall",
+    "type": "visualization",
+    "description": "A Waterfall chart for displaying variance between two metrics, walking through a set of dimension values.\nVersion: local-dev",
+    "version": "local-dev",
+    "icon": "waterfallchart",
+    "preview": "qlik-variance-waterfall.png",
+    "keywords": "qlik-sense, visualization",
+    "author": "Steven Pressland, Principal Solution Architect, Qlik",
+    "homepage": "",
+    "license": "MIT",
+    "repository": "https://github.com/qlik-oss/variance-waterfall",
+    "dependencies": {
+        "qlik-sense": ">=5.5.x"
+    }
+}

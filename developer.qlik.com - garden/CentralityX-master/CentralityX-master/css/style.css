@@ -1,0 +1,68 @@
+/* Lasso Based CSS
+*/
+
+.qv-object-CentralityX circle.possible {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.qv-object-CentralityX circle.not-possible {
+  fill: gray;
+  fill-opacity: .25;
+}
+
+.lasso path {
+  stroke: rgb(80,80,80);
+  stroke-width:2px;
+}
+
+.lasso .drawn {
+  fill-opacity:.05 ;
+}
+
+.lasso .loop_close {
+  fill:none;
+  stroke-dasharray: 4,4;
+}
+
+.lasso .origin {
+  fill:#3399FF;
+  fill-opacity:.5;
+}
+
+/* Radio Button Based CSS
+*/
+.qv-object-CentralityX input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+.qv-object-CentralityX label {
+  color: #333333;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 1px 4px;
+  font-family: helvetica;
+  font-size: 8;
+}
+
+.qv-object-CentralityX input[type=radio]:checked + label {
+  color: #333333;
+  background: #999999;
+}
+
+.qv-object-CentralityX label + input[type=radio] + label {
+  border-left: solid 2px #999999;
+}
+
+.radio-group {
+  border: solid 1px #999999;
+  display: inline-block;
+  margin: 4px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+

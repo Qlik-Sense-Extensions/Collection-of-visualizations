@@ -1,0 +1,31 @@
+<div class="menu-container">
+    <div class="menu-sistel" ng-style="{background: layout.color_fondo.color,color : layout.color_fuente.color}">
+        <!-- BRAND -->
+        <a class="menu-sistel-brand" ng-show="layout.logo.visibilidad_logo">
+            <span ng-style="{fontWeight: layout.logo.grosor}">{{layout.logo.marca_menu}}</span>
+        </a>
+        <ul class="menu-sistel-list">
+            <li ng-repeat="option in layout.objetos_menu" ng-show="option.visible" ng-class="{'dropdown-option': option.objetos_submenu.length > 0}" ng-mouseenter="hoverEnterEvent($event)" ng-mouseleave="hoverExitEvent($event)">
+                <!-- NO SUBMENUS OPTION -->
+                <a id="a-{{option.hoja_destino}}" ng-show="option.objetos_submenu.length == 0" ng-click="navigate(option.hoja_destino);">
+                    <i class="lui-icon lui-icon--{{option.icono}}" ng-show="option.icono != ''"></i>
+                    {{option.titulo}}
+                </a>
+
+                <!-- OPTION WITH SUBMENUS -->
+                <a id="a-{{option.hoja-destino}}" class="dropdown-link" ng-show="option.objetos_submenu.length > 0" ng-click="toggleDropdown($index)">
+                    <i class="lui-icon lui-icon--{{option.icono}}" ng-show="option.icono != ''"></i>
+                    {{option.titulo}}
+                </a>
+                <!-- DROPDOWN -->
+                <ul class="sistel-dropdown-menu hide" data-dropdownOption="{{$index+'-dropdown'}}" ng-show="option.objetos_submenu.length > 0" 
+                    ng-style="{background:  layout.color_fondo.color,color : layout.color_fuente.color}">
+                    <li class="submenu-option submenu-close-onexit" ng-repeat="submenu in option.objetos_submenu" 
+                        ng-mouseenter="hoverEnterEvent($event)" ng-mouseleave="hoverExitEvent($event)">
+                        <a class="submenu-option submenu-close-onexit" ng-click="navigate(submenu.hoja_destino_submenu)"">{{submenu.titulo_submenu}}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

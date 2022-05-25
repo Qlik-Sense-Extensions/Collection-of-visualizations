@@ -1,0 +1,39 @@
+.qv-object-scattermatrix div.qv-object-content-container {
+}
+ 
+.qv-object-scattermatrix svg {
+  font: 10px sans-serif;
+  padding: 10px;
+}
+
+.qv-object-scattermatrix .axis,
+.qv-object-scattermatrix .frame {
+  shape-rendering: crispEdges;
+}
+
+.qv-object-scattermatrix .axis line {
+  stroke: #ddd;
+}
+
+.qv-object-scattermatrix .axis path {
+  display: none;
+}
+
+.qv-object-scattermatrix .frame {
+  fill: none;
+  stroke: #aaa;
+}
+
+.qv-object-scattermatrix circle {
+  fill-opacity: .7;
+}
+
+.qv-object-scattermatrix circle.hidden {
+  fill: #ccc !important;
+}
+
+.qv-object-scattermatrix .extent {
+  fill: #000;
+  fill-opacity: .125;
+  stroke: #fff;
+}

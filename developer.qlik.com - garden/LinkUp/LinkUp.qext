@@ -1,0 +1,12 @@
+{
+	"name": "LinkUp!",
+	"description": "Creates a link based on Current Selections for distribution or sending the user to another page",
+	"type": "visualization",
+	"version": "1.0",
+	"icon": "extension",
+	"author": "Alex Byrd",
+	"keywords": "qlik-sense, visualization",
+	"dependencies": {
+		"qlik-sense": ">=2.2.x"
+	}
+}

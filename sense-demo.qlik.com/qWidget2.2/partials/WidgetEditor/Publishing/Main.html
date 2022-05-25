@@ -1,0 +1,84 @@
+<qv-modal-dialog
+		qv-id="wiWidgetEditor_PopupPublish"
+		ng-if="WidgetPublisher.visible == true"
+		qv-cancel="closeView()">
+
+	<header class="dm-header">
+		Publish Your qWidget
+	</header>
+
+	<main class="dm-main" style="height:500px;width:700px;">
+
+		<!-- Selected Repository -->
+		<!-- Only visible if a repository has been selected and if there are more than one repository allowing publishing -->
+		<div ng-if="WidgetPublisher.SelectedPublishingRepository && (Main.RepositoryList | filter: {allowsPublishing: true}).length > 1"
+			 style="position:absolute;top:30px;right:20px;text-align:right;">
+			{{WidgetPublisher.SelectedPublishingRepository.name}}<br/>
+			<a href="javascript:void(0);" qva-activate="WidgetPublisher.SelectedPublishingRepository = undefined; WidgetPublisher.clearError();">Change</a>
+		</div>
+
+		<!-- Repository Selection -->
+		<div ng-if="(!WidgetPublisher.SelectedPublishingRepository)
+			&& (Main.RepositoryList | filter: {allowsPublishing: true}).length > 1"
+			 data-ng-include data-src="'/extensions/qwidget/partials/WidgetEditor/Publishing/RepositorySelection.html'"></div>
+
+		<!-- Not Authenticated -->
+		<div ng-if="Main.SelectedOnlineRepository
+					&& WidgetPublisher.SelectedPublishingRepository
+                    && Main.SelectedOnlineRepository.authentication.isAuthenticated === false
+                    && Main.SelectedOnlineRepository.isOnline === true
+                    && WidgetPublisher.isLoading === false
+                    && !WidgetPublisher.error"
+			 data-ng-include data-src="'/extensions/qwidget/partials/WidgetEditor/Publishing/NotAuthenticated.html'"></div>
+
+		<!-- Authenticated, but account not verified -->
+		<div ng-if="Main.SelectedOnlineRepository
+					&& WidgetPublisher.SelectedPublishingRepository
+                    && Main.SelectedOnlineRepository.authentication.isAuthenticated === true
+                    && Main.SelectedOnlineRepository.authentication.isVerified === false
+                    && Main.SelectedOnlineRepository.isOnline === true
+                    && WidgetPublisher.isLoading === false
+                    && !WidgetPublisher.error"
+			 data-ng-include data-src="'/extensions/qwidget/partials/WidgetEditor/Publishing/NotAuthenticated.html'"></div>
+
+		<!-- Form -->
+		<div ng-if="WidgetPublisher.SelectedPublishingRepository
+					&& Main.SelectedOnlineRepository.authentication.isAuthenticated === true
+					&& Main.SelectedOnlineRepository.isOnline === true
+					&& !WidgetPublisher.error
+					&& WidgetPublisher.isLoading === false
+			 		&& WidgetPublisher.view !== 'confirmation'"
+				data-ng-include
+				data-src="'/extensions/qwidget/partials/WidgetEditor/Publishing/Form.html'">
+				Form ...
+		</div>
+
+		<!-- Error: Server not available -->
+		<div ng-if="Main.SelectedOnlineRepository
+					&& Main.SelectedOnlineRepository.isOnline === false"
+				style="margin-left:20px;margin-top:20px;">
+			<span class="wiBold wiRed">The repository is not reachable</span><br/>
+			<span class="wiRed">Please select another repository or <a href="javascript:void(0);" qva-activate="WidgetPublisher.initForm()">try again</a> ...</span>
+		</div>
+
+		<!-- Confirmation / Error -->
+		<div data-ng-include
+			 data-src="'/extensions/qwidget/partials/WidgetEditor/Publishing/Status.html'"></div>
+
+
+
+		<!-- Loading -->
+		<wi-spinner ng-if="WidgetPublisher.isLoading === true" />
+
+	</main>
+
+	<footer class="dm-footer">
+		<button class="wui-button"
+				qva-activate="WidgetPublisher.submit()"
+				ng-class="{'wui-disabled' : WidgetPublisher.view != 'form' || WidgetPublisher.isLoading === true }">
+			Submit
+		</button>
+		<button class="wui-button" qva-activate="closeView()">Close</button>
+	</footer>
+
+</qv-modal-dialog>

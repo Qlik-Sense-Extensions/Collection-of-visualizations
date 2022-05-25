@@ -1,0 +1,1364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="map"
+   viewBox="0 0 700 561"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Wells_Fargo_map.svg">
+  <metadata
+     id="metadata3557">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
+     id="namedview3555"
+     showgrid="false"
+     inkscape:zoom="1.459893"
+     inkscape:cx="406.6732"
+     inkscape:cy="280.5"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="map" />
+  <defs
+     id="defs3337">
+    <style
+       id="style3339">.cls-1,.cls-7{fill:none;}.cls-1{stroke:#58595b;stroke-width:2px;}.cls-1,.cls-3,.cls-7{stroke-miterlimit:10;}.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{opacity:0.5;}.cls-2,.cls-3{fill:#ed1a63;}.cls-3{stroke:url(#linear-gradient);}.cls-4{fill:#005e8a;}.cls-5{fill:#ffd49a;}.cls-6{fill:#25336e;}.cls-7{stroke:#fff;}</style>
+    <linearGradient
+       id="linear-gradient"
+       x1="448.13"
+       y1="181.36"
+       x2="508.6"
+       y2="181.36"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#fff"
+         id="stop3342" />
+      <stop
+         offset="1"
+         id="stop3344" />
+    </linearGradient>
+  </defs>
+  <title
+     id="title3346">Wells Fargo_map</title>
+  <path
+     class="cls-1"
+     d="M49,314c0,260,238,274,238,274H509s238-14,238-274V303C747,43,509,29,509,29H287S49,43,49,303v11Z"
+     transform="translate(-48 -28)"
+     id="path3348" />
+  <polygon
+     id="215"
+     data-name="215"
+     class="cls-2"
+     points="223.5 26.25 281.75 26.25 281.75 52.25 278.25 52.25 278.25 71.5 282 71.5 282 83.75 234.75 83.75 231.75 71.5 236 71.5 231.75 52.25 227.75 52.25 223.5 26.25"
+     inkscape:label="#_215" />
+  <path
+     id="214"
+     data-name="214"
+     class="cls-2"
+     d="M334,54.5h41V80.25h-4.75V99.5h4v12.25h-40V99.5h4V80.25H334S334.25,54.5,334,54.5Z"
+     transform="translate(-48 -28)"
+     inkscape:label="#_214" />
+  <path
+     id="213"
+     data-name="213"
+     class="cls-2"
+     d="M378,111.75V99.5h4.25V80.25h-4V54.5h39V80.25H414V99.5h4v12.25H378Z"
+     transform="translate(-48 -28)"
+     inkscape:label="#_213" />
+  <path
+     id="212"
+     data-name="212"
+     class="cls-2"
+     d="M422,111.75V99.5h4.25V80.25h-4.5V55h40V80.25H458V99.5h3.75v12.25S421.63,111.38,422,111.75Z"
+     transform="translate(-48 -28)"
+     inkscape:label="#_212" />
+  <path
+     id="211"
+     data-name="211"
+     class="cls-2"
+     d="M466,111.75V99.5h3.25V80.25H466V54.5h59l-4.75,25.75H516L512.75,99.5h4L515,111.75H466Z"
+     transform="translate(-48 -28)"
+     inkscape:label="#_211" />
+  <polygon
+     id="210A"
+     data-name="210A"
+     class="cls-2"
+     points="480.75 26.75 529 44 519 69 514.75 67 506.5 84.5 510.5 86.5 506.25 96 471 83.5 473.5 72.5 476.75 73.25 480.5 55.5 476.25 53 480.75 26.75"
+     inkscape:label="#_210A" />
+  <polygon
+     id="210"
+     data-name="210"
+     class="cls-2"
+     points="509.25 98.5 515 87.25 518.5 89.25 526 72.5 522.25 70 533.5 45.75 576 70 560.75 91.25 556.25 89 545.25 104.75 547.75 106.75 541.5 115.75 509.25 98.5"
+     inkscape:label="#_210" />
+  <polygon
+     id="209A"
+     data-name="209A"
+     class="cls-2"
+     points="545.25 118 552 109.25 554.25 111.75 566 96.75 562.75 93.5 579.75 73.25 623.25 116.25 603 131.75 598.75 128.75 584.5 139.75 586.75 142.75 577.75 149.5 545.25 118"
+     inkscape:label="#_209A" />
+  <polygon
+     id="209"
+     data-name="209"
+     class="cls-2"
+     points="580 152.25 589.25 146.25 591 149.5 607 138.25 604.5 134.75 625.5 119.75 654 168 629 178 626.75 174.25 610 181 611.5 184.75 601.5 188.5 580 152.25"
+     inkscape:label="#_209" />
+  <polygon
+     id="208"
+     data-name="208"
+     class="cls-2"
+     points="602.25 193.25 612.75 188.5 614.5 192.25 632.75 185 630.75 181.25 655 172 669 219.75 643.25 225.5 641 220.75 622.5 225 624 228.5 612.25 230.75 602.25 193.25"
+     inkscape:label="#_208" />
+  <polygon
+     id="206"
+     data-name="206"
+     class="cls-2"
+     points="602.25 365.84 612.75 370.59 614.5 366.84 632.75 374.09 630.75 377.84 655 387.09 669 339.34 643.25 333.59 641 338.34 622.5 334.09 624 330.59 612.25 328.34 602.25 365.84"
+     inkscape:label="#_206" />
+  <polygon
+     id="207A"
+     data-name="207A"
+     class="cls-2"
+     points="613.5 234.25 624.5 232.25 624.5 236.75 644 233 643.75 229 668.75 223.75 672 276.75 645.25 277.5 645 274 626.25 273.5 626 277.5 614 277.5 613.5 234.25"
+     inkscape:label="#_207A" />
+  <polygon
+     id="207"
+     data-name="207"
+     class="cls-2"
+     points="614 281.75 625.25 281.75 625.25 286 645 286 645 281.75 671.5 281.75 669.5 335.75 642.75 329.75 642.75 326.5 624.5 322 624.5 326.75 613.75 324.25 614 281.75"
+     inkscape:label="#_207" />
+  <polygon
+     id="216"
+     data-name="216"
+     class="cls-2"
+     points="219.25 26.75 171 44 181 69 185.25 67 193.5 84.5 189.5 86.5 193.75 96 229 83.5 226.5 72.5 223.25 73.25 219.5 55.5 223.75 53 219.25 26.75"
+     inkscape:label="#_216" />
+  <polygon
+     id="216A"
+     data-name="216A"
+     class="cls-2"
+     points="190.75 98.5 185 87.25 181.5 89.25 174 72.5 177.75 70 166.5 45.75 124 70 139.25 91.25 143.75 89 154.75 104.75 152.25 106.75 158.5 115.75 190.75 98.5"
+     inkscape:label="#_216A" />
+  <polygon
+     id="217"
+     data-name="217"
+     class="cls-2"
+     points="154.75 118 148 109.25 145.75 111.75 134 96.75 137.25 93.5 120.25 73.25 76.75 116.25 97 131.75 101.25 128.75 115.5 139.75 113.25 142.75 122.25 149.5 154.75 118"
+     inkscape:label="#_217" />
+  <polygon
+     id="217A"
+     data-name="217A"
+     class="cls-2"
+     points="120 152.25 110.75 146.25 109 149.5 93 138.25 95.5 134.75 74.5 119.75 46 168 71 178 73.25 174.25 90 181 88.5 184.75 98.5 188.5 120 152.25"
+     inkscape:label="#_217A" />
+  <polygon
+     id="218"
+     data-name="218"
+     class="cls-2"
+     points="97.75 193.25 87.25 188.5 85.5 192.25 67.25 185 69.25 181.25 45 172 31 219.75 56.75 225.5 59 220.75 77.5 225 76 228.5 87.75 230.75 97.75 193.25"
+     inkscape:label="#_218" />
+  <polygon
+     id="219"
+     data-name="219"
+     class="cls-2"
+     points="86.5 234.25 75.5 232.25 75.5 236.75 56 233 56.25 229 31.25 223.75 28 276.75 54.75 277.5 55 274 73.75 273.5 74 277.5 86 277.5 86.5 234.25"
+     inkscape:label="#_219" />
+  <polygon
+     id="219A"
+     data-name="219A"
+     class="cls-2"
+     points="86 281.75 74.75 281.75 74.75 286 55 286 55 281.75 28.5 281.75 30.5 335.75 57.25 329.75 57.25 326.5 75.5 322 75.5 326.75 86.25 324.25 86 281.75"
+     inkscape:label="#_219A" />
+  <polygon
+     id="223"
+     data-name="223"
+     class="cls-2"
+     points="223.5 532.42 281.75 532.42 281.75 506.42 278.25 506.42 278.25 487.17 282 487.17 282 474.92 234.75 474.92 231.75 487.17 236 487.17 231.75 506.42 227.75 506.42 223.5 532.42"
+     inkscape:label="#_223" />
+  <path
+     id="224"
+     data-name="224"
+     class="cls-2"
+     d="M334,560.17h41V534.42h-4.75V515.17h4V502.92h-40v12.25h4v19.25H334S334.25,560.17,334,560.17Z"
+     transform="translate(-48 -28)"
+     inkscape:label="#_224" />
+  <path
+     id="201"
+     data-name="201"
+     class="cls-2"
+     d="M378,502.92v12.25h4.25v19.25h-4v25.75h39V534.42H414V515.17h4V502.92H378Z"
+     transform="translate(-48 -28)"
+     inkscape:label="#_201" />
+  <path
+     id="202"
+     data-name="202"
+     class="cls-2"
+     d="M422,502.92v12.25h4.25v19.25h-4.5v25.25h40V534.42H458V515.17h3.75V502.92S421.63,503.29,422,502.92Z"
+     transform="translate(-48 -28)"
+     inkscape:label="#_202" />
+  <path
+     id="203"
+     data-name="203"
+     class="cls-2"
+     d="M466,502.92v12.25h3.25v19.25H466v25.75h59l-4.75-25.75H516l-3.25-19.25h4L515,502.92H466Z"
+     transform="translate(-48 -28)"
+     inkscape:label="#_203" />
+  <polygon
+     id="204"
+     data-name="204"
+     class="cls-2"
+     points="480.75 531.92 529 514.67 519 489.67 514.75 491.67 506.5 474.17 510.5 472.17 506.25 462.67 471 475.17 473.5 486.17 476.75 485.42 480.5 503.17 476.25 505.67 480.75 531.92"
+     inkscape:label="#_204" />
+  <polygon
+     id="204A"
+     data-name="204A"
+     class="cls-2"
+     points="509.25 460.17 515 471.42 518.5 469.42 526 486.17 522.25 488.67 533.5 512.92 576 488.67 560.75 467.42 556.25 469.67 545.25 453.92 547.75 451.92 541.5 442.92 509.25 460.17"
+     inkscape:label="#_204A" />
+  <polygon
+     id="205"
+     data-name="205"
+     class="cls-2"
+     points="545.25 440.67 552 449.42 554.25 446.92 566 461.92 562.75 465.17 579.75 485.42 623.25 442.42 603 426.92 598.75 429.92 584.5 418.92 586.75 415.92 577.75 409.17 545.25 440.67"
+     inkscape:label="#_205" />
+  <polygon
+     id="205A"
+     data-name="205A"
+     class="cls-2"
+     points="580 406.42 589.25 412.42 591 409.17 607 420.42 604.5 423.92 625.5 438.92 654 390.67 629 380.67 626.75 384.42 610 377.67 611.5 373.92 601.5 370.17 580 406.42"
+     inkscape:label="#_205A" />
+  <polygon
+     id="222A"
+     data-name="222A"
+     class="cls-2"
+     points="219.25 531.92 171 514.67 181 489.67 185.25 491.67 193.5 474.17 189.5 472.17 193.75 462.67 229 475.17 226.5 486.17 223.25 485.42 219.5 503.17 223.75 505.67 219.25 531.92"
+     inkscape:label="#_222A" />
+  <polygon
+     id="222"
+     data-name="222"
+     class="cls-2"
+     points="190.75 460.17 185 471.42 181.5 469.42 174 486.17 177.75 488.67 166.5 512.92 124 488.67 139.25 467.42 143.75 469.67 154.75 453.92 152.25 451.92 158.5 442.92 190.75 460.17"
+     inkscape:label="#_222" />
+  <polygon
+     id="221A"
+     data-name="221A"
+     class="cls-2"
+     points="154.75 440.67 148 449.42 145.75 446.92 134 461.92 137.25 465.17 120.25 485.42 76.75 442.42 97 426.92 101.25 429.92 115.5 418.92 113.25 415.92 122.25 409.17 154.75 440.67"
+     inkscape:label="#_221A" />
+  <polygon
+     id="221"
+     data-name="221"
+     class="cls-2"
+     points="120 406.42 110.75 412.42 109 409.17 93 420.42 95.5 423.92 74.5 438.92 46 390.67 71 380.67 73.25 384.42 90 377.67 88.5 373.92 98.5 370.17 120 406.42"
+     inkscape:label="#_221" />
+  <polygon
+     id="220"
+     data-name="220"
+     class="cls-2"
+     points="97.75 365.42 87.25 370.17 85.5 366.42 67.25 373.67 69.25 377.42 45 386.67 31 338.92 56.75 333.17 59 337.92 77.5 333.67 76 330.17 87.75 327.92 97.75 365.42"
+     inkscape:label="#_220" />
+  <rect
+     id="CB1"
+     data-name="1"
+     class="cls-2"
+     x="350.06"
+     y="91.04"
+     width="17.3"
+     height="9.08"
+     inkscape:label="#_1" />
+  <rect
+     id="CB2"
+     data-name="2"
+     class="cls-2"
+     x="367.56"
+     y="91.04"
+     width="17.3"
+     height="9.08"
+     inkscape:label="#_2" />
+  <rect
+     id="CB3"
+     data-name="3"
+     class="cls-2"
+     x="385.06"
+     y="91.04"
+     width="17.3"
+     height="9.08"
+     inkscape:label="#_3" />
+  <rect
+     id="CB4"
+     data-name="4"
+     class="cls-2"
+     x="402.56"
+     y="91.04"
+     width="17.3"
+     height="9.08"
+     inkscape:label="#_4" />
+  <rect
+     id="CB5"
+     data-name="5"
+     class="cls-2"
+     x="420.06"
+     y="91.04"
+     width="17.3"
+     height="9.08"
+     inkscape:label="#_5" />
+  <rect
+     id="CB78"
+     data-name="78"
+     class="cls-2"
+     x="263.35"
+     y="91.04"
+     width="17.3"
+     height="9.08"
+     inkscape:label="#_78" />
+  <rect
+     id="CB79"
+     data-name="79"
+     class="cls-2"
+     x="280.85"
+     y="91.04"
+     width="17.3"
+     height="9.08"
+     inkscape:label="#_79" />
+  <rect
+     id="CB80"
+     data-name="80"
+     class="cls-2"
+     x="298.35"
+     y="91.04"
+     width="17.3"
+     height="9.08"
+     inkscape:label="#_80" />
+  <rect
+     id="CB81"
+     data-name="81"
+     class="cls-2"
+     x="315.85"
+     y="91.04"
+     width="17.3"
+     height="9.08"
+     inkscape:label="#_81" />
+  <rect
+     id="CB82"
+     data-name="82"
+     class="cls-2"
+     x="333.35"
+     y="91.04"
+     width="17.3"
+     height="9.08"
+     inkscape:label="#_82" />
+  <polygon
+     id="CB77"
+     data-name="77"
+     class="cls-2"
+     points="245.75 92.25 263.35 91.04 263.35 100.12 247 100.5 245.75 92.25"
+     inkscape:label="#_77" />
+  <polygon
+     id="CB76"
+     data-name="76"
+     class="cls-2"
+     points="228 94.5 245.75 92.25 247 100.5 230.25 103 228 94.5"
+     inkscape:label="#_76" />
+  <polygon
+     id="CB75"
+     data-name="75"
+     class="cls-2"
+     points="208.75 99.75 228 94.5 230.25 103 211 107.75 208.75 99.75"
+     inkscape:label="#_75" />
+  <polygon
+     id="CB74"
+     data-name="74"
+     class="cls-2"
+     points="190.25 106.5 208.75 99.75 211 107.75 195.25 114.25 190.25 106.5"
+     inkscape:label="#_74" />
+  <polygon
+     id="CB73"
+     data-name="73"
+     class="cls-2"
+     points="175.25 114.75 190.25 106.5 195.25 114.25 179 122.25 175.25 114.75"
+     inkscape:label="#_73" />
+  <polygon
+     id="CB72"
+     data-name="72"
+     class="cls-2"
+     points="159 125.25 175.25 114.75 179 122.25 164.75 131.5 159 125.25"
+     inkscape:label="#_72" />
+  <polygon
+     id="CB71"
+     data-name="71"
+     class="cls-2"
+     points="145 137.75 159 125.25 164.75 131.5 151 142.75 145 137.75"
+     inkscape:label="#_71" />
+  <polygon
+     id="CB70"
+     data-name="70"
+     class="cls-2"
+     points="132 150.75 145 137.75 151 142.75 138.5 155.75 132 150.75"
+     inkscape:label="#_70" />
+  <polygon
+     id="CB69"
+     data-name="69"
+     class="cls-2"
+     points="120 165.5 132 150.75 138.5 155.75 127.5 170.25 120 165.5"
+     inkscape:label="#_69" />
+  <polygon
+     id="CB68"
+     data-name="68"
+     class="cls-2"
+     points="110 183.5 120 165.5 127.5 170.25 118 186.5 110 183.5"
+     inkscape:label="#_68" />
+  <polygon
+     id="CB67"
+     data-name="67"
+     class="cls-2"
+     points="102.75 203 110 183.5 118 186.5 110.25 204.75 102.75 203"
+     inkscape:label="#_67" />
+  <polygon
+     id="CB66"
+     data-name="66"
+     class="cls-2"
+     points="97.5 218.25 102.75 203 110.25 204.75 105.75 220.25 97.5 218.25"
+     inkscape:label="#_66" />
+  <polygon
+     id="CB65"
+     data-name="65"
+     class="cls-2"
+     points="94.75 235.75 97.5 218.25 105.75 220.25 103 236.25 94.75 235.75"
+     inkscape:label="#_65" />
+  <polygon
+     id="CB64"
+     data-name="64"
+     class="cls-2"
+     points="93.5 252.75 101.75 252.75 103 236.25 94.75 235.75 93.5 252.75"
+     inkscape:label="#_64" />
+  <rect
+     id="CB63"
+     data-name="63"
+     class="cls-2"
+     x="93.5"
+     y="252.75"
+     width="8.25"
+     height="18.25"
+     inkscape:label="#_63" />
+  <rect
+     id="CB62"
+     data-name="62"
+     class="cls-2"
+     x="93.5"
+     y="271.05"
+     width="8.25"
+     height="17.7"
+     inkscape:label="#_62" />
+  <rect
+     id="CB61"
+     data-name="61"
+     class="cls-2"
+     x="93.5"
+     y="288.82"
+     width="8.25"
+     height="18.04"
+     inkscape:label="#_61" />
+  <polygon
+     id="CB47"
+     data-name="47"
+     class="cls-2"
+     points="245.75 467.15 263.35 468.35 263.35 459.28 247 458.9 245.75 467.15"
+     inkscape:label="#_47" />
+  <polygon
+     id="CB48"
+     data-name="48"
+     class="cls-2"
+     points="228 464.9 245.75 467.15 247 458.9 230.25 456.4 228 464.9"
+     inkscape:label="#_48" />
+  <polygon
+     id="CB49"
+     data-name="49"
+     class="cls-2"
+     points="208.75 459.65 228 464.9 230.25 456.4 211 451.65 208.75 459.65"
+     inkscape:label="#_49" />
+  <polygon
+     id="CB50"
+     data-name="50"
+     class="cls-2"
+     points="190.25 452.9 208.75 459.65 211 451.65 195.25 445.15 190.25 452.9"
+     inkscape:label="#_50" />
+  <polygon
+     id="CB51"
+     data-name="51"
+     class="cls-2"
+     points="175.25 444.65 190.25 452.9 195.25 445.15 179 437.15 175.25 444.65"
+     inkscape:label="#_51" />
+  <polygon
+     id="CB52"
+     data-name="52"
+     class="cls-2"
+     points="159 434.15 175.25 444.65 179 437.15 164.75 427.9 159 434.15"
+     inkscape:label="#_52" />
+  <polygon
+     id="CB53"
+     data-name="53"
+     class="cls-2"
+     points="145 421.65 159 434.15 164.75 427.9 151 416.65 145 421.65"
+     inkscape:label="#_53" />
+  <polygon
+     id="CB54"
+     data-name="54"
+     class="cls-2"
+     points="132 408.65 145 421.65 151 416.65 138.5 403.65 132 408.65"
+     inkscape:label="#_54" />
+  <polygon
+     id="CB55"
+     data-name="55"
+     class="cls-2"
+     points="120 393.9 132 408.65 138.5 403.65 127.5 389.15 120 393.9"
+     inkscape:label="#_55" />
+  <polygon
+     id="CB56"
+     data-name="56"
+     class="cls-2"
+     points="110 375.9 120 393.9 127.5 389.15 118 372.9 110 375.9"
+     inkscape:label="#_56" />
+  <polygon
+     id="CB57"
+     data-name="57"
+     class="cls-2"
+     points="102.75 356.4 110 375.9 118 372.9 110.25 354.65 102.75 356.4"
+     inkscape:label="#_57" />
+  <polygon
+     id="CB58"
+     data-name="58"
+     class="cls-2"
+     points="97.5 341.15 102.75 356.4 110.25 354.65 105.75 339.15 97.5 341.15"
+     inkscape:label="#_58" />
+  <polygon
+     id="CB59"
+     data-name="59"
+     class="cls-2"
+     points="94.75 323.65 97.5 341.15 105.75 339.15 103 323.15 94.75 323.65"
+     inkscape:label="#_59" />
+  <polygon
+     id="CB60"
+     data-name="60"
+     class="cls-2"
+     points="93.42 306.9 101.67 306.9 103 323.15 94.75 323.65 93.42 306.9"
+     inkscape:label="#_60" />
+  <rect
+     id="CB42"
+     data-name="42"
+     class="cls-2"
+     x="381.25"
+     y="487.45"
+     width="17.3"
+     height="9.08"
+     transform="translate(731.8 955.97) rotate(180)"
+     inkscape:label="#_42" />
+  <rect
+     id="CB43"
+     data-name="43"
+     class="cls-2"
+     x="363.75"
+     y="487.45"
+     width="17.3"
+     height="9.08"
+     transform="translate(696.8 955.97) rotate(180)"
+     inkscape:label="#_43" />
+  <rect
+     id="CB44"
+     data-name="44"
+     class="cls-2"
+     x="346.25"
+     y="487.45"
+     width="17.3"
+     height="9.08"
+     transform="translate(661.8 955.97) rotate(180)"
+     inkscape:label="#_44" />
+  <rect
+     id="CB45"
+     data-name="45"
+     class="cls-2"
+     x="328.75"
+     y="487.45"
+     width="17.3"
+     height="9.08"
+     transform="translate(626.8 955.97) rotate(180)"
+     inkscape:label="#_45" />
+  <rect
+     id="CB46"
+     data-name="46"
+     class="cls-2"
+     x="311.25"
+     y="487.45"
+     width="17.3"
+     height="9.08"
+     transform="translate(591.8 955.97) rotate(180)"
+     inkscape:label="#_46" />
+  <rect
+     id="CB37"
+     data-name="37"
+     class="cls-2"
+     x="467.96"
+     y="487.45"
+     width="17.3"
+     height="9.08"
+     transform="translate(905.23 955.97) rotate(180)"
+     inkscape:label="#_37" />
+  <rect
+     id="CB38"
+     data-name="38"
+     class="cls-2"
+     x="450.46"
+     y="487.45"
+     width="17.3"
+     height="9.08"
+     transform="translate(870.23 955.97) rotate(180)"
+     inkscape:label="#_38" />
+  <rect
+     id="CB39"
+     data-name="39"
+     class="cls-2"
+     x="432.96"
+     y="487.45"
+     width="17.3"
+     height="9.08"
+     transform="translate(835.23 955.97) rotate(180)"
+     inkscape:label="#_39" />
+  <rect
+     id="CB40"
+     data-name="40"
+     class="cls-2"
+     x="415.46"
+     y="487.45"
+     width="17.3"
+     height="9.08"
+     transform="translate(800.23 955.97) rotate(180)"
+     inkscape:label="#_40" />
+  <rect
+     id="CB41"
+     data-name="41"
+     class="cls-2"
+     x="397.96"
+     y="487.45"
+     width="17.3"
+     height="9.08"
+     transform="translate(765.23 955.97) rotate(180)"
+     inkscape:label="#_41" />
+  <polygon
+     id="CB36"
+     data-name="36"
+     class="cls-2"
+     points="454.86 467.31 437.27 468.52 437.27 459.44 453.61 459.06 454.86 467.31"
+     inkscape:label="#_36" />
+  <polygon
+     id="CB35"
+     data-name="35"
+     class="cls-2"
+     points="472.61 465.06 454.86 467.31 453.61 459.06 470.36 456.56 472.61 465.06"
+     inkscape:label="#_35" />
+  <polygon
+     id="CB34"
+     data-name="34"
+     class="cls-2"
+     points="491.86 459.81 472.61 465.06 470.36 456.56 489.61 451.81 491.86 459.81"
+     inkscape:label="#_34" />
+  <polygon
+     id="CB33"
+     data-name="33"
+     class="cls-2"
+     points="510.36 453.06 491.86 459.81 489.61 451.81 505.36 445.31 510.36 453.06"
+     inkscape:label="#_33" />
+  <polygon
+     id="CB32"
+     data-name="32"
+     class="cls-2"
+     points="525.36 444.81 510.36 453.06 505.36 445.31 521.61 437.31 525.36 444.81"
+     inkscape:label="#_32" />
+  <polygon
+     id="CB31"
+     data-name="31"
+     class="cls-2"
+     points="541.61 434.31 525.36 444.81 521.61 437.31 535.86 428.06 541.61 434.31"
+     inkscape:label="#_31" />
+  <polygon
+     id="CB30"
+     data-name="30"
+     class="cls-2"
+     points="555.61 421.81 541.61 434.31 535.86 428.06 549.61 416.81 555.61 421.81"
+     inkscape:label="#_30" />
+  <polygon
+     id="CB29"
+     data-name="29"
+     class="cls-2"
+     points="568.61 408.81 555.61 421.81 549.61 416.81 562.11 403.81 568.61 408.81"
+     inkscape:label="#_29" />
+  <polygon
+     id="CB28"
+     data-name="28"
+     class="cls-2"
+     points="580.61 394.06 568.61 408.81 562.11 403.81 573.11 389.31 580.61 394.06"
+     inkscape:label="#_28" />
+  <polygon
+     id="CB27"
+     data-name="27"
+     class="cls-2"
+     points="590.61 376.06 580.61 394.06 573.11 389.31 582.61 373.06 590.61 376.06"
+     inkscape:label="#_27" />
+  <polygon
+     id="CB26"
+     data-name="26"
+     class="cls-2"
+     points="597.86 356.56 590.61 376.06 582.61 373.06 590.36 354.81 597.86 356.56"
+     inkscape:label="#_26" />
+  <polygon
+     id="CB25"
+     data-name="25"
+     class="cls-2"
+     points="603.11 341.31 597.86 356.56 590.36 354.81 594.86 339.31 603.11 341.31"
+     inkscape:label="#_25" />
+  <polygon
+     id="CB24"
+     data-name="24"
+     class="cls-2"
+     points="605.86 323.81 603.11 341.31 594.86 339.31 597.61 323.31 605.86 323.81"
+     inkscape:label="#_24" />
+  <polygon
+     id="CB23"
+     data-name="23"
+     class="cls-2"
+     points="607.36 307.06 599.11 307.06 597.61 323.31 605.86 323.81 607.36 307.06"
+     inkscape:label="#_23" />
+  <rect
+     id="CB22"
+     data-name="22"
+     class="cls-2"
+     x="646.86"
+     y="315.56"
+     width="8.25"
+     height="19.57"
+     transform="translate(1253.98 622.69) rotate(180)"
+     inkscape:label="#_22" />
+  <rect
+     id="CB21"
+     data-name="21"
+     class="cls-2"
+     x="646.86"
+     y="297.81"
+     width="8.25"
+     height="17.7"
+     transform="translate(1253.98 585.32) rotate(180)"
+     inkscape:label="#_21" />
+  <rect
+     id="CB20"
+     data-name="20"
+     class="cls-2"
+     x="646.86"
+     y="280.04"
+     width="8.25"
+     height="17.7"
+     transform="translate(1253.98 549.78) rotate(180)"
+     inkscape:label="#_20" />
+  <polygon
+     id="CB6"
+     data-name="6"
+     class="cls-2"
+     points="454.86 92.1 437.27 90.89 437.27 99.97 453.61 100.35 454.86 92.1"
+     inkscape:label="#_6" />
+  <polygon
+     id="CB7"
+     data-name="7"
+     class="cls-2"
+     points="472.61 94.35 454.86 92.1 453.61 100.35 470.36 102.85 472.61 94.35"
+     inkscape:label="#_7" />
+  <polygon
+     id="CB8"
+     data-name="8"
+     class="cls-2"
+     points="491.86 99.6 472.61 94.35 470.36 102.85 489.61 107.6 491.86 99.6"
+     inkscape:label="#_8" />
+  <polygon
+     id="CB9"
+     data-name="9"
+     class="cls-2"
+     points="510.36 106.35 491.86 99.6 489.61 107.6 505.36 114.1 510.36 106.35"
+     inkscape:label="#_9" />
+  <polygon
+     id="CB10"
+     data-name="10"
+     class="cls-2"
+     points="525.36 114.6 510.36 106.35 505.36 114.1 521.61 122.1 525.36 114.6"
+     inkscape:label="#_10" />
+  <polygon
+     id="CB11"
+     data-name="11"
+     class="cls-2"
+     points="541.61 125.1 525.36 114.6 521.61 122.1 535.86 131.35 541.61 125.1"
+     inkscape:label="#_11" />
+  <polygon
+     id="CB12"
+     data-name="12"
+     class="cls-2"
+     points="555.61 137.6 541.61 125.1 535.86 131.35 549.61 142.6 555.61 137.6"
+     inkscape:label="#_12" />
+  <polygon
+     id="CB13"
+     data-name="13"
+     class="cls-2"
+     points="568.61 150.6 555.61 137.6 549.61 142.6 562.11 155.6 568.61 150.6"
+     inkscape:label="#_13" />
+  <polygon
+     id="CB14"
+     data-name="14"
+     class="cls-2"
+     points="580.61 165.35 568.61 150.6 562.11 155.6 573.11 170.1 580.61 165.35"
+     inkscape:label="#_14" />
+  <polygon
+     id="CB15"
+     data-name="15"
+     class="cls-2"
+     points="590.61 183.35 580.61 165.35 573.11 170.1 582.61 186.35 590.61 183.35"
+     inkscape:label="#_15" />
+  <polygon
+     id="CB16"
+     data-name="16"
+     class="cls-2"
+     points="597.86 202.85 590.61 183.35 582.61 186.35 590.36 204.6 597.86 202.85"
+     inkscape:label="#_16" />
+  <polygon
+     id="CB17"
+     data-name="17"
+     class="cls-2"
+     points="603.11 218.1 597.86 202.85 590.36 204.6 594.86 220.1 603.11 218.1"
+     inkscape:label="#_17" />
+  <polygon
+     id="CB18"
+     data-name="18"
+     class="cls-2"
+     points="605.86 235.6 603.11 218.1 594.86 220.1 597.61 236.1 605.86 235.6"
+     inkscape:label="#_18" />
+  <polygon
+     id="CB19"
+     data-name="19"
+     class="cls-2"
+     points="607.36 252.35 599.11 252.35 597.61 236.1 605.86 235.6 607.36 252.35"
+     inkscape:label="#_19" />
+  <polygon
+     id="SU-16"
+     data-name="16"
+     class="cls-2"
+     points="173.67 135.33 231 108.33 236 135.33 189.67 156.33 173.67 135.33"
+     inkscape:label="#_16-2" />
+  <polygon
+     id="SU-10"
+     data-name="10"
+     class="cls-2"
+     points="526.67 135.33 469.33 108.33 464.33 135.33 510.67 156.33 526.67 135.33"
+     inkscape:label="#_10-2" />
+  <polygon
+     id="SU-15"
+     data-name="15"
+     class="cls-2"
+     points="235 107.33 239.67 134 288.67 134 288.67 107.67 235 107.33"
+     inkscape:label="#_15-2" />
+  <polygon
+     id="SU-11"
+     data-name="11"
+     class="cls-2"
+     points="465 107.33 460.33 134 411.33 134 411.33 107.67 465 107.33"
+     inkscape:label="#_11-2" />
+  <rect
+     id="SU-14"
+     data-name="14"
+     class="cls-2"
+     x="293"
+     y="107.67"
+     width="34"
+     height="27"
+     inkscape:label="#_14-2" />
+  <rect
+     id="SU-12"
+     data-name="12"
+     class="cls-2"
+     x="373.67"
+     y="107.67"
+     width="34"
+     height="27"
+     inkscape:label="#_12-2" />
+  <rect
+     id="SU-13"
+     data-name="13"
+     class="cls-2"
+     x="330"
+     y="107.67"
+     width="40.32"
+     height="27"
+     inkscape:label="#_13-2" />
+  <polygon
+     id="SU-4"
+     data-name="4"
+     class="cls-2"
+     points="526.67 424.33 469.33 451.33 464.33 424.33 510.67 403.33 526.67 424.33"
+     inkscape:label="#_4-2" />
+  <polygon
+     id="_22-2"
+     data-name="22"
+     class="cls-2"
+     points="173.67 424.33 231 451.33 236 424.33 189.67 403.33 173.67 424.33" />
+  <polygon
+     id="SU-3"
+     data-name="3"
+     class="cls-2"
+     points="465.33 452.33 460.67 425.67 411.67 425.67 411.67 452 465.33 452.33"
+     inkscape:label="#_3-2" />
+  <polygon
+     id="_23-2"
+     data-name="23"
+     class="cls-2"
+     points="235.33 452.33 240 425.67 289 425.67 289 452 235.33 452.33" />
+  <rect
+     id="SU-2"
+     data-name="2"
+     class="cls-2"
+     x="421.33"
+     y="453"
+     width="34"
+     height="27"
+     transform="translate(828.67 905) rotate(180)"
+     inkscape:label="#_2-2" />
+  <rect
+     id="_24-2"
+     data-name="24"
+     class="cls-2"
+     x="340.67"
+     y="453"
+     width="34"
+     height="27"
+     transform="translate(667.33 905) rotate(180)" />
+  <rect
+     id="SU-1"
+     data-name="1"
+     class="cls-2"
+     x="378.01"
+     y="453"
+     width="40.32"
+     height="27"
+     transform="translate(748.34 905) rotate(180)"
+     inkscape:label="#_1-2" />
+  <polygon
+     id="117"
+     data-name="117"
+     class="cls-2"
+     points="135.9 202.84 179 149.89 186.64 158.51 183.19 161.22 197.72 179.2 200.19 176.98 239.1 228.21 228.51 239.05 166.69 215.4 169.15 211.95 149.69 203.83 146.99 207.03 135.9 202.84"
+     inkscape:label="#_117" />
+  <polygon
+     id="116"
+     data-name="116"
+     class="cls-2"
+     points="242.79 225.75 251.91 222.3 240.09 157.03 236.39 159 231.71 137.08 192.8 154.81 206.59 172.06 203.88 174.27 242.79 225.75"
+     inkscape:label="#_116" />
+  <rect
+     id="114"
+     data-name="114"
+     class="cls-2"
+     x="292.54"
+     y="156.54"
+     width="33.99"
+     height="76.35"
+     inkscape:label="#_114" />
+  <path
+     id="115"
+     data-name="115"
+     class="cls-2"
+     d="M336.85,260.89V185.52h-3.69V161.88H291.29L296,184.78h-4.19l12.31,64.28h8.13v11.82S337.34,260.4,336.85,260.89Z"
+     transform="translate(-48 -28)"
+     inkscape:label="#_115" />
+  <polygon
+     id="109"
+     data-name="109"
+     class="cls-2"
+     points="564.7 202.84 521.6 149.89 513.96 158.51 517.41 161.22 502.88 179.2 500.42 176.98 461.5 228.21 472.09 239.05 533.91 215.4 531.45 211.95 550.91 203.83 553.62 207.03 564.7 202.84"
+     inkscape:label="#_109" />
+  <polygon
+     id="110"
+     data-name="110"
+     class="cls-3"
+     points="457.81 225.75 448.69 222.3 460.52 157.03 464.21 159 468.89 137.08 507.81 154.81 494.01 172.06 496.72 174.27 457.81 225.75"
+     inkscape:label="#_110" />
+  <rect
+     id="112"
+     data-name="112"
+     class="cls-2"
+     x="422.07"
+     y="184.54"
+     width="33.99"
+     height="76.35"
+     transform="translate(830.12 417.43) rotate(-180)"
+     inkscape:label="#_112" />
+  <path
+     id="111"
+     data-name="111"
+     class="cls-2"
+     d="M459.75,260.89V185.52h3.69V161.88h41.87l-4.68,22.91h4.19l-12.31,64.28h-8.13v11.82S459.26,260.4,459.75,260.89Z"
+     transform="translate(-48 -28)"
+     inkscape:label="#_111" />
+  <rect
+     id="_114-2"
+     data-name="114"
+     class="cls-2"
+     x="296.98"
+     y="134.37"
+     width="25.37"
+     height="11.58" />
+  <rect
+     id="_124"
+     data-name="124"
+     class="cls-2"
+     x="296.98"
+     y="413.55"
+     width="25.37"
+     height="11.58" />
+  <rect
+     id="_112-2"
+     data-name="112"
+     class="cls-2"
+     x="378.03"
+     y="134.04"
+     width="25.37"
+     height="11.58" />
+  <polygon
+     id="113"
+     data-name="113"
+     class="cls-2"
+     points="330.23 232.64 369.88 232.64 369.88 157.28 365.94 157.28 365.94 134.37 333.68 134.37 333.68 156.78 330.23 156.78 330.23 232.64"
+     inkscape:label="#_113" />
+  <rect
+     id="124"
+     data-name="124"
+     class="cls-2"
+     x="292.54"
+     y="327.37"
+     width="33.99"
+     height="76.35"
+     inkscape:label="#_124-2" />
+  <path
+     id="123"
+     data-name="123"
+     class="cls-2"
+     d="M336.85,355.37v75.37h-3.69v23.64H291.29L296,431.47h-4.19l12.31-64.28h8.13V355.37S337.34,355.86,336.85,355.37Z"
+     transform="translate(-48 -28)"
+     inkscape:label="#_123" />
+  <polygon
+     id="105"
+     data-name="105"
+     class="cls-2"
+     points="564.7 357.42 521.6 410.37 513.96 401.75 517.41 399.04 502.88 381.06 500.42 383.28 461.5 332.05 472.09 321.21 533.91 344.86 531.45 348.31 550.91 356.43 553.62 353.23 564.7 357.42"
+     inkscape:label="#_105" />
+  <polygon
+     id="104"
+     data-name="104"
+     class="cls-2"
+     points="457.81 334.51 448.69 337.96 460.52 403.23 464.21 401.26 468.89 423.18 507.81 405.44 494.01 388.2 496.72 385.99 457.81 334.51"
+     inkscape:label="#_104" />
+  <rect
+     id="102"
+     data-name="102"
+     class="cls-2"
+     x="422.07"
+     y="355.37"
+     width="33.99"
+     height="76.35"
+     transform="translate(830.12 759.09) rotate(180)"
+     inkscape:label="#_102" />
+  <path
+     id="103"
+     data-name="103"
+     class="cls-2"
+     d="M459.75,355.37v75.37h3.69v23.64h41.87l-4.68-22.91h4.19l-12.31-64.28h-8.13V355.37S459.26,355.86,459.75,355.37Z"
+     transform="translate(-48 -28)"
+     inkscape:label="#_103" />
+  <polygon
+     id="101"
+     data-name="101"
+     class="cls-2"
+     points="330.23 327.62 369.88 327.62 369.88 402.98 365.94 402.98 365.94 425.89 333.68 425.89 333.68 403.48 330.23 403.48 330.23 327.62"
+     inkscape:label="#_101" />
+  <polygon
+     id="118"
+     data-name="118"
+     class="cls-2"
+     points="133.67 206.67 124.33 253 136.33 253.67 137 249.67 159.33 251.67 158.67 256 222.67 262 226 241.67 165 219 164.67 222.33 144.33 215.33 144.33 210.33 133.67 206.67"
+     inkscape:label="#_118" />
+  <polygon
+     id="120"
+     data-name="120"
+     class="cls-2"
+     points="133.67 352.67 124.33 306.33 136.33 305.67 137 309.67 159.33 307.67 158.67 303.33 222.67 297.33 226 317.67 165 340.33 164.67 337 144.33 344 144.33 349 133.67 352.67"
+     inkscape:label="#_120" />
+  <polygon
+     id="119"
+     data-name="119"
+     class="cls-2"
+     points="124.67 257 136 257.67 136 262 158.67 264 158.67 260 223 265.67 223 292.67 159 298.67 159 294.33 135.33 297 135.33 301.33 124.67 302 124.67 257"
+     inkscape:label="#_119" />
+  <polygon
+     id="108"
+     data-name="108"
+     class="cls-2"
+     points="566.67 206.67 576 253 564 253.67 563.33 249.67 541 251.67 541.67 256 477.67 262 474.33 241.67 535.33 219 535.67 222.33 556 215.33 556 210.33 566.67 206.67"
+     inkscape:label="#_108" />
+  <polygon
+     id="106"
+     data-name="106"
+     class="cls-2"
+     points="566.67 352.67 576 306.33 564 305.67 563.33 309.67 541 307.67 541.67 303.33 477.67 297.33 474.33 317.67 535.33 340.33 535.67 337 556 344 556 349 566.67 352.67"
+     inkscape:label="#_106" />
+  <polygon
+     id="107"
+     data-name="107"
+     class="cls-2"
+     points="575.67 257 564.33 257.67 564.33 262 541.67 264 541.67 260 477.33 265.67 477.33 292.67 541.33 298.67 541.33 294.33 565 297 565 301.33 575.67 302 575.67 257"
+     inkscape:label="#_107" />
+  <path
+     id="_118-2"
+     data-name="118"
+     class="cls-2"
+     d="M308.75,270.75v29H275v-11l3.25-18S309.38,271.38,308.75,270.75Z"
+     transform="translate(-48 -28)" />
+  <path
+     id="_120-2"
+     data-name="120"
+     class="cls-2"
+     d="M308.75,345.25v-29H275v11l3.25,18S309.38,344.63,308.75,345.25Z"
+     transform="translate(-48 -28)" />
+  <path
+     id="_108-2"
+     data-name="108"
+     class="cls-2"
+     d="M487.26,270.75v29H521v-11l-3.25-18S486.63,271.38,487.26,270.75Z"
+     transform="translate(-48 -28)" />
+  <path
+     id="_106-2"
+     data-name="106"
+     class="cls-2"
+     d="M487.26,345.25v-29H521v11l-3.25,18S486.63,344.63,487.26,345.25Z"
+     transform="translate(-48 -28)" />
+  <polygon
+     id="_121"
+     data-name="121"
+     class="cls-2"
+     points="135.75 357 179 409.75 186.5 401.5 183.25 397 191.25 388 159 350.75 148.5 355.5 146.5 351.5 135.75 357" />
+  <polygon
+     id="_121-2"
+     data-name="121"
+     class="cls-2"
+     points="163 349.68 167 348.17 196 381.72 192.75 385.25 163 349.68" />
+  <polygon
+     id="121"
+     data-name="121"
+     class="cls-2"
+     points="167.25 344.25 200.75 382 239.5 331.5 227.75 320 167.25 344.25"
+     inkscape:label="#_121-3" />
+  <polygon
+     id="122"
+     data-name="122"
+     class="cls-2"
+     points="246.5 335.25 242.5 333.5 203.25 384.25 207 387 192.5 405 232.25 423 236 399.75 239.75 401.75 244.75 374.25 231.75 369.25 246.5 335.25"
+     inkscape:label="#_122" />
+  <rect
+     class="cls-4"
+     x="328.87"
+     y="270.44"
+     width="139.99"
+     height="73.61"
+     transform="translate(749.74 586.49) rotate(180)"
+     id="rect3513" />
+  <rect
+     class="cls-5"
+     x="341.34"
+     y="276.34"
+     width="115.05"
+     height="61.81"
+     transform="translate(749.74 586.49) rotate(180)"
+     id="rect3515" />
+  <rect
+     class="cls-6"
+     x="384.75"
+     y="272.38"
+     width="23.5"
+     height="14.13"
+     id="rect3517" />
+  <circle
+     class="cls-7"
+     cx="350.44"
+     cy="279.25"
+     r="7.75"
+     id="circle3519" />
+  <circle
+     class="cls-7"
+     cx="385.25"
+     cy="279.25"
+     r="6.91"
+     id="circle3521" />
+  <rect
+     class="cls-6"
+     x="341.34"
+     y="300.34"
+     width="23.5"
+     height="14.13"
+     transform="translate(658.19 586.81) rotate(180)"
+     id="rect3523" />
+  <circle
+     class="cls-7"
+     cx="316.34"
+     cy="279.59"
+     r="6.91"
+     id="circle3525" />
+  <path
+     class="cls-7"
+     d="M341,281.25h17.5s18.25,6,18.25,26.5"
+     transform="translate(-48 -28)"
+     id="path3527" />
+  <path
+     class="cls-7"
+     d="M341,333.75h17.5s18.25-6,18.25-26.5"
+     transform="translate(-48 -28)"
+     id="path3529" />
+  <path
+     class="cls-7"
+     d="M455.76,333.75h-17.5s-18.25-6-18.25-26.5"
+     transform="translate(-48 -28)"
+     id="path3531" />
+  <path
+     class="cls-7"
+     d="M455.76,281.25h-17.5s-18.25,6-18.25,26.5"
+     transform="translate(-48 -28)"
+     id="path3533" />
+  <line
+     class="cls-7"
+     x1="350.44"
+     y1="248.25"
+     x2="350.44"
+     y2="310.25"
+     id="line3535" />
+  <polygon
+     id="CB-R"
+     class="cls-2"
+     points="525.8 143.63 530.35 137.48 544.25 148.53 538.67 154.45 525.8 143.63"
+     inkscape:label="#R" />
+  <polygon
+     id="Q"
+     class="cls-2"
+     points="551.65 168.8 538.67 154.45 544.25 148.53 558.37 163.33 551.65 168.8" />
+  <polygon
+     id="CB-P"
+     class="cls-2"
+     points="562.58 184.51 551.65 168.8 558.37 163.33 570.21 180.53 562.58 184.51"
+     inkscape:label="#P" />
+  <polygon
+     id="CB-O"
+     class="cls-2"
+     points="571.92 201.94 562.58 184.51 570.21 180.53 579.21 198.41 571.92 201.94"
+     inkscape:label="#O" />
+  <polygon
+     id="CB-N"
+     class="cls-2"
+     points="577.16 216.86 571.92 201.94 579.21 198.41 584.79 214.13 577.16 216.86"
+     inkscape:label="#N" />
+  <polygon
+     id="CB-M"
+     class="cls-2"
+     points="580.46 232 577.16 216.86 584.79 214.13 588.66 230.87 580.46 232"
+     inkscape:label="#M" />
+  <polygon
+     id="CB-L"
+     class="cls-2"
+     points="582.06 248.29 580.46 232 588.66 230.87 590.6 248.06 582.06 248.29"
+     inkscape:label="#L" />
+  <rect
+     id="CB-K"
+     class="cls-2"
+     x="582.06"
+     y="247.95"
+     width="8.43"
+     height="17.08"
+     inkscape:label="#K" />
+  <rect
+     id="CB-J"
+     class="cls-2"
+     x="582.06"
+     y="265.11"
+     width="8.43"
+     height="14.38"
+     inkscape:label="#J" />
+  <rect
+     id="CB-I"
+     class="cls-2"
+     x="582.06"
+     y="279.58"
+     width="8.43"
+     height="14.38"
+     inkscape:label="#I" />
+  <polygon
+     id="CB-H"
+     class="cls-2"
+     points="582.06 310.8 590.49 311.73 590.49 294.04 582.06 294.04 582.06 310.8"
+     inkscape:label="#H" />
+  <polygon
+     id="CB-G"
+     class="cls-2"
+     points="588.21 328.47 590.49 311.73 582.06 310.8 580.69 326.65 588.21 328.47"
+     inkscape:label="#G" />
+  <polygon
+     id="CB-F"
+     class="cls-2"
+     points="584.68 344.87 588.21 328.47 580.69 326.65 577.05 342.02 584.68 344.87"
+     inkscape:label="#F" />
+  <polygon
+     id="CB-E"
+     class="cls-2"
+     points="579.1 360.47 584.68 344.87 577.05 342.02 571.81 357.4 579.1 360.47"
+     inkscape:label="#E" />
+  <polygon
+     id="CB-D"
+     class="cls-2"
+     points="569.99 378.81 579.1 360.47 571.81 357.4 563.27 374.37 569.99 378.81"
+     inkscape:label="#D" />
+  <polygon
+     id="CB-C"
+     class="cls-2"
+     points="558.03 395.55 569.99 378.81 563.27 374.37 551.76 390.43 558.03 395.55"
+     inkscape:label="#C" />
+  <polygon
+     id="CB-B"
+     class="cls-2"
+     points="544.47 410.24 558.03 395.55 551.76 390.43 538.67 404.55 544.47 410.24"
+     inkscape:label="#B" />
+  <polygon
+     id="CB-A"
+     class="cls-2"
+     points="530.47 421.86 544.47 410.24 538.67 404.55 525.8 415.82 530.47 421.86"
+     inkscape:label="#A" />
+</svg>

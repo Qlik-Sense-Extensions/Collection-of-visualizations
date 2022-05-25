@@ -1,0 +1,17 @@
+{
+    "name": "Container: ShowHide Container",
+    "description": "A container that shows or hides master visualizations based on IF conditions. ** Zuco Note ** Very good extension and similar to Climber Container sans icon integration. Multiple objects can be shown in a single area and controlled through buttons.",
+    "type": "visualization",
+    "version": "1.1",
+    "icon": "extension",
+    "author": "Fady Heiba",
+    "homepage": "http://branch.qlik.com/#!/project/583764c83dc0cfc4138afa26",
+    "preview": "FEI-ShowHide.png",
+    "keywords": "qlik-sense, visualization",
+    "license": "ICS",
+    "repository": "https://github.com/fadyheiba/ShowHide",
+    "dependencies": {
+        "qlik-sense": ">=3.0.x"
+    },
+    "src": "/extensions/FEI-ShowHide/FEI-ShowHide.png"
+}

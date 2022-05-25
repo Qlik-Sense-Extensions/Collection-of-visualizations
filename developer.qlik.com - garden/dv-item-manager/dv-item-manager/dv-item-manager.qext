@@ -1,0 +1,16 @@
+{
+	"name": "Item Manager",
+	"description": "Master Item/Variable Manager",
+	"icon": "extension",
+	"preview" : "preview.png",
+	"type": "visualization",
+	"version": "1.0.0",
+	"author": "Devan9876",
+	"homepage": "",
+	"keywords": "qlik-sense, visualization",
+	"license": "",
+	"repository": "",
+	"dependencies": {
+		"qlik-sense": ">=3.0.x"
+	}
+}

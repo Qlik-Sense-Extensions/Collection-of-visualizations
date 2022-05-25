@@ -1,0 +1,35 @@
+<!--
+    Snippet: Button with Action
+    ~~
+    DESCRIPTION:
+        Add a button which triggers an action.
+        Change the property of ...wi-action=''... to define
+        your action.
+    ~~
+    USAGE:
+        The following actions (as of now) are possible:
+            - ClearAll
+            - Back
+            - Forward
+            - LockAll
+            - UnlockAll
+            - NextSheet (experimental)
+            - PrevSheet (experimental)
+    ~~
+    DESIGN:
+        To set the design of your button the following pre-defined
+        styles are available:
+            - btn-primary
+            - btn-green
+            - btn-blue
+            - btn-red
+    ~~
+    DOCUMENTATION:
+        To be defined
+-->
+
+<div wi-action="clearAll" class="btn-green">
+    Clear All
+</div>
+
+

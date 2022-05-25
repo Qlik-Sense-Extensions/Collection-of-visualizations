@@ -1,0 +1,9 @@
+{
+    "name": "Utility: QlikLegend",
+    "description": "Customizable legends",
+    "icon": "text",
+    "type": "visualization",
+    "version": "1.0",
+    "homepage": "http://branch.qlik.com/#!/project/58ab26332203a2027a0b6da6",
+    "author": "Vikraant "
+}

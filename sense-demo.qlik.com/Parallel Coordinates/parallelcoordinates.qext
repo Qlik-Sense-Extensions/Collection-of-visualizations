@@ -1,0 +1,9 @@
+{
+    "name": "Parallel Coordinates",
+    "description": "Parallel Coordinates Extension",
+    "icon": "extension",
+    "type": "visualization",
+    "version": "1.0",
+    "preview": "ParallelCoordinates.png",
+    "author": "Juan Gerardo Cabeza"
+}

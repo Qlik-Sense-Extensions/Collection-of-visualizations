@@ -1,0 +1,1 @@
+define(["qvangular","moment"],function(a,b){"use strict";a.filter("wiMoment",function(){return function(a,c){var d=Array.prototype.slice.call(arguments,2),e=b(a);return e[c].apply(e,d)}})});

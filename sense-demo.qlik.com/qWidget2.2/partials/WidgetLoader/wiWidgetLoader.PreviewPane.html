@@ -1,0 +1,61 @@
+<div ng-if="Main.SelectedRepository.type === 'local' ||
+            (Main.SelectedOnlineRepository.authentication.isAuthenticated === true && Main.SelectedOnlineRepository.authentication.isVerified === true)"
+     class="wiEditor_ColRight">
+    <div class="widgetEditor_LivePreview_Container">
+
+        <div class="qWidget_WidgetLoader_PreviewContainer"
+             wi-resizer
+             wi-resizer-target=".qvt-sheet"
+             wi-resizer-offset="-140">
+
+            <div ng-if="WidgetLoader.selectedWidget && WidgetLoader.previewImgVisible == false && Main.SelectedRepository.type == 'ws'"
+                 class="widgetEditor_LivePreview_PreviewModeImg_Msg">
+                <div class="icon">
+                    <span class="fa fa-info-circle fa-lg" style="color:#ccc"></span>
+                </div>
+                <div class="text">
+                    Depending on the properties defined for this object (property panel), the Live-Preview may not be rendered correctly.
+                </div>
+            </div>
+
+            <!-- WidgetLoader - Preview -->
+            <div id="widgetEditor_Preview_{{layout.qInfo.qId}}"
+                 ng-if="WidgetLoader.selectedWidget && (WidgetLoader.previewImgVisible == false || Main.SelectedRepository.type == 'local') && (WidgetLoader.loadingPreview == false)"
+                 class="qWidget_WidgetLoader_PreviewContent"
+
+                 wi-view="true"
+                 wi-view-unescape="false"
+                 wi-view-html="widgetPreview.html"
+                 wi-view-less="widgetPreview.less"
+                 wi-view-use-data="true"
+                 wi-view-data="widgetPreview.data">
+            </div>
+
+            <!-- Preview Image -->
+            <div ng-if="WidgetLoader.selectedWidget && (WidgetLoader.previewImgVisible == true && Main.SelectedRepository.type == 'ws') && (WidgetLoader.loadingPreview == false)"
+                    class="qWidget_WidgetLoader_PreviewContent"
+                    style="text-align:center;">
+                <img class="WidgetLoader_PreviewImg" ng-src="{{widgetPreview.PreviewImg || 'data:image/png;base64,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'}}"/>
+            </div>
+
+            <!-- Nothing selected -->
+            <div ng-if="(!WidgetLoader.selectedWidget)"
+                 class="qWidget_WidgetLoader_PreviewContent"
+                 style="text-align:center;color:#ccc;font-size:2em;margin-top:30px;">
+                    No visualization selected.
+            </div>
+
+            <wi-spinner ng-if="WidgetLoader.loadingPreview == true" />
+
+        </div>
+
+        <!--<div class="widgetEditor_LivePreview_BGInfo">Live Preview</div>-->
+        <!--<div class="widgetEditor_LivePreview_DataUsedLnk"><a ng-click="WidgetLoader.PopupData.show()">qWidget's Data & Properties</a></div>-->
+        <div class="widgetEditor_LivePreview_PreviewMode" ng-if="WidgetLoader.selectedWidget && (Main.SelectedRepository.type == 'ws') && (WidgetLoader.selectedWidget !== null)">
+            <a ng-click="WidgetLoader.togglePreview(true)" ng-class="{active: WidgetLoader.previewImgVisible == true}">Screenshot</a> |
+            <a ng-click="WidgetLoader.togglePreview(false)"ng-class="{active: WidgetLoader.previewImgVisible == false}">Live Preview</a>
+        </div>
+
+    </div>
+</div>
+

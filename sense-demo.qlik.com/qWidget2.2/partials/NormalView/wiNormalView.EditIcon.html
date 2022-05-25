@@ -1,0 +1,15 @@
+<div style="height:100%;width:100%;"
+     ng-if="!Main.isLinkedObject && Main.isEditMode() && Main.mouseOver">
+    <div class="qWidget-hint">
+        <!--
+        isLinkedObject: {{Main.isLinkedObject}}<br/>
+        Main.isEditMode: {{Main.isEditMode()}}<br/>
+        Main.mouseOver: {{Main.mouseOver}}<br/>
+        All: {{!Main.isLinkedObject && Main.isEditMode() && Main.mouseOver}}<br/>
+        -->
+        <div class="qWidget-hint-content">
+            <!-- Edit Button-->
+            <button qva-activate="Main.openEditor()" class="wui-button hint">Edit qWidget</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+﻿.entireTable {
+    border-collapse: collapse;
+    font-family: Arial;
+    color: white;
+}
+.entireTable tr.darkbg {
+    background-color: #313B41;
+    color:#efefef;
+}
+.entireTable tr.brightbg {
+    background-color:#354044;
+    color:#efefef;
+}
+.entireTable tr.darkbg.color1 {
+    background-color: #001527;
+    color:#efefef;
+}
+.entireTable tr.brightbg.color1 {
+    background-color:#011A30;
+    color:#efefef;
+}
+.entireTable tr.bottomRowCellsmall {
+    color: #807D78;
+}
+
+.entireTable tr.bottomRowCellSmall.color1 {
+    color:#324F68;
+}
+
+.entireTable tr.darkbg.color2 {
+    background-color: #02365B;
+    color:#efefef;
+}
+.entireTable tr.brightbg.color2 {
+    background-color: #073A5E;
+    color:#efefef;
+}
+.entireTable tr.bottomRowCellSmall.color2 {
+    color:#355D79;
+}
+
+.entireTable tr.darkbg.color3 {
+    background-color: #4980A7;
+    color:#efefef;
+}
+.entireTable tr.brightbg.color3 {
+    background-color: #4C85AD;
+    color:#efefef;
+}
+.entireTable tr.bottomRowCellSmall.color3 {
+    color:#064A7A;
+}
+
+.entireTable tr.darkbg.color4 {
+    background-color: #6B9AA4;
+    color:#efefef;
+}
+.entireTable tr.brightbg.color4 {
+    background-color: #6F9FA9;
+    color:#efefef;
+}
+
+.entireTable tr.bottomRowCellSmall.color4 {
+    color:#2B6A77;
+}
+
+.entireTable tr.darkbg.color5 {
+    background-color: #F2F1DC;
+    color:#333333;
+}
+.entireTable tr.brightbg.color5 {
+    background-color: #FAF9E6;
+    color:#333333;
+}
+.entireTable tr.bottomRowCellSmall.color5 {
+    color:#B9B66E;
+}
+
+.entireTable .middleRowFront {
+    font-size: 24px;
+    width: 50%;
+    text-align:center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.entireTable .middleRowEnd {
+    font-size: 36px;
+    width: 50%;
+    text-align: center;
+}
+.entireTable .bottomRowCellSmall {
+    font-size: 10px;
+    color: grey;
+    text-align: center;
+}
+
+.entireTable .bottomRowCellLarge {
+    font-size: 12px;
+    text-align: center;
+}

@@ -1,0 +1,165 @@
+<div class="qWidget_wiSysInfo">
+    <div class="qWidget_wiSysInfo_tab-container">
+        <ul>
+            <li ng-show="apps !== undefined" ng-class="{selected: selectedTab === 'apps'}"><a href="javascript:void(0);" qva-activate="selectedTab='apps'">Apps <small>({{apps.length}})</small></a></li>
+            <li ng-show="sheets !== undefined" ng-class="{selected: selectedTab === 'sheets'}"><a href="javascript:void(0);" qva-activate="selectedTab='sheets'">Sheets <small>({{sheets.length}})</small></a></li>
+            <li ng-show="sheets !== undefined" ng-class="{selected: selectedTab === 'objects'}"><a href="javascript:void(0);" qva-activate="selectedTab='objects'">Sheets & Objects</a></li>
+            <li ng-show="masterobjects !== undefined" ng-class="{selected: selectedTab === 'masterobjects'}"><a href="javascript:void(0);" qva-activate="selectedTab='masterobjects'">Master Objects <small>({{masterobjects.length}})</small></a></li>
+            <li ng-show="dimensions !== undefined" ng-class="{selected: selectedTab === 'dimensions'}"><a href="javascript:void(0);" qva-activate="selectedTab='dimensions'">Dimensions <small>({{dimensions.length}})</small></a></li>
+            <li ng-show="measures !== undefined" ng-class="{selected: selectedTab === 'measures'}"><a href="javascript:void(0);" qva-activate="selectedTab='measures'">Measures <small>({{measures.length}})</small></a></li>
+            <li ng-show="fields !== undefined" ng-class="{selected: selectedTab === 'fields'}"><a href="javascript:void(0);" qva-activate="selectedTab='fields'">Fields <small>({{fields.length}})</small></a></li>
+            <li ng-show="extensions !== undefined" ng-class="{selected: selectedTab === 'extensions'}"><a href="javascript:void(0);" qva-activate="selectedTab='extensions'">Extensions <small>({{extensions.length}})</small></a></li>
+            <li ng-show="bookmarks !== undefined" ng-class="{selected: selectedTab === 'bookmarks'}"><a href="javascript:void(0);" qva-activate="selectedTab='bookmarks'">Bookmarks <small>({{bookmarks.length}})</small></a></li>
+            <li ng-show="currentselections !== undefined" ng-class="{selected: selectedTab === 'currentselections'}"><a href="javascript:void(0);" qva-activate="selectedTab='currentselections'">Current Selections <small>({{currentselections.qSelections.length}})</small></a></li>
+        </ul>
+    </div>
+    <div class="qWidget_wiSysInfo_main-container">
+
+        <!-- Apps -->
+        <div ng-show="selectedTab === 'apps'">
+            <h2>Apps (<span ng-bind="apps.length" />)</h2>
+            <ul>
+                <li ng-repeat="app in apps track by $index">
+                    <b>{{app.qTitle}}</b><br/>
+                    <ul class="qWidget_wiSysInfo_detailList">
+                        <li><b>DocId: </b><span class="wiSelectable">{{app.qDocId}}</span></li>
+                        <li><b>DocName: </b>{{app.qDocName}}</li>
+                        <li><b>Connected User: </b>{{app.qConnectedUsers}}</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Sheets -->
+        <div ng-show="selectedTab === 'sheets'">
+            <h2>Sheets ({{sheets.length}})</h2>
+            <ul>
+                <li ng-repeat="sheet in sheets track by $index">
+                    <b>{{sheet.qMeta.title}}</b><br/>
+                    <ul class="qWidget_wiSysInfo_detailList">
+                        <li><b>Id: </b><span class="wiSelectable">{{sheet.qInfo.qId}}</span></li>
+                        <li><b>Description: </b>{{sheet.qMeta.description}}</span></li>
+                        <li><b># Objects: </b>{{sheet.qData.cells.length}}</li>
+                    </ul>
+                    <hr/>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Sheets and Objects -->
+        <div ng-show="selectedTab === 'objects'">
+            <h2>Sheets and Objects</h2>
+            <ul>
+                <li ng-repeat="sheet in sheets">"<b>{{sheet.qMeta.title}}</b>" ({{sheet.qData.cells.length}} objects)
+                    <ul class="qWidget_wiSysInfo_detailList">
+                        <li ng-repeat="cell in sheet.qData.cells">
+                            <b>Id:</b> <span class="wiSelectable">{{cell.name}}</span><br/>
+                            <b>Type:</b> {{cell.type}}
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- MasterObjects -->
+        <div ng-show="selectedTab === 'masterobjects'">
+            <h2>Master Objects ({{masterobjects.length}})</h2>
+            <ul>
+                <li ng-repeat="masterobject in masterobjects track by $index">
+                    <b>{{masterobject.qData.name}}</b><br/>
+                    <ul class="qWidget_wiSysInfo_detailList">
+                        <li><b>Id:</b> <span class="wiSelectable">{{masterobject.qInfo.qId}}</span></li>
+                        <li><b>Type:</b> {{masterobject.qInfo.qType}}</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Dimensions -->
+        <div ng-show="selectedTab === 'dimensions'">
+            <h2>Dimensions ({{dimensions.length}})</h2>
+            <ul>
+                <li ng-repeat="dimension in dimensions track by $index">
+                    <b>{{dimension.qData.title}}</b>
+                        <ul class="qWidget_wiSysInfo_detailList">
+                            <li><b>Id:</b> {{dimension.qInfo.qId}}</li>
+                        </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Measures -->
+        <div ng-show="selectedTab === 'measures'">
+            <h2>Measures ({{measures.length}})</h2>
+            <ul>
+                <li ng-repeat="measure in measures track by $index">
+                    <b>{{measure.qData.title}}</b>
+                    <ul class="qWidget_wiSysInfo_detailList">
+                        <li><b>Id:</b> {{measure.qInfo.qId}}</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Fields -->
+        <div ng-show="selectedTab === 'fields'">
+            <h2>Fields ({{fields.length}})</h2>
+            <ul>
+                <li ng-repeat="field in fields track by $index">
+                    <b>{{field.qName}}</b><br/>
+                    <ul class="qWidget_wiSysInfo_detailList">
+                        <li><b>Tags:</b> {{field.qTags}}</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+        <!-- Extensions -->
+        <div ng-show="selectedTab === 'extensions'">
+            <h2>Extensions ({{extensions.length}})</h2>
+            <div ng-repeat="extension in extensions track by $index">
+                <ul>
+                    <li><b>{{extension}}</b></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bookmarks -->
+        <div ng-show="selectedTab === 'bookmarks'">
+            <h2>Bookmarks ({{bookmarks.length}})</h2>
+            <ul>
+                <li ng-repeat="bookmark in bookmarks track by $index">
+                    <!--(<a href="javascript:void(0)" wi-action="bookmark.apply('{{bookmark.qInfo.qId}}')">Apply</a>)-->
+                    <b>{{bookmark.qData.title}}</b><br/>
+                    <ul class="qWidget_wiSysInfo_detailList">
+                        <li><b>Id: </b><span class="wiSelectable">{{bookmark.qInfo.qId}}</span></li>
+                        <li><b>Description: </b>{{bookmark.qData.description}}</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Current Selections -->
+        <div ng-show="selectedTab === 'currentselections'">
+            <h2>Current Selections ({{currentselections.qSelections.length}})</h2>
+            <div ng-repeat="sel in currentselections.qSelections track by $index">
+                <ul>
+                    <li>Field: <b>{{sel.qField}}</b></li>
+                    <ul class="qWidget_wiSysInfo_detailList">
+                        <li><b>Selected Values: </b> {{sel.qSelected}}</li>
+                        <li><b># Total: </b> {{sel.qTotal}}</li>
+                        <li><b># Selected: </b> {{sel.qSelectedCount}}</li>
+                        <li><b># Alternatives: </b> {{sel.qStateCounts.qAlternative}}</li>
+                        <li><b># Excluded: </b> {{sel.qStateCounts.qExcluded}}</li>
+                        <li><b># Locked: </b> {{sel.qStateCounts.qLocked}}</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>

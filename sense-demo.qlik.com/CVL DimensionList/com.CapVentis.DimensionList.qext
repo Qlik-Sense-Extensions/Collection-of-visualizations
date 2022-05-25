@@ -1,0 +1,9 @@
+{
+    "name": "CVL DimensionList",
+    "description": "CapricornVentis Dimension List",
+    "icon": "list",
+    "type": "visualization",
+    "version": 1,
+    "preview": "list",
+    "author": ""
+}

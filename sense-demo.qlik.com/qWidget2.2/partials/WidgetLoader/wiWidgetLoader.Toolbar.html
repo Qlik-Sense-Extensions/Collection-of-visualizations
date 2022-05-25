@@ -1,0 +1,51 @@
+<!-- Todo: Rename qWidget_bar -->
+<!-- Todo: Ensure to re-use qWidget_WidgetLoader_Header -->
+<div class="qWidget_bar qWidget_WidgetLoader_Header">
+        <div class="wiEditor_ColLeft">
+            <div class="wui-buttongroup" style="margin-left: 10px;margin-top: 3px;">
+                <!--<label>Repositories:</label>-->
+
+                <!-- Repository Selection -->
+                <select ng-model="Main.SelectedRepository"
+                        ng-options="item.name for item in Main.RepositoryList"
+                        ng-change="WidgetLoader.Repository_OnChange(Main.SelectedRepository)"
+                        class="wui-button wui-select"
+                        ></select>
+
+                <!-- Refresh Icon -->
+                <button class="wui-button"
+                        ng-class="Main.SelectedRepository.type === 'ws' ? '' : 'wui-disabled'"
+                        qva-activate="WidgetLoader.loadWidgets( true );" title="Refresh list of qWidgets">
+                    <span class="fa fa-refresh" />
+                </button>
+
+                <!-- Login Button -->
+                <button class="wui-button"
+                        ng-if="Main.SelectedRepository.type === 'local' || !Main.SelectedOnlineRepository.authentication.isAuthenticated"
+                        qva-activate="Main.Authentication.LocalAuthentication.visible = true"
+                        ng-disabled="Main.SelectedRepository.type === 'local'"
+                        title="Login to the qWidget repository (only necessary for online repositories)">
+                    <span class="fa"
+                          ng-class="Main.SelectedRepository.type === 'local' ? 'fa-circle-o' : 'fa-circle wiRed'">
+                    </span>
+                </button>
+
+                <!-- Logout Button -->
+                <button class="wui-button"
+                        ng-if="Main.SelectedRepository.type === 'ws' && Main.SelectedOnlineRepository.authentication.isAuthenticated"
+                        qva-activate="Main.Authentication.logOut();"
+                        ng-disabled="Main.SelectedRepository.type === 'local'"
+                        title="Logout from repository">
+                    <span class="fa fa-circle"
+                          ng-class="Main.SelectedOnlineRepository.authentication.isAuthenticated ? 'qWidget_btnLogout' : 'qWidget_btnLogin'">
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Use Button -->
+        <div class="wiEditor_Bar">
+            <button class="confirm" qva-activate="WidgetLoader.use()" style="margin-left:20px;margin-top:3px;" ng-disabled="WidgetLoader.selectedWidget === null"><span class="fa fa-arrow-down fa-lg" style="margin-right:5px;" />Download Visualization</button>
+            <button qva-activate="Main.switchEditMode('create')" style="margin-top:3px;"><span class="fa fa-code fa-lg" style="margin-right:5px;" />Back to Editor</button>
+        </div>
+</div>

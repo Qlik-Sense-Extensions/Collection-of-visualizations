@@ -1,0 +1,16 @@
+{
+	"name": "Popup Message",
+	"description": "Popup Windows Message with Visualization driven by condition. Version: 1.0.5",
+	"version": "1.0.5",
+	"type": "visualization",
+	"icon": "extension",
+	"author": "Arnaldo Sandoval",
+	"preview": "PopupMessage.png",
+	"homepage": "",
+	"keywords": "qlik-sense, visualization, popup message",
+	"license": "MIT",
+	"repository": "",
+	"dependencies": {
+		"qlik-sense": ">=3.0.x"
+	}
+}

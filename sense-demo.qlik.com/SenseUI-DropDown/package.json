@@ -1,0 +1,14 @@
+{
+    "name": "senseui-dropdown",
+    "version": "1.0.0",
+    "description": "",
+    "main": "senseui-dropdown.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "start": "babel senseui-dropdown.es6 --out-file senseui-dropdown.js  --presets es2015"
+    },
+    "author": "yianni.ververs@qlik.com",
+    "license": "ISC"
+}

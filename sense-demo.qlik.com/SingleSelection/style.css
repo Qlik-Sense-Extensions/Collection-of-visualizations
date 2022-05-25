@@ -1,0 +1,58 @@
+.qv-object-SingleSelection div.qv-object-content-container {
+	overflow: auto;
+}
+.qv-object-SingleSelection ul {
+	list-style: none;
+}
+.qv-object-SingleSelection .data {
+	padding: 4px;
+	border-bottom: 0px solid #ddd;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+/* frequency */
+.qv-object-SingleSelection li.data span
+{
+	padding-left: 10px;
+	font-style: italic;
+	float:right;
+}
+/* colors when NOT in selection mode */
+
+.qv-object-SingleSelection .stateS, .qv-object-SingleSelection .stateL {
+	background-image: linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -o-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -moz-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -webkit-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -ms-linear-gradient(top, #52cc52, #4dc04d);
+	color: #fff;
+}
+
+.qv-object-SingleSelection .stateX, .qv-object-SingleSelection .stateXL, .qv-object-SingleSelection li.stateXS {
+	background-color: #A9A9A9;
+	color: #fff;
+}
+
+.qv-object-SingleSelection .stateA {
+	background-image: none;
+	background-color: #ddd;
+	color: #000;
+	cursor: pointer;
+}
+/* colors when in selection mode */
+.qv-object-SingleSelection.qv-selections-active  {
+	background-image: none;
+	background-color: #ddd;
+	color: #000;
+}
+
+.qv-object-SingleSelection.qv-selections-active .selected {
+	background-image: linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -o-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -moz-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -webkit-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -ms-linear-gradient(top, #52cc52, #4dc04d);
+	color: #fff;
+}

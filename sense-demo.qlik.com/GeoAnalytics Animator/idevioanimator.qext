@@ -1,0 +1,9 @@
+{
+    "name": "GeoAnalytics Animator",
+    "description": "An animator for GeoAnalytics.",
+    "preview": "animatoricon-preview.png",
+    "type": "visualization",
+    "version": "1.0",
+    "author": "Qlik",
+    "icon": "map icon-idevio-animator"
+}

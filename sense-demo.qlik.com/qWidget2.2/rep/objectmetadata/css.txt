@@ -1,0 +1,29 @@
+﻿@borderColor:#ccc;
+@evenRowBGColor:#F7F7F9;
+
+.wi-omd .row {
+  border-bottom: 1px solid @borderColor;
+  padding-top:2px;
+  padding-bottom:2px;
+}
+
+.wi-omd .row:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.wi-omd .row .label {
+  font-weight: bold;
+  width: 100px;
+  display:inline-block;
+}
+
+.wi-omd .row .val {
+  display:inline-block;
+}
+.wi-omd .row:nth-child(2n) {
+  background-color: @evenRowBGColor;
+}

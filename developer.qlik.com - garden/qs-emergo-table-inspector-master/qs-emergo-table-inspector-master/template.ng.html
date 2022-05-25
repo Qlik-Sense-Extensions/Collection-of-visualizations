@@ -1,0 +1,24 @@
+<div class="qs-emergo-table-inspector" ng-class="{'table-selected': vizId && !object.inEditState(), 'loading': loading}">
+	<div class="inspector-loading">
+		<div class="qv-loader modal-loader"></div>
+	</div>
+
+	<div id="qs-emergo-table-inspector-{{$id}}" class="object-container"></div>
+
+	<div qv-requirements class="requirements-wrapper" aria-hidden="false">
+		<div class="requirements">
+			<h2 class="header">
+				<i class="object-icon lui-icon lui-icon--table"></i>
+			</h2>
+
+			<lui-button ng-if="!object.inEditState()" class="button open-button" ng-class="{'lui-active': isActive()}" qva-activate="open()">Select Table</lui-button>
+
+			<p ng-if="object.inEditState()" class="incomplete-text">
+				<span>Use this extension in
+					<button class="lui-button open-edit-mode" qva-activate="switchToAnalysis()">Analysis mode</button>
+				</span>
+			</p>
+		</div>
+	</div>
+</div>
+</div>

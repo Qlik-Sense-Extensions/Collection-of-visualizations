@@ -1,0 +1,9 @@
+.senseui-search ul {
+	border: 1px solid #CCC;
+	width: 200px;
+}
+.senseui-search ul li {
+	border-bottom: 1px solid #CCC;
+	padding: 5px;
+	cursor: pointer;
+}

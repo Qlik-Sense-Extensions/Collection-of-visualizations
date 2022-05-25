@@ -1,0 +1,13 @@
+<wi-slider
+    min="1"
+    max="12"
+    step="1"
+    bind-qs-var="vMonth"
+    labels="['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct', 'Nov','Dec']"
+
+    ticks="true"
+    ticks-labels="['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']"
+    ticks-step="1"
+    ticks-rest="label"
+>
+</wi-slider>

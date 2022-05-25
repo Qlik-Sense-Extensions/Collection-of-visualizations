@@ -1,0 +1,9 @@
+<wi-slider
+    min="0"
+    max="100"
+    step="10"
+    range="true"
+    bind-qs-var-min="vSliderResultMin"
+    bind-qs-var-max="vSliderResultMax"
+    >
+</wi-slider>

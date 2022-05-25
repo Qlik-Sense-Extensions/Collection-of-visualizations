@@ -1,0 +1,1 @@
+define(["jquery","qvangular"],function(a,b){"use strict";b.directive("wiResizer",function(){return{scope:{wiResizerTarget:"@",wiResizerOffset:"@"},link:function(b,c){function d(){f()}var e=a(b.wiResizerTarget),f=b.$watch(function(){return e.height()},function(a){c.height(a+parseInt(b.wiResizerOffset))});c.bind("$destroy",d)}}})});

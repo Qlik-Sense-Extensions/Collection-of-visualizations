@@ -1,0 +1,101 @@
+.radio-listbox-ext label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+}
+
+.radio-listbox-ext input[type=radio],
+.radio-listbox-ext input[type=checkbox] {
+	display: none;
+}
+
+.radio-listbox-ext label.stateS:before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color:rgb(80,198,80);
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.radio-listbox-ext label:before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #aaa;
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.radio-listbox-ext.radio label:before {
+	border-radius: 8px;
+}
+.radio-listbox-ext.checkbox label {
+	margin-bottom: 10px;
+}
+.radio-listbox-ext.checkbox label:before {
+    border-radius: 3px;
+}
+
+.radio-listbox-ext input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: rgb(80,198,80);
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.radio-listbox-ext input[type=checkbox]:checked + label:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 15px;
+	color: #f3f3f3;
+	text-align: center;
+    line-height: 15px;
+}
+
+.radio-listbox-ext.listbox {
+	position:absolute;
+	overflow:auto !important;
+}
+
+.radio-listbox-ext.listbox p{
+	list-style:none;
+	cursor:pointer;
+}
+
+.radio-listbox-ext.listbox p{
+    display: block;
+    text-decoration: none;
+    padding:8px 0;
+}
+
+.radio-listbox-ext.listbox p.stateS {
+	background:rgb(80,198,80);
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+	color:#FFFFFF !important;
+}
+.radio-listbox-ext.listbox p.stateA{
+	background-image: none;
+	background-color: #ddd;
+	color: #000;
+}
+.radio-listbox-ext.listbox p.stateA, .listbox p.stateS{
+	border-right:#FFFFFF solid 1px;
+	border-bottom:#CCCCCC 1px solid !important;
+}
+.radio-listbox-ext.listbox p.stateO{
+	border-right:#CCCCCC solid 1px;
+}
+.radio-listbox-ext.listbox p:hover{
+    color: grey;
+}

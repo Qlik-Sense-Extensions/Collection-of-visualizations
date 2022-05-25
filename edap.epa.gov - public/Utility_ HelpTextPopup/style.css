@@ -1,0 +1,8 @@
+/* Comment */
+.qv-object-HelpTextPopup{
+	cursor: pointer;
+	text-align:center;
+}
+.qv-object-HelpTextPopup .qv-inner-object {
+	padding-top: 2px !important;
+}

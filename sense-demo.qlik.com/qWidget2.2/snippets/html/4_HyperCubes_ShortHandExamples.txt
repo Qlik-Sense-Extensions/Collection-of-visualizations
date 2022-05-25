@@ -1,0 +1,25 @@
+<hr />
+<b>Retrieve a cell and its text:</b><br/>
+{{wi.cell(0,0).qText}}
+
+<hr />
+<b>Retrieve a row:</b><br/>
+{{wi.row(0)}}
+
+<hr />
+<b>Row count:</b><br/>
+{{wi.rowCount()}}
+
+<hr />
+<b>Column count:</b><br/>
+{{wi.colCount()}}
+
+<hr />
+<b>Table Empty:</b><br/>
+{{wi.tableEmpty()}}
+
+<hr />
+<b>Iterating through rows:</b>
+<div ng-repeat="row in wi.rows()">
+    {{row[0].qText}}
+</div>

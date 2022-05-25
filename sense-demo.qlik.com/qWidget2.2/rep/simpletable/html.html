@@ -1,0 +1,19 @@
+<div ng-show="layout.qHyperCube.qDataPages[0].qMatrix.length == 0">
+    No Dimensions and Measures added to this object.<br/>
+    Otherwise you'd see here the table.
+</div>
+<table class="wiTable">
+  <thead>
+    <tr>
+      <td ng-repeat="dim in layout.qHyperCube.qDimensionInfo">{{dim.qLabel}}</td>
+      <td ng-repeat="mea in layout.qHyperCube.qMeasureInfo" ng-bind="mea.qFallbackTitle"></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="row in layout.qHyperCube.qDataPages[0].qMatrix">
+      <td ng-repeat="col in row">
+        {{col.qText}}
+      </td>
+    </tr>
+  </tbody>
+</table>

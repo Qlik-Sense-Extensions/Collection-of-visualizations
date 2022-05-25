@@ -1,0 +1,17 @@
+{
+    "name": "Filter: Sense Field UI",
+    "description": "Manage how fields are viewed in the UI with radio, dropdown and checkboxes.",
+    "icon": "list",
+    "type": "visualization",
+    "version": "1.0.0",
+    "preview": "preview.png",
+    "author": "Alex Byrd",
+    "keywords": "qlik-sense, extension, bootstrap, font-awesome, dropdown, checkbox, button, radio",
+    "license": "MIT",
+    "homepage": "http://branch.qlik.com/#!/project/57b75fd3b3122e2cd1e72fdf",
+    "repository": "",
+    "dependencies": {
+        "qlik-sense": ">=1.0.x"
+    },
+    "src": "/extensions/senseFieldUI/preview.png"
+}

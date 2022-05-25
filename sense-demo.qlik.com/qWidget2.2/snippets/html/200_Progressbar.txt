@@ -1,0 +1,6 @@
+<wi-progressbar
+    max="100"
+    value="88"
+    animate="true"
+    design="danger">88%
+</wi-progressbar>

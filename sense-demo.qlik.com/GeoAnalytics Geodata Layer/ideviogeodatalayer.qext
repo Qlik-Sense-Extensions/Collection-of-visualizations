@@ -1,0 +1,9 @@
+{
+    "name": "GeoAnalytics Geodata Layer",
+    "description": "A geodata layer for GeoAnalytics.",
+    "preview": "geodatalayericon-preview.png",
+    "type": "visualization",
+    "version": "1.0",
+    "author": "Qlik",
+    "icon": "map icon-idevio-geodatalayer"
+}

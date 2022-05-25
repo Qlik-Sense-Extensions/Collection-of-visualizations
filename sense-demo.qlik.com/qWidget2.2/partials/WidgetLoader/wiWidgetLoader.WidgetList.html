@@ -1,0 +1,99 @@
+<div ng-if="Main.SelectedRepository.type === 'local' ||
+            (Main.SelectedOnlineRepository.authentication.isAuthenticated === true && Main.SelectedOnlineRepository.authentication.isVerified === true)"
+     class="wiEditor_ColLeft">
+
+
+    <!-- WidgetLoader: List Filter -->
+    <div data-ng-include data-src="'/extensions/qwidget/partials/WidgetLoader/wiWidgetLoader.Filter.html'"></div>
+
+    <!-- List -->
+    <div style="overflow:auto;min-width:400px;" wi-resizer wi-resizer-target=".qvt-sheet" wi-resizer-offset="-165">
+
+        <!-- Loading Msg -->
+        <wi-spinner ng-show="WidgetLoader.loading == true"></wi-spinner>
+
+
+        <div ng-if="(WidgetLoader.WidgetList | filter:WidgetLoader.textFilter | filter:WidgetLoader.privateFilter ).length === 0
+                    && WidgetLoader.loading !== true"
+             class="qWidget_widgetLoader_ListEmpty">
+            No qWidgets found for the given filter
+        </div>
+
+        <div class="qWidget_widgetLoader_ListContainer"
+             ng-if="WidgetLoader.WidgetList.length > 0 && WidgetLoader.loading == false && WidgetLoader.repositoryNotReachable == false"
+             >
+
+            <div ng-repeat="widget in WidgetLoader.WidgetList | filter:WidgetLoader.textFilter | filter:WidgetLoader.privateFilter | orderBy:WidgetLoader.SortBy.field:(WidgetLoader.SortOrder!='ascending')"
+                 class="qWidget_widgetLoader_ListItem"
+                 ng-class="{selected:WidgetLoader.selectedWidget == widget}">
+
+                <!--<div class="">-->
+                    <!--<div class="ListImgContainer">-->
+                        <!--<img ng-src="{{widget.PreviewImg}}" ng-if="widget.PreviewImg !== ''" class="ListImg" />-->
+                        <!--<img src="/extensions/qwidget/lib/img/WidgetPreview_Default.png" ng-if="widget.PreviewImg === ''" class="ListImg" />-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div ng-bind="widget.Category" class="ListImgTitle"></div>-->
+
+                <div class="ListContent" ng-dblclick="WidgetLoader.preview(widget)">
+                    <div class="Title" ng-bind="widget.name" title="WidgetId: {{widget._id}}" qve-highlight text="{{ widget.name }}" query="WidgetLoader.textFilter"  />
+                    <div class="MetaContainer">
+                        <div ng-if="widget.author.full_name" class="MetaContent">
+                            Author: <span qve-highlight text="{{ widget.author.full_name }}" query="WidgetLoader.textFilter" />&nbsp;|
+                        </div>
+                        <div ng-if="!widget.author.full_name" class="MetaContent">
+                            Author: <span qve-highlight text="{{ widget.author.first_name + ' ' + widget.author.last_name }}" query="WidgetLoader.textFilter" />&nbsp;|
+                        </div>
+                        <div ng-if="widget.category && widget.category.name != ''" class="MetaContent">
+                            Category: <span qve-highlight text="{{ widget.category.name || '-' }}" query="WidgetLoader.textFilter" />&nbsp;|
+                        </div>
+                        <div ng-if="widget.creation_date != '' && Main.SelectedRepository.type == 'ws'" class="MetaContent">
+                            Date: {{ widget.creation_date | wiMoment: 'format': 'YYYY-MM-DD' }}&nbsp;|
+                        </div>
+                        <div ng-if="widget.use_count >= 0 && Main.SelectedRepository.type == 'ws'" class="MetaContent">
+                            # Used: {{ widget.use_count}}&nbsp;|
+                        </div>
+                    </div>
+                    <div qve-highlight class="Description" text="{{widget.description}}" title="{{widget.description}}" query="WidgetLoader.textFilter" />
+                </div>
+                <!--<div class="FavContainer" ng-show="Main.SelectedRepository.type == 'ws'">-->
+                    <!--<div ng-if="widget.IsFav">-->
+                        <!--<i class="fa fa-heart fa-lg isFav" title="In Favorites" ng-click="widget.IsFav = false; WidgetLoader.toggleFav(widget.WidgetId);"></i>-->
+                    <!--</div>-->
+                    <!--<div  ng-if="!widget.IsFav">-->
+                        <!--<i class="fa fa-heart fa-lg notFav" title="Add to Favorites" ng-click="widget.IsFav = true; WidgetLoader.toggleFav(widget.WidgetId);"></i>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="DelContainer" ng-show="(Main.SelectedRepository.type == 'ws') && WidgetLoader.canDelete(widget) ">-->
+                    <!--<i class="fa fa-ban fa-lg del" ng-click="WidgetLoader.deleteWidget( widget );" wi-confirmation-needed="Do you really want to delete this qWidget?"></i>-->
+                <!--</div>-->
+                <div class="PreviewLinkContainer" qva-activate="WidgetLoader.preview(widget)">
+                    <a href="javascript:void(0);">Preview</a>
+                </div>
+                <div class="PrivateItemBadge" ng-if="widget.is_private === true">
+                    Private
+                </div>
+                <div class="UnapprovedBadge" ng-if="widget.approval_status === 'NOT_APPROVED' && !widget.is_private">
+                    Not approved
+                </div>
+
+
+            </div>
+            <div style="width:100%;height:30px;">
+                <!-- Panel to hide the last badge -->
+            </div>
+        </div>
+
+        <!-- Todo: (B) - Not used anymore ? -->
+        <div ng-if="WidgetLoader.repositoryNotReachable == true && WidgetLoader.loading == false && Main.SelectedRepository.type == 'ws'"
+             style="width:100%;text-align:center;margin-top:100px;">
+            <div class="wiRed">
+                <span class="wiBold">The selected repository is not reachable.</span><br/>
+                Are you connected to the Internet?<br/><br/>
+            </div>
+            <a href="javascrip:void(0;" qva-activate="WidgetLoader.loadWidgets( Main.SelectedRepository );">Try again</a>
+        </div>
+    </div>
+
+
+</div>

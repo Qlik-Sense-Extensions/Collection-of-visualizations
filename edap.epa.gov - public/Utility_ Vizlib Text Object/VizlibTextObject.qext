@@ -1,0 +1,15 @@
+{
+    "name": "Utility: Vizlib Text Object",
+    "description": "Classic QlikView text object with extended formatting options and HTML support. ** Note ** Great extension that can accept html and css, and execute actions on click.",
+    "icon": "text",
+    "type": "visualization",
+    "version": "1.0.0",
+    "author": "Martin Mahler",
+    "homepage": "http://branch.qlik.com/#!/project/57881118637877f40865b5cc",
+    "keywords": "qlik-sense, visualization",
+    "license": "Copyright of Smart Data Analytics Ltd.",
+    "repository": "",
+    "dependencies": {
+        "qlik-sense": ">=1.0.x"
+    }
+}

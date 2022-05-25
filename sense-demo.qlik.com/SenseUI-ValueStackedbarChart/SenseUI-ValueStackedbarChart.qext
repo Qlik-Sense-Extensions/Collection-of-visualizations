@@ -1,0 +1,15 @@
+{
+    "name": "SenseUI-ValueStackedbarChart",
+    "description": "Chart visualization template",
+    "icon": "bar-chart-horizontal",
+    "type": "visualization",
+    "version": "1.0.0",
+    "author": "yianni.ververis@qlik.com",
+    "homepage": "https://github.com/yianni-ververis/SenseUI-ValueStackedbarChart",
+    "keywords": "qlik-sense, visualization",
+    "license": "MIT",
+    "repository": "https://github.com/yianni-ververis/SenseUI-ValueStackedbarChart",
+    "dependencies": {
+        "qlik-sense": ">=3.0.x"
+    }
+}

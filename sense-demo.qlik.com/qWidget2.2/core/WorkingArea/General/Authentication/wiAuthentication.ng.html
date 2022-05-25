@@ -1,0 +1,18 @@
+<div>
+	<qv-modal-dialog
+			qv-id="wiWidgetEditor_Authentication"
+			qv-cancel="onButtonClose();"
+			>
+		<header class="dm-header">
+			Connect to qWidget Repository
+		</header>
+		<main class="dm-main">
+
+			<iframe ng-src="{{trustedUrl}}" class="wiWidgetEditor_AuthenticationFrame"></iframe>
+
+		</main>
+		<footer class="dm-footer">
+			<button class="wui-button" qva-activate="onButtonClose();">Close</button>
+		</footer>
+	</qv-modal-dialog>
+</div>

@@ -1,0 +1,15 @@
+<table>
+  <thead>
+    <tr>
+      <th ng-repeat="dim in layout.qHyperCube.qDimensionInfo">{{dim.qFallbackTitle}}</td>
+      <th ng-repeat="mea in layout.qHyperCube.qMeasureInfo" ng-bind="mea.qFallbackTitle"></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="row in layout.qHyperCube.qDataPages[0].qMatrix">
+      <td ng-repeat="col in row">
+        {{col.qText}}
+      </td>
+    </tr>
+  </tbody>
+</table>

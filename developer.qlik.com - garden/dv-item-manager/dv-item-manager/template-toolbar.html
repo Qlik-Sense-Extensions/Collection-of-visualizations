@@ -1,0 +1,81 @@
+<div class="toolbar-row">
+	<label class="lui-checkbox">
+	  <input name="type" value="dimension" class="lui-checkbox__input" type="checkbox" aria-label="Label" checked />
+	  <div class="lui-checkbox__check-wrap">
+		<span class="lui-checkbox__check"></span>
+		<span class="lui-checkbox__check-text">Dimensions</span>
+	  </div>
+	</label>
+	<label class="lui-checkbox">
+	  <input name="type" value="measure" class="lui-checkbox__input" type="checkbox" aria-label="Label" checked />
+	  <div class="lui-checkbox__check-wrap">
+		<span class="lui-checkbox__check"></span>
+		<span class="lui-checkbox__check-text">Measures</span>
+	  </div>
+	</label>
+	<label class="lui-checkbox">
+	  <input name="type" value="variable" class="lui-checkbox__input" type="checkbox" aria-label="Label" checked />
+	  <div class="lui-checkbox__check-wrap">
+		<span class="lui-checkbox__check"></span>
+		<span class="lui-checkbox__check-text">Variables</span>
+	  </div>
+	</label>
+	<select class="lui-select" name="variableSource" style="width:90px;">
+	  <option value="All" selected>All</option>
+	  <option value="App">App</option>
+	  <option value="Script">Script</option>
+	</select>
+	<div class="lui-search">
+		<span class="lui-icon  lui-icon--search  lui-search__search-icon"></span>
+		<input class="lui-search__input" maxlength="255" spellcheck="false" type="text" name="searchName" placeholder="Search Name"/>
+		<button class="lui-search__clear-button">
+		<span class="lui-icon  lui-icon--small  lui-icon--close"></span>
+		</button>
+	</div>
+	<div class="lui-search">
+		<span class="lui-icon  lui-icon--search  lui-search__search-icon"></span>
+		<input class="lui-search__input" maxlength="255" spellcheck="false" type="text" name="searchTags" placeholder="Search Tags"/>
+		<button class="lui-search__clear-button">
+		<span class="lui-icon  lui-icon--small  lui-icon--close"></span>
+		</button>
+	</div>
+	<div class="lui-buttongroup">
+		<button class="lui-button lui-buttongroup__button btnRefresh">Refresh</button>
+		<button class="lui-button lui-buttongroup__button btnSearch">Search</button>
+		<button class="lui-button lui-buttongroup__button btnClear">Clear</button>
+		<button class="lui-button btnSave">Save</button>
+		<button class="lui-button btnDelete">Delete</button>
+	</div>
+</div>
+<div class="bottom-toolbar">
+	<select class="lui-select fndrplField" name="fndrplField" style="width:250px;">
+	  <option value="definition" selected>Definition</option>
+	  <option value="label">Label</option>
+	  <option value="name">Name</option>
+	  <option value="tags">Tags</option>
+	</select>
+	<div class="lui-input-group">
+	  <input class="lui-input-group__item lui-input-group__input  lui-input txtFind"/>
+	  <button class="lui-input-group__item lui-button lui-button--info btnFind">
+		<span class="lui-button__text">Find</span>
+	  </button>
+	</div>
+	<div class="lui-input-group">
+		<input class="lui-input-group__item lui-input-group__input lui-input txtReplace"/>
+		<button class="lui-input-group__item lui-button lui-button--warning btnReplace">
+			<span class="lui-button__text">Replace</span>
+		</button>
+	</div>
+	<select class="lui-select applyField" name="fndrplField" style="width:250px;">
+		<option value="definition" selected>Definition</option>
+		<option value="description">Description</option>
+		<option value="label">Label</option>
+		<option value="tags">Tags</option>
+	</select>
+	<div class="lui-input-group">
+		<input class="lui-input-group__item lui-input-group__input lui-input apply"/>
+		<button class="lui-input-group__item lui-button lui-button--info lui-button--magenta btnSet">
+			<span class="lui-button__text">Write</span>
+		</button>
+	</div>
+</div>

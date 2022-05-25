@@ -1,0 +1,28 @@
+<div id="qWidget_WidgetEditor_HtmlEditor">
+    <div class="wiEditor_Bar" id="wiHtmlEditToolbar">
+        <button qva-activate="WidgetEditor.popUpScope('html')"><span class="fa fa-terminal" />Variables</button>
+        <button qva-activate="WidgetEditor.PopupSnippets.show('html')"><span class="fa fa-code" />Snippets</button>
+        <button qva-activate="WidgetEditor.PopupIcons.show('html')"><span class="fa fa-plus-circle" />Icons</button>
+
+        <button qva-activate="WidgetEditor.toggleHtmlEditor()" class="expandIcon" title="Toggle size of code editor"><span class="fa fa-expand" /></button>
+        <select ng-model="WidgetEditor.SelectedFontSize"
+                ng-options="item.label for item in WidgetEditor.EditorFontSizes"
+                ng-change="WidgetEditor.FontSize_OnChange()"
+                class="wui-select"
+                style="float:right;margin-right:25px;margin-top:2px;"
+                title="First click into the editor, then the dropdown works ;-)"
+
+                wi-hide-by="true"
+                target="#wiHtmlEditToolbar"
+                max-width="401"
+                ></select>
+
+    </div>
+    <div style="line-height:0px;">
+        <div class="qWidget_widgetEditor_html_bg">HTML</div>
+        <div id="htmlEditor_{{layout.qInfo.qId}}"
+             ui-ace="{theme:'idle_fingers', mode: 'html', showGutter: true, useWrapMode: false, onChange: WidgetEditor.htmlChanged, useAnnotations: false}"
+             class="ace-editor"
+             ></div>
+    </div>
+</div>

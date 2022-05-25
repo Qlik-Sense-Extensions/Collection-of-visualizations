@@ -1,0 +1,19 @@
+{
+	"name": "Utility: HelpTextPopup",
+	"description": "***Zuco note: Very good popup/modal extension tested on June 2019 p5.*** You can display this Help Text Box by clicking the question mark help icon on the sheet. 
+ 
+The Help Icon is displayed as question mark. It can be placed anywhere on the sheet and can be as small as one grid box.
+
+The Help Text Box is a popup box that overlays a portion of the screen with HTML help text content. The box can be rendered as modal or non-modal, and can be any size, up to the height and width of the window. The help text is any HTML content that can be rendered. This version adds configurable HTML sanitization in order to prevent cross-site scripting and other vulnerabilities.",
+	"type": "visualization",
+	"version": "2.0.0",
+	"icon": "extension",
+	"author": "Leslie Blumenfeld",
+	"homepage": "https://developer.qlik.com/garden/5ddcd57cf62b220018fd28dc",
+	"keywords": "qlik-sense, visualization, help-text",
+	"license": "",
+	"repository": "https://github.com/lblumenfeld/Help-Text-Popup",
+	"dependencies": {
+		"qlik-sense": ">=3.0.x"
+	}
+}

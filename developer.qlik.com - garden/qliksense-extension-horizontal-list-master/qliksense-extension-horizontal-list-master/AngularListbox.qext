@@ -1,0 +1,16 @@
+{
+	"name": "HorizontalListbox",
+	"description": "Simple horizontal listbox for Qlik Sense",
+	"type": "visualization",
+	"icon": "list",
+	"preview": "icon.png",
+	"version": "1.0.1",
+	"author": "Roy Nilsson",
+	"homepage": "https://www.miniblip.com",
+	"keywords": "qlik-sense, visualization",
+	"license": "MIT",
+	"repository": "https://github.com/royalswe/qliksense-extension-horizontal-list",
+	"dependencies": {
+		"qlik-sense": ">=3.0.x"
+	}
+}

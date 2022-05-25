@@ -1,0 +1,25 @@
+{
+    "name": "senseui-combochart",
+    "version": "1.0.0",
+    "description": "A more customizable and Mobile Friendly Combo Chart for Qlik Sense",
+    "main": "SenseUI-ComboChart.js",
+    "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-preset-es2015": "^6.24.1"
+    },
+    "scripts": {
+        "start": "npm run cssjs & npm run js",
+        "cssjs": "babel SenseUI-ComboChart-css.es6 --out-file SenseUI-ComboChart-css.js --presets=es2015",
+        "js": "babel SenseUI-ComboChart.es6 --out-file SenseUI-ComboChart.js --presets=es2015"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yianni-ververis/SenseUI-ComboChart.git"
+    },
+    "author": "yianni.ververis@qlik.com",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yianni-ververis/SenseUI-ComboChart/issues"
+    },
+    "homepage": "https://github.com/yianni-ververis/SenseUI-ComboChart#readme"
+}

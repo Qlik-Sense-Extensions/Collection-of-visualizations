@@ -1,0 +1,98 @@
+<div class="field-box">
+    <div style="overflow:hidden;height:470px;width:680px;padding-right:20px;">
+
+        <form name="WidgetPublisherForm" ng-init="WidgetPublisher.view = 'form'">
+            <div>
+                <div style="width:50%;float:left;">
+                    <div class="label wiBold">
+                        Publishing Mode:
+                    </div>
+                    <div class="value">
+                        <select ng-model="WidgetPublisher.SelectedPublishingMode"
+                                ng-options="item.label for item in WidgetPublisher.PublishingModes"
+                                class="wui-select"
+                                style="width:95%"
+                                ng-change="WidgetPublisher.PublishingMode_OnChange( WidgetPublisher.SelectedPublishingMode )"
+                                ></select>
+                    </div>
+                    <br/>
+                </div>
+                <div style="width:50%;float:left;" ng-if="WidgetPublisher.SelectedPublishingMode.value == 'update'">
+                    <div class="label wiBold">
+                        Select the qWidget you would like to update:
+                    </div>
+                    <div class="value">
+                        <select ng-model="WidgetPublisher.SelectedWidgetToUpdate"
+                                ng-options="item.name for item in WidgetPublisher.OwnWidgets | orderBy:'name'"
+                                class="wui-select"
+                                ng-if="WidgetPublisher.OwnWidgets.length > 0"
+                                style="width:100%"
+                                ng-change="WidgetPublisher.applyOwnWidget(WidgetPublisher.SelectedWidgetToUpdate);"
+                                ></select>
+                        <div ng-if="WidgetPublisher.OwnWidgets.length === 0" class="wiRed" style="margin-top:5px;"><span class="fa fa-exclamation-circle wiRed"/>You have not published any qWidgets so far.</div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+            <br clear="all"/>
+
+            <div class="label wiBold">Name of Your qWidget:</div>
+            <div class="value">
+                <input type="text" required ng-model="WidgetPublisher.Widget.name" class="wui-input" style="width:100%;">
+            </div>
+            <br/>
+
+            <div class="label wiBold">Widget Type:</div>
+            <div class="value" ng-init="WidgetPublisher.selectedCategory =  Main.SelectedOnlineRepository.categories[0]">
+                <!--ng-change="WidgetPublisher.Category_OnChanged(WidgetPublisher.selectedCategory);"-->
+                <select ng-model="WidgetPublisher.selectedCategory"
+                        ng-options="item.name for item in Main.SelectedOnlineRepository.categories"
+                        ng-change="WidgetPublisher.Category_OnChanged(WidgetPublisher.selectedCategory);"
+                        class="wui-select"
+                        style="width:100%"
+                        ></select>
+            </div>
+            <br/>
+
+            <div class="label wiBold">Description:</div>
+            <div class="value">
+                <textarea class="wui-textarea" style="height:60px;width:calc(100% - 10px);"
+                          ng-model="WidgetPublisher.Widget.description"></textarea>
+            </div>
+
+            <div class="label wiBold">Options:</div>
+            <div class="value">
+                <div style="margin-left:20px;margin-top:7px;">
+                    <label class="wui-checkboxicon" title="{{mkTitle}}">
+                        <input type="checkbox" ng-model="WidgetPublisher.Widget.is_private">
+
+                        <div class="check-wrap">
+                            <span class="check"></span>
+                            <span class="check-text" style="max-width:400px;"><b>Publish Privately</b></span>
+                        </div>
+                    </label>
+                    <div style="font-weight:normal;margin-left:30px;">If published privately, only you can later on load this qWidget from the repository.</div>
+                    <br clear="all" />
+                    <!--
+                    <label class="wui-checkboxicon" title="{{mkTitle}}">
+                        <input type="checkbox" ng-model="WidgetPublisher.includeData">
+
+                        <div class="check-wrap">
+                            <span class="check"></span>
+                            <span class="check-text" style="max-width:400px;"><b>Include Data (of this object only).</b></span>
+                        </div>
+                    </label>
+                    <div style="font-weight:normal;margin-left:30px;"><b>Recommended!</b> If you don't post the data of , the preview may not work properly.</div>
+                    -->
+                </div>
+            </div>
+            <br/>
+        </form>
+
+        <div ng-if="WidgetPublisher.isPrivate != true">
+            Your submission will not be visible to other users automatically, but after manual review.<br/>
+            Every published qWidget (regardless the privacy status) can later on be loaded from the repository.
+        </div>
+
+    </div>
+</div>

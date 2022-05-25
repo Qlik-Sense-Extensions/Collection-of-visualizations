@@ -1,0 +1,16 @@
+{
+    "name": "Image Gauge",
+    "description": "Create an image gauge",
+    "type": "visualization",
+    "version": "2.0.0",
+    "icon": "gauge-chart",
+    "preview": "preview.png",
+    "author": "msorel@acssi.fr",
+    "homepage": "http://acssi.fr",
+    "keywords": "qlik-sense, visualization, jauge",
+    "license": "",
+    "repository": "",
+    "dependencies": {
+        "qlik-sense": ">=2.1.x"
+    }
+}

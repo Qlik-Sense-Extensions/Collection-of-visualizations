@@ -1,0 +1,6 @@
+<div qv-extension style="height: 100%; position: relative; overflow: auto;" class="EMDSBookmarksObj ng-scope" onload="loadQlikBookmarks()">
+	<select id="qlikExtBookmarks" >
+		<option value="" selected disabled hidden>Choose Bookmark</option>
+		<option ng-repeat="bookmark in bookmarks.responseJSON" value="{{bookmark.app.id}}|{{bookmark.engineObjectId}}"><strong> {{bookmark.app.name}} </strong> - {{bookmark.name}} </option>
+	</select>
+</div>

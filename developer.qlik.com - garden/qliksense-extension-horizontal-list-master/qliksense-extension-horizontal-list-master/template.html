@@ -1,0 +1,10 @@
+<div qv-extension class="ext-horizontal-listbox" ng-mouseup="mouseup()" ng-mouseleave="mouseout()">
+	<div ng-if="layout.qListObject.qDimensionInfo.qFieldShowLabel">
+		<p style="{{layout.qListObject.qDimensionInfo.qFieldLabelPos}}" class="custom-label">
+			{{layout.qListObject.qDimensionInfo.qFallbackTitle}}
+		</p>
+	</div>
+	<ul class="{{locked}}" style="{{layout.vars.CustomRow}}" >
+    	<li ng-repeat="row in listRows" ng-mousedown="mousedown($event, row.qElemNumber)" ng-mouseover="mousemove($event, row.qElemNumber)" class="{{layout.vars.FieldSize}} {{row.qState}}" style="{{layout.vars.LabelAlign}}{{layout.vars.FixedWidth}}">{{row.qText}}</li>
+    </ul>
+</div>

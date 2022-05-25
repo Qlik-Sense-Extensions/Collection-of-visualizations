@@ -1,0 +1,1 @@
+define(["jquery","underscore","qvangular"],function(a,b,c){"use strict";var d=27;c.directive("wiEnterEsc",function(){return{restrict:"A",link:function(a,b,c){b.bind("keydown keypress",function(b){b.which===d&&(a.$apply(function(){a.$eval(c.ngEnterEsc)}),b.preventDefault())}),b.bind("$destroy",function(){b.off()})}}})});

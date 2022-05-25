@@ -1,0 +1,13 @@
+{
+	"name": "Selections Applier",
+	"description": "Allows you to copy a large list of values from Excel and apply these selections to a field.",
+	"type": "visualization",
+	"version": "1.0",
+	"icon": "extension",
+	"author": "Fady Heiba",
+	"preview": "FEI-SelectionsApplier.png",
+	"keywords": "qlik-sense, visualization",
+	"dependencies": {
+		"qlik-sense": ">=2.2.x"
+	}
+}

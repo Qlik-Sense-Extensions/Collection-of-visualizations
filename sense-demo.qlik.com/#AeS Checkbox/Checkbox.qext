@@ -1,0 +1,8 @@
+{
+    "name": "#AeS Checkbox",
+    "description": "Set a variable in Qlik Sense to true/false using checkbox.",
+    "type": "visualization",
+    "preview": "extn.png",
+    "version": 1,
+    "author": "Assure eServices Inc.,"
+}

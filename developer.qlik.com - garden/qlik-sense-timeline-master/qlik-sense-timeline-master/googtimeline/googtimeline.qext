@@ -1,0 +1,9 @@
+{
+	"name" : "Google Timeline",
+	"description" : "Google Timeline",
+	"icon" : "bar-chart-horizontal",
+	"type" : "visualization",
+	"version": "1.8",
+	"preview" : "googtimeline.png",
+	"author": "Florian Käfert"
+}

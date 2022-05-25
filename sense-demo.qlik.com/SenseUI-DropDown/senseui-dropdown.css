@@ -1,0 +1,62 @@
+.senseui-dropdown {
+	height: 100%; 
+	position: relative; 
+	overflow: auto;
+}
+.dropdown-item  {
+  display: block;
+}
+#dropdownP {
+  padding: 5px;
+}
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+    /*min-width: 180px;*/
+    z-index: 9999999;
+}
+/* Dropdown API hack for now*/
+.qv-object-senseui-dropdown {
+	overflow: visible !important;
+}
+
+.btn-default.dropdown-toggle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+/*
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.3em;
+    vertical-align: middle;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-left: 0.3em solid transparent;
+}*/
+.dropdown-toggle:before {
+  position: absolute;
+  top: -7px;
+  left: 9px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+
+.dropdown-toggle:after {
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+  content: '';
+}

@@ -1,0 +1,27 @@
+{
+  "name": "qs-variable-drill",
+  "version": "0.1.0",
+  "description": "Qlik Sense extension that increments / decrements variable value based on an integer range or index of a list of values",
+  "scripts": {
+    "build": "qext-scripts",
+    "watch": "qext-scripts -w"
+  },
+  "keywords": [],
+  "author": "Chris Braley",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "qext-scripts": "^1.0.1",
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjbraley/qs-variable-drill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cjbraley/qs-variable-drill/issues"
+  },
+  "homepage": "https://github.com/cjbraley/qs-variable-drill#readme"
+}

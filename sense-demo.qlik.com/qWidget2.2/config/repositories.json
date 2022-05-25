@@ -1,0 +1,18 @@
+{
+    "repositories": [
+        {
+            "name": "Local Repository",
+            "type": "local",
+            "repUrl": "/extensions/qwidget/rep/widgets.json",
+            "allowsPublishing": false,
+            "main": false
+        },
+        {
+            "name": "Limited Public Beta Repository (ONLINE)",
+            "type": "ws",
+            "repUrl": "http://qwidget.mod.bz/api/1.0/",
+            "allowsPublishing": true,
+            "main": true
+        }
+    ]
+}

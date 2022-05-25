@@ -1,0 +1,19 @@
+.applySelections {
+    display: inline-block;
+    padding: 0px 0px;
+    margin-bottom: 0;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: normal;
+    vertical-align: middle;
+    width: calc(100%);
+    height: calc(100%);
+    color: #fff;
+    background-color: #78AC2A;
+    border-color: #398439
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Container: QS Side Menu",
+    "description": "a filters menu ** Zuco Note ** Good, working, filter pane only container that can store up to 4 filter pane GROUPS (many filters) in a side panel.",
+    "icon": "",
+    "type": "visualization",
+    "version": "0.0.1",
+    "preview": "qssidemenu.png",
+    "author": "Loris Lombardo",
+    "src": "/extensions/qssidemenu/qssidemenu.png",
+    "homepage": "http://branch.qlik.com/#!/project/59a7cf3c074edfb580b4b968",
+    "repository": "https://github.com/LorisLombardo87/qs-side-menu"
+}

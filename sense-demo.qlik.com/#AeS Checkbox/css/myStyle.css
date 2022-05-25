@@ -1,0 +1,40 @@
+/* .qv-object-onoffswitch myClass1 {
+	 color: pink;
+  font-size: 14px;
+}
+.myClass{
+	 color: green;
+  font-size: 20px;
+} */	
+.AeSonoffswitchCheckbox {
+    position: relative; width: 60px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.AeSonoffswitchCheckbox-checkbox {
+    display: none;
+}
+.AeSonoffswitchCheckbox-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 30px; padding: 0; line-height: 30px;
+    border: 2px solid #CCCCCC; border-radius: 30px;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease-in;
+}
+.AeSonoffswitchCheckbox-label:before {
+    content: "";
+    display: block; width: 30px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 27px;
+    border: 2px solid #CCCCCC; border-radius: 30px;
+    transition: all 0.3s ease-in 0s; 
+}
+.AeSonoffswitchCheckbox-checkbox:checked + .AeSonoffswitchCheckbox-label {
+    background-color: #49E845;
+}
+.AeSonoffswitchCheckbox-checkbox:checked + .AeSonoffswitchCheckbox-label, .AeSonoffswitchCheckbox-checkbox:checked + .AeSonoffswitchCheckbox-label:before {
+   border-color: #49E845;
+}
+.AeSonoffswitchCheckbox-checkbox:checked + .AeSonoffswitchCheckbox-label:before {
+    right: 0px; 
+}

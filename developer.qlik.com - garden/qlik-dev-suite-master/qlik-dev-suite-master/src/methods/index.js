@@ -1,0 +1,7 @@
+export { default as beforeDestroy } from "./beforeDestroy"
+export { default as controller } from "./controller"
+export { default as definition } from "./definition"
+export { default as initialProperties } from "./initial-properties"
+export { default as paint } from "./paint"
+export { default as resize } from "./resize"
+export { default as template } from "./template.html"

@@ -1,0 +1,139 @@
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .qv-object-nav.inline {
+	display: none;
+}
+
+
+
+article {
+    z-index: 2;
+}
+
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-div {
+	width: calc(100% - 2px);
+	height: calc(100% - 2px);
+	border-radius: 3px;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-div {
+	display: table;
+	table-layout: fixed;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-div-text {
+	display: table-cell;
+	overflow: hidden;
+    	text-overflow: ellipsis;
+	height: 100%;
+	width: 100%;
+	padding: 4px 8px;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-div-text div {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('%%_IMAGE_%%');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-div-text div.left-top {
+	background-position: left top;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-div-text div.left-middle {
+	background-position: left center;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-div-text div.left-bottom {
+	background-position: left bottom;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-div-text div.center-top {
+	background-position: center top;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-div-text div.center-middle {
+	background-position: center center;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-div-text div.center-bottom {
+	background-position: center bottom;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-div-text div.right-top {
+	background-position: right top;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-div-text div.right-middle {
+	background-position: right center;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-div-text div.right-bottom {
+	background-position: right bottom;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-span {
+	display: none;  
+	padding: 4px 8px;
+	border-radius: 3px;
+	position: fixed;
+	white-space: pre-wrap;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-span img {
+	display: block;
+	margin: 0;
+	padding: 4px 0;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-span.eTooltip-span-top::after {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	width: 0;
+	border-color: %%_TOOLTIP_BACKGROUND_COLOR_%% transparent transparent transparent;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-span.eTooltip-span-bottom::after {
+	content: " ";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	width: 0;
+	border-color: transparent transparent %%_TOOLTIP_BACKGROUND_COLOR_%% transparent;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-span.eTooltip-span-right::after {
+	content: " ";
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	height: 0;
+	border-color: transparent %%_TOOLTIP_BACKGROUND_COLOR_%% transparent transparent;
+}
+
+article#%%_ARTICLE_ID_%%.qv-object-EasyTooltip .eTooltip-span.eTooltip-span-left::after {
+	content: " ";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	height: 0;
+	border-color: transparent transparent transparent %%_TOOLTIP_BACKGROUND_COLOR_%%;
+}

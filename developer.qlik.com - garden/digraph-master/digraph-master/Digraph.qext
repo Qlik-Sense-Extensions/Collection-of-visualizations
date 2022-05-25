@@ -1,0 +1,16 @@
+{
+	"name": "Digraph",
+	"description": "Directed Graphs",
+	"icon": "share",
+	"type": "visualization",
+	"version": "1.0.0",
+	"author": "Gerrit Bury",
+	"homepage": "http://www.inform-bi.com",
+	"keywords": "qlik-sense, visualization, directed, graph, graphviz",
+	"preview": "preview.png",
+	"license": "MIT License",
+	"repository": "",
+	"dependencies": {
+		"qlik-sense": ">=3.0.x"
+	}
+}

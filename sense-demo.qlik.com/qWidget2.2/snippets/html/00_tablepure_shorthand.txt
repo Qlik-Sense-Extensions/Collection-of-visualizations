@@ -1,0 +1,18 @@
+<wi-bootstrap>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th ng-repeat="header in wi.colHeaders()">
+                    {{header.qFallbackTitle}}
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in wi.rows()">
+                <td ng-repeat="col in row">
+                    {{col.qText}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</wi-bootstrap>

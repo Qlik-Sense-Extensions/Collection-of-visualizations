@@ -1,0 +1,82 @@
+<!-- Toolbar -->
+<div class="wiEditor_Container" ng-if="Main.isEditMode() === true">
+    <div class="wiEditor_Toolbar">
+
+        <!-- Create / Load Switch -->
+        <div class="wiEditor_ColLeft">
+            <div class="wui-buttongroup">
+
+                <!-- Widget Editor -->
+                <button class="wui-toolbar-button"
+                        ng-class="(Main.editMode=='create') ? 'wui-active' : ''"
+                        qva-activate="Main.switchEditMode('create')">Widget Editor</button>
+
+                <!-- Load Widget -->
+                <!--<button class="wui-button" ng-class="(Main.editMode=='load') ? 'wui-active' : ''" qva-activate="Main.switchEditMode('load')">Load Widget<span class="badge" ng-if="News.NewWidgets > 0" title="{{News.NewWidgets}} new qWidgets in the last 7 days!">{{News.NewWidgets}}</span></span></button>-->
+                <button class="wui-toolbar-button"
+                        ng-class="(Main.editMode=='load') ? 'wui-active' : ''"
+                        qva-activate="Main.switchEditMode('load')"
+                        >Load Widget</button>
+
+                <!-- Publish Widget -->
+                <button
+                        class="wui-toolbar-button"
+                        ng-class="(Main.editMode!='create') ? 'wui-disabled' : ''"
+                        qva-activate="WidgetPublisher.show()"
+                        ng-disabled="(Main.editMode!='create')"
+                        title="Publish to qWidget repository in the cloud."
+                        >Publish to Cloud</button>
+            </div>
+        </div>
+
+        <!-- Actions Menu -->
+        <div class="wiEditor_ColRight">
+            <div class="wui-buttongroup" style="float:right;">
+
+                <!-- Export -->
+                <!--
+                <button
+                        class="wui-toolbar-button"
+                        ng-class="(Main.editMode!='create') ? 'wui-disabled' : ''"
+                        ng-disabled="(Main.editMode!='create')"
+                        qva-activate="WidgetEditor.PopupExport.show()"
+                        title="Export current visualization as .zip-file."
+
+                        wi-hide-by="true"
+                        target=".qWidget-Editor"
+                        max-width="720"
+                        ><span class="fa fa-arrow-down" style="margin-right:5px;color:#ccc;" />Save to Zip
+                </button>
+                -->
+
+                <!-- About -->
+                <button class="wui-toolbar-button"
+                        qva-activate="WorkingArea.About.show();"
+                        title="About and Third-Party Licenses"
+                        >
+                    <span class="fa fa-info" style="color:#ccc;margin-right:5px;" />
+                    About
+                </button>
+
+                <!-- Help Icon -->
+                <button class="wui-toolbar-button"
+                        qva-activate="WidgetEditor.PopupHelp.show()"
+                        title="Help"><span class="fa fa-question" style="color:#ccc;margin-right:5px;" />Help
+                </button>
+
+                <!-- Close Button -->
+                <!--ng-if="Main.editMode=='load'"-->
+                <button class="wui-toolbar-button"
+                        qva-activate="Main.closeEditor()"
+
+                        title="Close qWidget"><span class="fa fa-times" style="color:#ccc;margin-right:5px;" />Close qWidget</button>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <!--<wi-about ng-if="WorkingArea.About.visible" on-close="WorkingArea.About.hide"></wi-about>-->
+
+</div>

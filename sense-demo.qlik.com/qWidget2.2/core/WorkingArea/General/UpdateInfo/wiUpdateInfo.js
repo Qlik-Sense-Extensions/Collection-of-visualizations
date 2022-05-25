@@ -1,0 +1,1 @@
+define(["ng!$http","text!./wiUpdateInfo.ng.html"],function(a,b){"use strict";return{template:b,scope:!0,controller:["$scope",function(a){a.onButtonClose=function(){a.onClose?a.$eval(a.onClose)():a.closeView()},a.closeView=function(){a.destroyComponent()}}]}});

@@ -1,0 +1,10 @@
+{
+    "name": "Filter: SenseUI-Filter",
+    "description": "Simple Filter with totals",
+    "icon": "text-image",
+    "type": "visualization",
+    "version": "1.0",
+    "preview": "text-image",
+    "homepage": "http://branch.qlik.com/#!/project/5702b378bf1c421463412c90",
+    "author": "Yianni Ververis"
+}

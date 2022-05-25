@@ -1,0 +1,13 @@
+{
+    "name": "Default Selection",
+    "description": "Makes a selection of the current username automatically.",
+    "type": "visualization",
+    "version": "1.0",
+    "icon": "extension",
+    "author": "Fady Heiba",
+    "preview": "FEI-DefaultSelection.png",
+    "keywords": "qlik-sense, visualization",
+    "dependencies": {
+        "qlik-sense": ">=2.2.x"
+    }
+}

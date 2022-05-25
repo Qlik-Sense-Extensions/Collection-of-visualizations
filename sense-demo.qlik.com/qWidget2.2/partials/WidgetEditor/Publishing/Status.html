@@ -1,0 +1,14 @@
+<div ng-if="WidgetPublisher.view == 'confirmation'"
+	 style="margin-left:20px;margin-top:20px;">
+	Thanks for contributing
+</div>
+<div ng-if="WidgetPublisher.view == 'error'"
+	 style="margin-left:20px;margin-top:20px;">
+	<h2>An error has occurred:</h2>
+
+	<div class="wiRed" ng-if="WidgetPublisher.error && WidgetPublisher.error.errorDesc" ng-bind="WidgetPublisher.error.errorDesc"/>
+	<pre ng-if="WidgetPublisher.error && WidgetPublisher.error.error" ng-bind="WidgetPublisher.error.error | json"/>
+	<br/><br/>
+	<a href="javascript:void(0);" qva-activate="WidgetPublisher.clearError();">Go back</a>
+</div>
+

@@ -1,0 +1,1 @@
+define(["qvangular"],function(a){"use strict";a.directive("embedSrc",function(){return{restrict:"A",link:function(a,b,c){a.$watch(function(){return c.embedSrc},function(){b.attr("src",c.embedSrc)})}}})});

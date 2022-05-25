@@ -1,0 +1,9 @@
+{
+    "name": "WCAG",
+    "description": "WCAG compliance",
+    "preview": "wcag.png",
+    "type": "visualization",
+    "icon": "list",
+    "version": "1.0",
+    "author": "Ivan Felipe ife@qlik.com QlikTech Iberia,s.l."
+}

@@ -1,0 +1,86 @@
+#menu {
+	display: block;
+	margin: 0 auto;
+	overflow: visible; /* uncomment this if you are using bouncing animations*/
+    border-radius: 50%;
+    border: 2px solid #6a7f86;
+    box-shadow: 0px 0px 2px black;
+    margin: 5px;
+}
+
+
+
+
+a {
+	outline: none;
+}
+
+
+.item .sector {
+	fill: #ddd;
+	stroke: #111;
+	stroke-width: 2%;
+	pointer-events: hover;
+	transform: scale 99%;
+}
+
+.item .sector ~ path {
+	fill: #ccc;
+	stroke: transparent;
+}
+
+.item .sector ~  rect {
+	fill: #ccc;
+	stroke: transparent;
+}
+
+.item .sector ~ circle {
+	fill: #ccc;
+	stroke: transparent;
+}
+
+.item:hover .sector.active{
+	stroke-width:3%;
+	fill: #95b5bf;
+}
+
+.item:hover path,.item:hover rect,.item:hover circle{
+
+transform: translate3d(0px, -5px, 0px);
+
+}
+
+
+
+.item:hover .sector{
+transform: translate3d(0px, 0px, 0px);
+
+}
+
+.item:hover .sector{
+	stroke-width:3%;
+	fill: #eee;
+}
+
+
+.item .sector.active {
+	fill: #0ad;
+	opacity:1;
+}
+
+
+.item .sector.active ~ path {
+	fill: black;
+}
+
+.item .sector.active ~ rect {
+	fill: black;
+}
+
+.item .sector.active ~ circle {
+	fill: black;
+}
+
+symbol {
+	overflow: visible; /* KEEP THIS so that text will not get cut off it it is wider than the icon width */
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Variance Waterfall",
+  "description": "A Waterfall chart for displaying variance between two metrics, walking through a set of dimension values.",
+  "type": "visualization",
+  "version": "1.1.1",
+  "author": "Steven Pressland, Principal Solution Architect, Qlik",
+  "icon":"waterfallchart",
+  "preview": "static/logo_square_140.png"
+}

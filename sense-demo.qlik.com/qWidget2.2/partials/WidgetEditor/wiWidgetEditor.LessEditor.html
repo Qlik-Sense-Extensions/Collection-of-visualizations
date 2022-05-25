@@ -1,0 +1,12 @@
+<div id="qWidget_WidgetEditor_LessEditor">
+    <div class="wiEditor_Bar">
+        <button qva-activate="WidgetEditor.popUpScope('css')"><span class="fa fa-terminal" />Variables</button>
+        <button qva-activate="WidgetEditor.toggleLessEditor()" class="expandIcon" title="Toggle size of code editor"><span class="fa fa-expand" /></button>
+    </div>
+    <div style="line-height:0px;">
+        <div class="qWidget_widgetEditor_css_bg">CSS/Less</div>
+        <div id="lessEditor_{{layout.qInfo.qId}}"
+             class="ace-editor"
+             ui-ace="{theme:'idle_fingers', mode: 'css', showGutter: true, useWrapMode: false, onChange: WidgetEditor.lessChanged, useAnnotations: false}"></div>
+    </div>
+</div>

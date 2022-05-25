@@ -1,0 +1,49 @@
+<div>
+    <div class="cssmenu">
+        <ul>
+            <li ng-class="{active: layout.property1 == 'revenue' || layout.property1.length === 0}"><a href='javascript:void(0);' qva-activate="layout.property1 = 'revenue'"><span>Revenue</span></a></li>
+            <li ng-class="{active: layout.property1 == 'opencases'}"><a href='javascript:void(0);' qva-activate="layout.property1 = 'opencases'"><span>Open Cases</span></a></li>
+            <li ng-class="{active: layout.property1 == 'systemstatus'}"><a href='javascript:void(0);' qva-activate="layout.property1 = 'systemstatus'"><span>System Status</span></a></li>
+            <li ng-class="{active: layout.property1 == 'corework'}" class='last'><a href='javascript:void(0);' qva-activate="layout.property1 = 'corework'"><span>Core Work</span></a></li>
+        </ul>
+    </div>
+
+    <div class="cssmenutext">
+        <div ng-show="layout.property1 === 'revenue' || layout.property1.length === 0">
+            <h1>Revenue</h1>
+            <div>
+                <div class="ico">
+                    <i class="fa fa-usd fa-5x" style="color:#404040"></i>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus, tellus a consectetur congue, ante mauris ullamcorper nibh, quis rhoncus est leo non turpis. Ut rutrum in ligula ultrices aliquet. Vestibulum nec consectetur tellus. Curabitur semper eget metus ac faucibus.<br/>Curabitur semper eget metus ac faucibus. Vestibulum nec consectetur tellus. Curabitur semper eget metus ac faucibus.</div>
+            </div>
+        </div>
+        <div ng-show="layout.property1 === 'opencases'">
+            <h1>Open Cases</h1>
+            <div>
+                <div class="ico">
+                    <i class="fa fa-bullhorn fa-5x" style="color:#404040"></i>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus, tellus a consectetur congue, ante mauris ullamcorper nibh, quis rhoncus est leo non turpis. Ut rutrum in ligula ultrices aliquet. Vestibulum nec consectetur tellus. Curabitur semper eget metus ac faucibus.<br/>Curabitur semper eget metus ac faucibus. Vestibulum nec consectetur tellus. Curabitur semper eget metus ac faucibus.</div>
+            </div>
+        </div>
+        <div ng-show="layout.property1 === 'systemstatus'">
+            <h1>Open Cases</h1>
+            <div>
+                <div class="ico">
+                    <i class="fa fa-clock-o fa-5x" style="color:#404040"></i>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus, tellus a consectetur congue, ante mauris ullamcorper nibh, quis rhoncus est leo non turpis. Ut rutrum in ligula ultrices aliquet. Vestibulum nec consectetur tellus. Curabitur semper eget metus ac faucibus.<br/>Curabitur semper eget metus ac faucibus. Vestibulum nec consectetur tellus. Curabitur semper eget metus ac faucibus.</div>
+            </div>
+        </div>
+        <div ng-show="layout.property1 === 'corework'">
+            <h1>Open Cases</h1>
+            <div>
+                <div class="ico">
+                    <i class="fa fa-calendar fa-5x" style="color:#404040"></i>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus, tellus a consectetur congue, ante mauris ullamcorper nibh, quis rhoncus est leo non turpis. Ut rutrum in ligula ultrices aliquet. Vestibulum nec consectetur tellus. Curabitur semper eget metus ac faucibus.<br/>Curabitur semper eget metus ac faucibus. Vestibulum nec consectetur tellus. Curabitur semper eget metus ac faucibus.</div>
+            </div>
+        </div>
+    </div>
+</div>

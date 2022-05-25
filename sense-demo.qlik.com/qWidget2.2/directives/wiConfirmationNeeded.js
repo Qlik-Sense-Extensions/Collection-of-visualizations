@@ -1,0 +1,1 @@
+define(["jquery","qvangular","./../modules/utils/wiUtils","qlik"],function(a,b){"use strict";b.directive("wiConfirmationNeeded",function(){return{priority:1,terminal:!0,link:function(a,b,c){var d=c.confirmationNeeded||"Are you sure?",e=c.ngClick;b.bind("click",function(){window.confirm(d)&&a.$eval(e)})}}})});

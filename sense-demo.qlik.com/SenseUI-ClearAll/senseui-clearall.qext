@@ -1,0 +1,9 @@
+{
+    "name": "SenseUI-ClearAll",
+    "description": "A Simple Clear All Button",
+    "icon": "text-image",
+    "type": "visualization",
+    "version": "1.0",
+    "preview": "text-image",
+    "author": "Yianni Ververis"
+}

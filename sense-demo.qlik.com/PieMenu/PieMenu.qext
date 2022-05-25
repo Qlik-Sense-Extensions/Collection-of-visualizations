@@ -1,0 +1,15 @@
+{
+    "name": "PieMenu",
+    "description": "Submits reviewed patients",
+    "type": "visualization",
+    "version": "0.0.1",
+    "icon": "extension",
+    "author": "Zech Mysiuk",
+    "homepage": "",
+    "keywords": "qlik-sense, visualization",
+    "license": "",
+    "repository": "",
+    "dependencies": {
+        "qlik-sense": ">=3.0.x"
+    }
+}

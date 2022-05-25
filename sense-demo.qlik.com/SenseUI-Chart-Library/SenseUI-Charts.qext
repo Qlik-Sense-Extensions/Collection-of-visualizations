@@ -1,0 +1,15 @@
+{
+    "name": "SenseUI-Chart-Library",
+    "description": "Qlik Sense Extensions Library",
+    "type": "visualization",
+    "version": "1.0.0",
+    "icon": "bar-chart-horizontal",
+    "author": "yianni.ververis@qlik.com",
+    "homepage": "",
+    "keywords": "qlik-sense, visualization",
+    "license": "MIT",
+    "repository": "",
+    "dependencies": {
+        "qlik-sense": ">=3.2.x"
+    }
+}

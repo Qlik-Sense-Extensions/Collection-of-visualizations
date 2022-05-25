@@ -1,0 +1,136 @@
+/*
+ 	Copyright 2013 Uniclau S.L. (www.uniclau.com)
+ 	
+  	This file is part of jbPivot.
+
+    jbPivot is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    jbPivot is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with jbPivot.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/*body
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}*/
+
+label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+
+}
+
+
+
+input[type=radio],
+input[type=checkbox] {
+	display: none;
+	
+}
+
+
+label.stateS:before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color:rgb(80,198,80);
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+label:before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #aaa;
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.radio label:before {
+	border-radius: 8px;
+}
+.checkbox label {
+	margin-bottom: 10px;
+}
+.checkbox label:before {
+    border-radius: 3px;
+}
+
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: rgb(80,198,80);
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+input[type=checkbox]:checked + label:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 15px;
+	color: #f3f3f3;
+	text-align: center;
+    line-height: 15px;
+}
+
+
+.listbox {
+position:absolute;
+overflow:auto !important;
+}
+
+.listbox p{
+list-style:none;
+cursor:pointer;
+
+}
+
+.listbox p{
+    display: block;
+    text-decoration: none;
+    
+    padding:8px 0;
+    
+}
+
+
+.listbox p.stateS {
+background:rgb(80,198,80);
+box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+color:#FFFFFF !important;
+}
+.listbox p.stateA{
+	background-image: none;
+	background-color: #ddd;
+	color: #000;
+}
+.listbox p.stateA, .listbox p.stateS{
+border-right:#FFFFFF solid 1px;border-bottom:#CCCCCC 1px solid !important;
+}
+.listbox p.stateO{border-right:#CCCCCC solid 1px;
+}
+/* Hover state */
+
+.listbox p:hover{
+    color: grey;
+}

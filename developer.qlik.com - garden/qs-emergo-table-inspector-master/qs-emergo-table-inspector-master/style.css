@@ -1,0 +1,67 @@
+/**
+ * E-mergo Table Inspector Styles
+ *
+ * @package E-mergo Tools Bundle
+ */
+
+.qs-emergo-table-inspector,
+.qs-emergo-table-inspector .object-container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.qs-emergo-table-inspector .inspector-loading {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.qs-emergo-table-inspector .modal-loader {
+	height: 38px;
+	width: 38px;
+	display: inline-block;
+}
+
+.qs-emergo-table-inspector.loading .inspector-loading ~ div,
+.qs-emergo-table-inspector:not(.loading) .inspector-loading,
+.qs-emergo-table-inspector.table-selected > .requirements-wrapper,
+.qs-emergo-table-inspector:not(.table-selected) .object-container {
+	display: none;
+}
+
+.qs-emergo-table-inspector .button {
+	height: 32px;
+	width: 250px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.qv-layout-small .qs-emergo-table-inspector .button,
+.qv-layout-xsmall .qs-emergo-table-inspector .button,
+.qv-layout-spark .qs-emergo-table-inspector .button {
+	height: 28px;
+	width: 150px;
+}
+
+/* Card-based themes */
+
+.qv-client.qv-card #qv-stage-container #grid .qv-object-qs-emergo-table-inspector .qv-object-header.thin,
+.touch-off .qv-client.qv-card #qv-stage-container #grid .qv-object-qs-emergo-table-inspector .qv-object-header.thin {
+	height: 0px !important;
+	border: 0px;
+}
+
+.qv-client.qv-card #qv-stage-container #grid .qv-object-qs-emergo-table-inspector .qv-inner-object {
+	padding: 0px;
+}
+
+.qv-client.qv-card #qv-stage-container #grid .qv-object-qs-emergo-table-inspector .qv-object-wrapper .qv-object {
+	border: 0px;
+}

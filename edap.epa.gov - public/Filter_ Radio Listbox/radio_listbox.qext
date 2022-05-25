@@ -1,0 +1,11 @@
+{
+    "name": "Filter: Radio Listbox",
+    "description": "Listbox Extension",
+    "icon": "list",
+    "type": "visualization",
+    "version": 1.1,
+    "preview": "listbox",
+    "homepage": "",
+    "author": "",
+    "repository": "https://github.com/mihirmullick/qliksenselistbox"
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Advanced-KPI",
+    "type": "visualization",
+    "description": "Advanced-KPI is about creating a smart KPI object that fits to 90% of the needs of Qlik Sense users.\nVersion: local-dev",
+    "version": "local-dev",
+    "icon": "kpi",
+    "preview": "advanced-kpi.png",
+    "keywords": "qlik-sense, visualization, kpi",
+    "author": "Dennis Jaskowiak",
+    "homepage": "",
+    "license": "MIT",
+    "repository": "https://github.com/djaskowiak/advanced-kpi",
+    "dependencies": {
+        "qlik-sense": ">=5.5.x"
+    }
+}

@@ -1,0 +1,80 @@
+<qv-modal-dialog
+        id="qWidget_WidgetEditor_PopupIcons"
+        qv-cancel="closeView()">
+    <header class="dm-header">
+        Insert an Icon
+    </header>
+    <main class="dm-main">
+        <div style="margin-bottom:5px;background-color:#fff;">
+            <div class="Header">
+                <div class="SearchBoxContainer">
+                    <div class="label">
+                        <label>Search: </label>
+                    </div>
+                    <div class="value">
+                        <input type="text" ng-model="searchTerm.$"
+                               class="wui-input SearchBox">
+                    </div>
+                </div>
+                <div>
+                    <div class="IconPickerContainer">
+                        <div class="label">Insert Color:</div>
+                        <div class="value" style="margin-top:5px;">
+                            <ng-color-picker selected='iconColor'></ng-color-picker>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="IconSizeDropdownContainer">
+                        <div class="label">
+                            <label>Insert Size: </label>
+                        </div>
+                        <div class="value">
+                            <select class="wui-select"
+                                    ng-model="iconSize"
+                                    ng-options="icon.value as icon.label for icon in iconSizes"></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br clear="all"/>
+
+            <div style="overflow:auto;height:350px;width:100%;">
+                <br clear="all"/>
+
+                <wi-spinner ng-if="loading == true"></wi-spinner>
+
+                <div ng-repeat="ico in icons |filter:searchTerm"
+                     class="IconContainer">
+                    <div class="Icon"
+                         ng-class="{enlarged: hover}"
+                         ng-mouseover="hover = true"
+                         ng-mouseleave="hover = false"
+                         qva-activate="insert('{{ico.id}}')"
+                            >
+                        <i class="fa fa-{{ico.id}}" style="color:{{WidgetEditor.PopupIcons.iconColor}}"></i>
+                    </div>
+                </div>
+                <div ng-if="!(icons | filter:searchTerm).length &&
+                            loading == false">
+                    No icons found for "{{searchTerm.$}}".
+                </div>
+
+
+            </div>
+
+            <br clear="all"/>
+
+            <!-- Icon Count -->
+            <!-- Todo: (B) - Better Style -->
+            <div class="widgetEditor_IconCount">
+                {{(icons | filter:searchTerm).length}} Icons
+            </div>
+
+            <br clear="all"/>
+        </div>
+    </main>
+    <footer class="dm-footer">
+        <button class="wui-button" name="cancel" ng-click="closeView()">Close</button>
+    </footer>
+</qv-modal-dialog>

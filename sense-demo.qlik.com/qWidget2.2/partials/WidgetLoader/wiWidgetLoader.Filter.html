@@ -1,0 +1,50 @@
+<div class="qWidget_widgetLoader_ListFilterContainer" id="qWidget_ListFilterContainer">
+	<div style="float:left;display:inline-block">
+
+		<div style="float:left;display:inline-block;margin-top:5px;padding-right:3px;">
+			Filter:
+		</div>
+
+		<!-- Filter Group -->
+		<div class="wui-buttongroup">
+
+			<!-- Filter Input -->
+			<input type="text" ng-model="WidgetLoader.textFilter" class="wui-input wui-button" style="width:120px;" />
+
+			<!-- Filter: Private Only -->
+			<button class="wui-button"
+					title="Filter to only private objects"
+					ng-if="Main.SelectedRepository.type === 'ws'"
+					qva-activate="WidgetLoader.toggleFilter_Private();">
+				<span class="fa fa-filter"
+					  ng-class="WidgetLoader.PrivateOnly === true ? 'wiRed' : ''"></span>
+			</button>
+		</div>
+	</div>
+	<div style="float:left;line-height:30px;padding-left:5px;">{{(WidgetLoader.WidgetList | filter:WidgetLoader.filter | filter:WidgetLoader.privateFilter).length}} {{(WidgetLoader.WidgetList | filter:WidgetLoader.filter | filter:WidgetLoader.privateFilter).length > 1 ? 'qWidgets' : 'qWidget' }}</div>
+
+	<div style="float:right;text-align:right;"
+		 ng-if="Main.SelectedRepository.type === 'ws'">
+
+		<!-- Sorting -->
+		<div class="wui-buttongroup"
+			 ng-init="WidgetLoader.SortBy = WidgetLoader.SortOptions[0]"
+			 wi-hide-by="true"
+			 target="#qWidget_ListFilterContainer"
+			 max-width="440">
+
+			<!-- Sort Button -->
+			<button class="wui-button asc-desc"
+					qva-activate="WidgetLoader.toggleSortOrder()"
+					data-icon="{{WidgetLoader.SortOrder}}"
+					title="Sort direction"></button>
+
+			<!-- Sort By -->
+			<select ng-model="WidgetLoader.SortBy"
+					ng-options="item.label for item in WidgetLoader.SortOptions"
+					class="wui-button wui-select"
+					style="width:120px;"
+					></select>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,9 @@
+{
+    "name": "Simple KPI",
+    "description": "Simple KPI",
+    "preview": "preview.png",
+    "icon": "kpi",
+    "type": "visualization",
+    "version": "1.1.1",
+    "author": "Alexander Nerush"
+}

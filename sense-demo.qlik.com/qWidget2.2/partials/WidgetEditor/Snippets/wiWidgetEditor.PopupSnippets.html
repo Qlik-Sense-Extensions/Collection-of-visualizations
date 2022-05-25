@@ -1,0 +1,69 @@
+<qv-modal-dialog
+
+        qv-id="wiWidgetEditor_PopupSnippets"
+        qv-cancel="closeView();">
+    <header class="dm-header">
+        Insert Code Snippets <span style="font-weight:normal;font-size:smaller;">({{(snippets |filter: filterQuery).length}})</span>
+
+        <div ng-if="loading === false"
+             class="Info">
+            {{loadedFrom}}
+            <!--<div ng-if="Main.MainRepository.isOnline === false">-->
+            <!--The main repository is not online ...-->
+            <!--</div>-->
+        </div>
+
+        <div class="Search">
+            <input
+                    type="text"
+                    ng-model="filterQuery"
+                    class="wui-input"
+                    placeholder="Search ..."
+                    wi-delayed-keyup="true"
+                    wi-delayed-keyup-event="trackSearch"/>
+        </div>
+
+
+    </header>
+    <main class="dm-main MainContainer">
+
+
+        <div class="TableContainer"
+             wi-enter-esc="WidgetEditor.PopupSnippets.hide();">
+
+            <wi-spinner ng-if="loading === true"></wi-spinner>
+
+            <table class="wiTable Table"
+                   ng-if="loading === false">
+                <thead>
+                <tr>
+                    <th>Nr.</th>
+                    <th style="width:30%;">Name</th>
+                    <th style="width:50%;">Description</th>
+                    <th style="width:20%;">Author</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="snippet in snippets | filter: filterQuery"
+                    qva-activate="insert(snippet)"
+                        class="selectable">
+
+                    <td style="text-align:center;">{{$index + 1}}</td>
+                    <td qve-highlight text="{{ snippet.name }}" query="filterQuery" ng-bind="snippet.name" />
+                    <td qve-highlight text="{{ snippet.description }}" query="filterQuery" ng-bind="snippet.description" />
+                    <td qve-highlight text="{{ snippet.author }}" query="filterQuery" ng-bind="snippet.author" />
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div ng-if="loading === false"
+             style="margin-top:20px;">
+            You are searching for specific snippets and cannot find it here?<br/>
+            Please also have a look at the section "Load Widget" with a growing collection of full qWidgets covering
+            many examples!
+        </div>
+    </main>
+    <footer class="dm-footer">
+        <button class="wui-button" name="cancel" qva-activate="closeView();">Close</button>
+    </footer>
+</qv-modal-dialog>

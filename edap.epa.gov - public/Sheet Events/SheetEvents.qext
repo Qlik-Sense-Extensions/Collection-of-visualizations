@@ -1,0 +1,16 @@
+{
+    "name": "Sheet Events",
+    "description": "Sense Sheet Events triggered on open.",
+    "icon": "extension",
+    "type": "visualization",
+    "version": "0.0.1",
+    "preview": "SheetEvents.png",
+    "author": "Ivan Felipe",
+    "license": "MIT",
+    "homepage": "http://github.com/iviasensio/SheetEvents",
+    "keywords": "qlik-sense, visualization",
+    "repository": "https://github.com/iviasensio/SheetEvents",
+    "dependencies": {
+        "qlik-sense": ">=2.1.1"
+    }
+}

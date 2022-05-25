@@ -1,0 +1,9 @@
+{
+    "name": "MapLarge Config",
+    "description": "MapLarge - Configuration",
+    "icon": "extension",
+    "type": "visualization",
+    "version": "1.0",
+    "preview": "MaplargeLogo.png",
+    "author": "maplargelogo.png"
+}

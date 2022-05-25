@@ -1,0 +1,100 @@
+/* CSS */
+
+
+.qv-object-dv-item-manager .toolbar-row{
+	display:flex;
+	flex-direction:row;
+}
+
+.qv-object-dv-item-manager .toolbar-row *{
+	margin-right:1rem;
+}
+ 
+
+.qv-object-dv-item-manager .bottom-toolbar{
+	display:flex;
+	flex-direction:row;
+}
+
+.qv-object-dv-item-manager .bottom-toolbar *{
+	margin-right:.25rem;
+}
+
+
+.qv-object-dv-item-manager .lui-button--magenta{
+ 	background-color:#cc66b3;
+}
+
+/***********Table********************/
+.qv-object-dv-item-manager .table-container{
+	overflow:scroll;
+	height:80%;
+
+}
+
+.qv-object-dv-item-manager table {
+	text-align: left;
+	position: relative;
+	border-collapse: collapse; 
+	table-layout:fixed;
+	width: 100%;
+}
+
+.qv-object-dv-item-manager col.name,col.label,col.description{
+	width:160px;
+}
+.qv-object-dv-item-manager col.num,col.type,col.origin{
+	width:50px;
+}
+
+.qv-object-dv-item-manager col.actions{
+width:200px;
+}
+
+.qv-object-dv-item-manager col.tags{
+	width:150px;
+	color:orange;
+}
+
+.qv-object-dv-item-manager th {
+	padding-top: 13px;
+	border: 1px solid #ddd;
+	padding-bottom: 13px;
+	text-align: center;
+	background-color: #333333;
+	color: white;
+	position: sticky;
+	height:1em;
+	z-index:99;
+	top: 0;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+.qv-object-dv-item-manager td{
+	white-space: nowrap;
+	border: 1px solid #ddd;
+	box-sizing:border-box;
+	padding: .15rem;
+	text-align: center;
+	height:1em;
+	overflow:hidden;
+}
+
+
+.qv-object-dv-item-manager tr{
+	height:12px;
+	overflow:hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+{
+    "name": "Qwik variable",
+    "type": "visualization",
+    "description": "set a variable with additional information from the browser and Qlik Sense\nVersion: local-dev",
+    "version": "local-dev",
+    "icon": "grid",
+    "preview": "qwik-variable.png",
+    "keywords": "qlik-sense, visualization",
+    "author": "Riley MacDonald",
+    "homepage": "https://github.com/rileymd88/qwik-variable",
+    "license": "MIT",
+    "repository": "https://github.com/rileymd88/qwik-variable",
+    "dependencies": {
+        "qlik-sense": ">=5.5.x"
+    }
+}

@@ -1,0 +1,54 @@
+<qv-modal-dialog
+		qv-cancel="closeView()"
+		>
+	<header class="dm-header">
+		About qWidget
+	</header>
+	<main class="dm-main wiAbout" style="height:400px;width:700px;">
+
+		<!-- Toolbar -->
+		<div class="toolbar">
+			<button class="wui-toolbar-button"
+					ng-class="{'wui-active': section === 'general'}"
+					qva-activate="changeSection('general');">General Information</button>
+			<button class="wui-toolbar-button"
+					ng-class="{'wui-active': section === 'licenses'}"
+					qva-activate="changeSection('licenses');">Third-Party Software</button>
+		</div>
+		<!-- Version Info -->
+		<div ng-if="section == 'general'" class="container">
+			<b>qWidget Extension for Qlik<sup>&copy;</sup> Sense</b><br/><br/>
+
+			<b>Current Version of qWidget:</b> {{ext.libraryInfo.version}}<br/>
+			<b>Qlik Sense Version:</b> {{layout.clientVersion}}<br/><br/>
+
+			<b>Feedback, Questions & Ideas:</b> <a href="http://community.qlik.com/community/qlikview_beta_programs/qwidget_limited_public_beta" target="_blank">Qlik Community Group for qWidget</a><br/><br/>
+
+			You are free to use this extension for both, commercial and private use.<br/>
+			Qlik's support agreement does not cover support for this extension.<br/><br/>
+
+			Copyright 2014, Stefan Walther, Qlik.<br/>
+		</div>
+
+		<!-- Third Party Software -->
+		<div ng-if="section == 'licenses'" class="container">
+
+			<div ng-repeat="lic in licenses" class="list">
+				<b>{{lic.name}}</b><span ng-if="lic.version">&nbsp;({{lic.version}})</span><br/>
+				<a href="{{lic.url}}" target="_blank">{{lic.url}}</a><br/>
+				Licence Type: {{lic.licType}}<br/>
+				<a href="javascript:void(0);" ng-click="lic.expanded = (!lic.expanded)"><span class="fa" style="margin-right:5px;color: #666;" ng-class="{'fa-caret-right': !lic.expanded, 'fa-caret-down': lic.expanded }" />License Details</a><br/>
+				<div class="licDetails" ng-if="lic.expanded">
+					<div ng-bind-html="lic.licStatement">
+						{{lic.licStatement}}
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+	<footer class="dm-footer">
+		<button class="wui-button" qva-activate="onButtonClose()">Close</button>
+	</footer>
+</qv-modal-dialog>

@@ -1,0 +1,9 @@
+{
+    "name": "qWidget2.2",
+    "description": "Create, load and share great visualizations.",
+    "icon": "extension",
+    "type": "visualization",
+    "version": "0.25.00",
+    "preview": "qWidget.png",
+    "author": "Stefan Walther"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "GeoAnalytics Chart Layer",
+    "description": "A chart layer for GeoAnalytics.",
+    "preview": "chartlayericon-preview.png",
+    "type": "visualization",
+    "version": "1.0",
+    "author": "Qlik",
+    "icon": "map icon-idevio-chartlayer"
+}

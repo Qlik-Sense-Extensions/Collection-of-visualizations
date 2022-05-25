@@ -1,0 +1,10 @@
+.singleTab{
+    background-color:	black;
+    color:				white;
+    position:			relative;
+    float:				right;
+}
+
+ul.nav li{
+	cursor: pointer;
+}

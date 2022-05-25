@@ -1,0 +1,21 @@
+.qv-object-gridchart div.qv-object-content-container {
+
+}
+
+.qv-object-gridchart .axis text {
+  font: 14px sans-serif;
+}
+
+.qv-object-gridchart .axis path {
+  fill: none;
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-gridchart .circles {
+
+}
+
+.qv-object-gridchart .axis .tick {
+	cursor: default;
+}

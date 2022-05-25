@@ -1,0 +1,9 @@
+{
+    "name": "Grid Chart",
+    "description": "A 2 dimensional visualization",
+    "icon": "table",
+    "type": "visualization",
+    "version": "1.0",
+    "preview": "table",
+    "author": "Speros Kokenes"
+}

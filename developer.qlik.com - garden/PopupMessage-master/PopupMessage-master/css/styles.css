@@ -1,0 +1,23 @@
+.qv-object-popupmessage .myP{
+ font-family:sans-serif !important;
+ text-align:justify !important;
+ }
+
+.qv-object-popupmessage .myH5{
+ font-family:sans-serif !important;
+ text-align:center !important;
+ font-style:bold ! important;
+ }
+
+.qv-object-popupmessage .myButton{
+ font-style:bold ! important;
+ max-width :100px !important;
+ display:block !important;
+ width:60% !important;
+ margin: auto !important;
+  min-width:15px !important;
+ }
+
+.qv-object-popupmessage .myBorder{
+ border-color:dimgray;
+ }

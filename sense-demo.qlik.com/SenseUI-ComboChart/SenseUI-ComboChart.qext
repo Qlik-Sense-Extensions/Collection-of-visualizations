@@ -1,0 +1,15 @@
+{
+    "name": "SenseUI-ComboChart",
+    "description": "Basic empty visualization template",
+    "type": "visualization",
+    "version": "1.0.0",
+    "icon": "combo-chart",
+    "author": "yianni.ververis@qlik.com",
+    "homepage": "https://github.com/yianni-ververis/SenseUI-ComboChart",
+    "keywords": "qlik-sense, visualization",
+    "license": "",
+    "repository": "https://github.com/yianni-ververis/SenseUI-ComboChart",
+    "dependencies": {
+        "qlik-sense": ">=3.0.x"
+    }
+}

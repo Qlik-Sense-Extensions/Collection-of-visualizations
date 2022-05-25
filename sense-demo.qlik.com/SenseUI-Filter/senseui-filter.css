@@ -1,0 +1,44 @@
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+.senseui-filter {
+	height: 100%; 
+	position: relative; 
+	overflow: auto;
+}
+.scrollable {
+    height: auto;
+    z-index: 9999999;
+}
+.senseui-filter li {
+	line-height: 1em;
+	white-space: pre-wrap;
+	/*padding-left: 5px;
+	padding-right: 5px;*/
+	margin-bottom: 1px;
+}
+.senseui-filter li.horizontal {
+	display: inline-block;
+}
+.senseui-filter li.vertical {
+	display: block;
+}
+.senseui-filter li a {
+	cursor: pointer;
+	/*margin: 0 5px;*/
+	color: black;
+    /*background-color: white;*/
+	transition: all 0.3s ease;
+	font-style: normal;
+	font-family: 'Droid Sans', sans-serif !important;
+}
+/*.senseui-filter li.active, 
+.senseui-filter li.active a, 
+.senseui-filter li:hover,
+.senseui-filter li a:hover { 
+	color: white;
+    background-color: #52CC52;
+}
+.senseui-filter li.deactive { 
+	color: white;
+    background-color: #CCCCCC;
+}*/

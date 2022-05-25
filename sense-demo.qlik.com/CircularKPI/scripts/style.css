@@ -1,0 +1,27 @@
+.qv-object-CircularKPI .background {
+	fill:rgb(0,255,255);
+	fill-opacity:0;
+}
+
+.qv-object-CircularKPI .label {
+	text-anchor: middle;
+}
+.qv-object-CircularKPI .circular-kpi-tile {
+    margin: 0;
+    float: left;
+}
+.qv-object-CircularKPI .component {
+    fill: #e1e1e1;
+}
+.qv-object-CircularKPI .circular-kpi-tile {
+    text-align: center;
+}
+
+.qv-object-CircularKPI .arc {
+            stroke-weight: 0;
+        }
+
+.qv-object-CircularKPI .arc2 {
+            stroke-weight: 0;
+        }
+

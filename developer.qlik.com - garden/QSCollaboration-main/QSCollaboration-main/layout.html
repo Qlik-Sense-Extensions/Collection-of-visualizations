@@ -1,0 +1,92 @@
+<div style='display:flex;margin: 5px;'>
+		<select class='lui-select' id='select_App' style='width: 90%;margin: 5px;'>
+		</select> <button class='lui-button lui-button--success custBtn' id='SelectApp' style='width: 10%;'>Select</button>
+	</div>
+	<div style='display:flex;margin: 5px;overflow: auto;'>
+		<div class='cont' style=''>
+			<p class='Title'>Variable</p><select class='select' id='select_Variable' multiple style=''>
+			</select>
+			<div style="display:flex;">
+				<button class='lui-button lui-button--warning custBtn clone_btn' id='clone_Variable' title='Clone' disabled='disabled'><span class="lui-icon">copy</span></button> 
+				<button class='lui-button lui-button--warning custBtn download_btn' id='clone_Variable_Download' title='Download' disabled='disabled'><span class="lui-icon">download</span></button>
+			</div>
+		</div>
+		<div class='cont' style=''>
+			<p class='Title'>Measure</p><select class='select' id='select_Master_Mes' multiple style=''>
+			</select>
+			<div style="display:flex;">
+				<button class='lui-button lui-button--warning custBtn clone_btn' id='clone_Master_Mes' title='Clone' disabled='disabled'><span class="lui-icon">copy</span></button> 
+				<button class='lui-button lui-button--warning custBtn download_btn' id='clone_Master_Mes_Download' title='Download' disabled='disabled'><span class="lui-icon">download</span></button>
+			</div>
+		</div>
+		<div class='cont' style=''>
+			<p class='Title'>Dimension</p><select class='select' id='select_Master_Dim' multiple style=''>
+			</select>
+			<div style="display:flex;">
+				<button class='lui-button lui-button--warning custBtn clone_btn' id='clone_Master_Dim' title='Clone' disabled='disabled'><span class="lui-icon">copy</span></button> 
+				<button class='lui-button lui-button--warning custBtn download_btn' id='clone_Master_Dim_Download' title='Download' disabled='disabled'><span class="lui-icon">download</span></button>
+			</div>
+		</div>
+		<div class='cont' style=''>
+			<p class='Title'>Visualization</p><select class='select' id='select_Master_Viz' multiple style=''>
+			</select>
+			<div style="display:flex;">
+				<button class='lui-button lui-button--warning custBtn clone_btn' id='clone_Master_Viz' title='Clone' disabled='disabled'><span class="lui-icon">copy</span></button> 
+				<button class='lui-button lui-button--warning custBtn download_btn' id='clone_Master_Viz_Download' title='Download' disabled='disabled'><span class="lui-icon">download</span></button>
+			</div>
+		</div>
+		<div class='cont' style='display:none;'>
+			<p class='Title'>Connections</p><select class='select' id='select_Connections' multiple style=''>
+			</select>
+			<div style="display:flex;">
+				<button class='lui-button lui-button--warning custBtn clone_btn' id='clone_Connections' title='Clone' disabled='disabled'><span class="lui-icon">copy</span></button> 
+				<button class='lui-button lui-button--warning custBtn download_btn' id='clone_Connections_Download' title='Download' disabled='disabled'><span class="lui-icon">download</span></button>
+			</div>
+		</div>
+		<div class='cont' style='display:none;'>
+			<p class='Title'>Story</p><select class='select' id='select_Story' multiple style=''>
+			</select>
+			<div style="display:flex;">
+				<button class='lui-button lui-button--warning custBtn clone_btn' id='clone_Story' title='Clone' disabled='disabled'><span class="lui-icon">copy</span></button> 
+				<!--<button id='clone_Story_Download' class='lui-button lui-button==warning custBtn download_btn' title='Download'  disabled='disabled'><span class="lui-icon ">download</span></button>-->
+			</div>
+		</div>
+		<div class='cont mr-0' style=''>
+			<p class='Title'>Sheets</p><select class='select' id='select_Sheet' multiple style=''>
+			</select>
+			<div style="display:flex;">
+				<button class='lui-button lui-button--warning custBtn clone_btn' id='clone_Sheet' title='Clone' disabled='disabled'><span class="lui-icon">copy</span></button> 
+				<!--<button id="clone_Sheet_Download" class="lui-button lui-button==warning custBtn clone_btn download_btn" title='Download' disabled='disabled'  style="display:none;"><span class="lui-icon ">download</span></button>-->
+			</div>
+		</div>
+	</div>
+	<div style="">
+		<button class='lui-button mb-10' id='clear_log'>Clear Log</button> 
+		<button class='lui-button mb-10' id='get_script'>Get Script</button> 
+		<button class='lui-button mb-10' id='copy_script'>Copy</button> 
+		<input class='custom-file-input' id="read_files" name="file" type="file"> 
+		<select class='lui-select' id='file_type' style='width: 120px;position: relative;top: -5px;'>
+			<option value='Variable'>
+				Variable
+			</option>
+			<option value='Measure'>
+				Measure
+			</option>
+			<option value='Dimension'>
+				Dimension
+			</option>
+			<option value='Visualization'>
+				Visualization
+			</option>
+		</select>
+		
+			<option value='Connections'>
+				Connections
+			</option>
+			
+		<pre id='file_data' style='display:none;'></pre>
+		<button class='lui-button mb-10' id='clone_file'>Clone</button>
+	</div>
+	<div class='log' style=''>
+		<pre id='log'></pre>
+	</div>

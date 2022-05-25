@@ -1,0 +1,9 @@
+{
+    "name": "transpose-dimension-table",
+    "description": "transpose-dimension-table",
+    "icon": "bar-chart-vertical",
+    "type": "visualization",
+    "version": "1.0",
+    "preview": "bar",
+    "author": "Michael Clemens"
+}

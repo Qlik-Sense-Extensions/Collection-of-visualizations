@@ -1,0 +1,13 @@
+{
+	"name": "QSCollaboration",
+	"description": "Qlik Sense Collaboration extension",
+	"type": "visualization",
+	"version": "1.1.0",
+	"icon": "extension",
+	"author": "Ajay Kakkar",
+	"homepage": "https://github.com/ajaykakkar93",
+	"keywords": "qlik-sense, visualization",
+	"dependencies": {
+		"qlik-sense": ">=3.0.x"
+	}
+}

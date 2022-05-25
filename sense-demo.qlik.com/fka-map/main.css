@@ -1,0 +1,86 @@
+.qv-object-fka-map {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.fka-map {
+    height: 100%; 
+    position: relative; 
+    overflow: auto;
+}
+.layer2legend, .layer3legend{
+    background-color: rgba(255,255,255,.65);
+    display: inline-block;
+    position: absolute;
+    color: #333;
+    list-style: none;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 4px;
+    margin:10px;
+    padding: 10px 10px 0 10px;
+    box-shadow: rgba(0,0,0,0.2) 0 0 4px 2px;
+}
+
+.layer3legend ul, .layer2legend ul{
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+.legendtitle{
+    font-size: 120%;
+}
+.layer2legend {
+    bottom: 0;
+    right: 0;
+    
+}
+
+.layer2legend.collapsed ul {
+    height: 0;
+    overflow: hidden;
+}
+
+.layer2legend li {
+    display: block;
+}
+.layer2legend .symbol {
+    display: inline-block;
+    /*vertical-align: top;
+    margin-top: 2.5px;
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;*/
+}
+.layer2legend .legendlabel {
+    display: inline-block;
+    max-width: 200px;
+}
+
+.layer3legend {
+
+    top: 0;
+    right: 0;
+  
+}
+
+.layer3legend.collapsed ul {
+    height: 0;
+    overflow: hidden;
+}
+
+.layer3legend li {
+    display: block;
+}
+.layer3legend .color-box {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2.5px;
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+}
+.layer3legend .legendlabel {
+    display: inline-block;
+    max-width: 200px;
+}

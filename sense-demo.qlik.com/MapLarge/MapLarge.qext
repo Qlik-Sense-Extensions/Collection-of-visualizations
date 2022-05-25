@@ -1,0 +1,9 @@
+{
+    "name": "MapLarge",
+    "description": "MapLarge - Point & Point In Poly maps",
+    "icon": "map",
+    "type": "visualization",
+    "version": "1.0",
+    "preview": "MaplargeLogo.png",
+    "author": "maplargelogo.png"
+}

@@ -1,0 +1,23 @@
+<qv-modal-dialog
+        qv-id="wiError"
+        ng-if="Main.Error"
+        qv-cancel="closeView()"
+        >
+    <header class="dm-header">
+        An Error occurred
+    </header>
+    <main class="dm-main">
+
+        <!-- Put all error details here -->
+        <div class="errorDetailContainer">
+            <div class="wiRed">{{Main.Error.ErrorDesc}}</div>
+            <br/>
+
+            <pre ng-if="Main.Error.ErrorObject" ng-bind="Main.Error.ErrorObject | json"></pre>
+        </div>
+
+    </main>
+    <footer class="dm-footer">
+        <button class="wui-button" name="cancel" qva-activate="closeView()">Close</button>
+    </footer>
+</qv-modal-dialog>

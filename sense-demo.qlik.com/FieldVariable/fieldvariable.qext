@@ -1,0 +1,7 @@
+{
+    "name": "FieldVariable",
+    "description": "Variable extension",
+    "version": "2.2.0",
+    "type": "visualization",
+    "author": "Erik Wetterberg"
+}

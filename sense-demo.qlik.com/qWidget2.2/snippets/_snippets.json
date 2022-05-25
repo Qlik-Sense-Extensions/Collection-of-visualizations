@@ -1,0 +1,116 @@
+{
+    "snippets": [
+        {
+            "name": "Dimensions and Measures in a Table (Shorthand Notation)",
+            "description": "Html-table iterating through all measures and dimensions (without any css)",
+            "key": "html/00_tablepure_shorthand",
+            "cat": "html",
+            "show": true,
+            "src": "local",
+            "author": "Stefan Walther"
+        },
+        {
+            "name": "Dimensions and Measures in a Table",
+            "description": "Html-table iterating through all measures and dimensions (without any css)",
+            "key": "html/0_tablepure",
+            "cat": "html",
+            "show": true,
+            "src": "local",
+            "author": "Stefan Walther"
+        },
+        {
+            "name": "Show- & Hide-Conditions",
+            "description": "Basic example how to create show- & hide-conditions.",
+            "key": "html/2_ngshow-nghide",
+            "cat": "html",
+            "show": true,
+            "src": "local",
+            "author": "Stefan Walther"
+        },
+        {
+            "name": "Button with Action",
+            "description": "Add a button which triggers an action.",
+            "key": "html/3_Button_WithAction",
+            "cat": "html",
+            "show": true,
+            "src": "local",
+            "author": "Stefan Walther"
+        },
+        {
+            "name": "Working with HyperCubes: Shorthand Notation Examples",
+            "description": "Examples how to work with HyperCubes and the Shorthand notation..",
+            "key": "html/4_HyperCubes_ShortHandExamples",
+            "cat": "html",
+            "show": true,
+            "src": "local",
+            "author": "Stefan Walther"
+        },
+        {
+            "name": "Basic Tab Example",
+            "description": "Horizontal Tab example using default settings",
+            "key": "html/6_TabDefault",
+            "cat": "html",
+            "show": true,
+            "src": "local",
+            "author": "Stefan Walther"
+        },
+        {
+            "name": "Basic Tab Example (Type Pills)",
+            "description": "Horizontal Tab example using type 'pills'",
+            "key": "html/7_TabPills",
+            "cat": "html",
+            "show": true,
+            "src": "local",
+            "author": "Stefan Walther"
+        },
+        {
+            "name": "Vertical Tab Example (Type Pills)",
+            "description": "Vertical Tab example using type 'pills'",
+            "key": "html/8_TabPillsVertical",
+            "cat": "html",
+            "show": true,
+            "src": "local",
+            "author": "Stefan Walther"
+        },
+        {
+            "name": "Single Value Slider",
+            "description": "Slider to manipulate a single variable.",
+            "key": "html/100_Slider_DefaultSingle",
+            "cat": "html",
+            "show": true,
+            "src": "local"
+        },
+        {
+            "name": "Range Slider",
+            "description": "Slider to manipulate a two variables.",
+            "key": "html/101_Slider_RangeSlider",
+            "cat": "html",
+            "show": true,
+            "src": "local"
+        },
+        {
+            "name": "Slider with Customized Labels",
+            "description": "Slider to select a month + showing months on the slider's axis.",
+            "key": "html/102_Slider_Months",
+            "cat": "html",
+            "show": true,
+            "src": "local"
+        },
+        {
+            "name": "Progressbar",
+            "description": "Basic example of a progressbar",
+            "key": "html/200_Progressbar",
+            "cat": "html",
+            "show": true,
+            "src": "local"
+        },
+        {
+            "name": "Stacked Progressbar",
+            "description": "Example of a stacked progressbar",
+            "key": "html/201_Progressbar_Stacked",
+            "cat": "html",
+            "show": true,
+            "src": "local"
+        }
+    ]
+}

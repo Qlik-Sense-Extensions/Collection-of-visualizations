@@ -1,0 +1,24 @@
+<qv-modal-dialog
+		qv-id="wiWidgetEditor_PopupUpdateInfo"
+		qv-cancel="$parent.onButtonClose()"
+		>
+	<header class="dm-header">
+		qWidget - Update Info
+	</header>
+	<main class="dm-main">
+
+		<b>Updates newer than your current version ({{Main.MainRepository.currentVersion}}):</b><br/>
+
+		<div ng-repeat="ui in Main.MainRepository.updateInfo" style="height:100%;overflow:auto;margin-left:20px;">
+			<hr/>
+			<b>Version {{ui.version}}</b><br/>
+			Date: {{ui.pub_date | wiMoment: 'format': 'YYYY-MM-DD'}}<br/><br/>
+			Download: <a href="http://doc.qwidget.mod.bz/download.default.html" target="_blank">Download</a><br/>
+
+		</div>
+
+	</main>
+	<footer class="dm-footer">
+		<button class="wui-button" qva-activate="$parent.onButtonClose()">Close</button>
+	</footer>
+</qv-modal-dialog>

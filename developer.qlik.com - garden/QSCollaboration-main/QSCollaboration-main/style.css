@@ -1,0 +1,117 @@
+/* CSS */
+
+.qv-object-QSCollaboration .qv-object-header, .qv-object-QSCollaboration~.qv-object-nav, .hide {
+	display: none;
+}
+.mb-10 {
+	margin-bottom: 10px;
+}
+.mr-0 {
+	margin-right: 0px !important;
+}
+.cont {
+	margin-right: 1px;
+	width: calc(98% / 6);
+	border: 1px solid #b3b3b3;
+}
+.Title {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	padding: 4px;
+	border-bottom: 1px solid #b3b3b3;
+	/*border-bottom: 0;*/
+}
+.custBtn {
+	width: 100%;
+	margin: 5px;
+	/*margin-left: 0;*/
+}
+button.custBtn[disabled="disabled"] {
+    cursor: not-allowed;
+}
+.custBtn-50 {
+	width: 50%;
+}
+.log {
+	width: 99%;
+	height: 60%;
+	border: 1px solid #b3b3b3;
+	border-radius: 3px;
+	overflow: auto;
+}
+.log p {
+	padding-left: 4px;
+	padding-top: 4px;
+}
+.log .script_cont {
+	width: 97%;
+	height: 100px;
+	margin: 10px;
+	border: 1px solid #b3b3b3;
+	border-radius: 3px;
+}
+.select {
+	overflow: auto;
+	height: 150px;
+	box-sizing: border-box;
+	border: 1px solid #b3b3b3;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 24px;
+	padding: 1px 30px 1px 10px;
+	min-width: 44px;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 13px;
+	font-weight: 700;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	background-clip: border-box;
+	border-radius: 0px 0px 3px 3px;
+	outline: none;
+	cursor: pointer;
+	transition: border-color .2s ease-out;
+	background-size: 10px 7px, auto auto;
+	background-origin: border-box, padding-box;
+	background-repeat: no-repeat, no-repeat;
+	background-position: right 11px top 50%, 0 0;
+}
+.custom-file-input {
+	color: #000;
+	position: relative;
+	top: -5px;
+}
+.custom-file-input::-webkit-file-upload-button {
+	visibility: hidden;
+}
+.custom-file-input::before {
+	content: 'JSON files';
+	vertical-align: middle;
+	height: 28px;
+	min-width: 44px;
+	padding: 4px 8px;
+	font-size: 13px;
+	font-weight: 700;
+	text-decoration: none;
+	line-height: 24px;
+	position: relative;
+	outline: none;
+	cursor: pointer;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	border-radius: 3px;
+	color: #595959;
+	background-color: transparent;
+	border: 1px solid #b3b3b3;
+	transition: border-color .2s ease-out;
+}

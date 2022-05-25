@@ -1,0 +1,33 @@
+﻿table.wiTable {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+table.wiTable thead tr td {
+    background-color:#ccc;
+    font-weight:bold;
+}
+
+table.wiTable tr {
+    border-bottom: 1px solid silver;
+}
+table.wiTable tr td {
+    border-right: 1px solid silver;
+    padding: 5px;
+}
+table.wiTable tbody tr:hover {
+    cursor:pointer;
+    background-color:#808080 !important;
+    color:#efefef;
+}
+
+table.wiTable tbody tr:nth-child(even) {
+  background: #efefef;
+}
+
+table.wiTable tbody tr:nth-child(odd) {
+  background: #FFF;
+}

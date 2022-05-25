@@ -1,0 +1,21 @@
+.qv-object-FormatTable div.qv-object-content-container {
+	overflow: auto;
+}
+.qv-object-FormatTable td,
+.qv-object-FormatTable th {
+	border-top: 0px solid #fff;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	cursor: default;
+	font-size: 12px;
+}
+.qv-object-FormatTable td.numeric {
+	text-align: right;
+}
+.qv-object-FormatTable button {
+	width: 100%;
+}

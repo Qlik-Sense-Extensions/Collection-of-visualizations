@@ -1,0 +1,21 @@
+/*
+   Github custom css
+ */
+table {
+      border-collapse: collapse;
+}
+
+table, thead, tbody{
+    border: 1px solid black;
+	font-family: Calibri;
+}
+
+table th, td {
+  font-family: Tahoma; 
+  font-size: 30px; 
+  background-color: #bfbfbf;
+}
+
+thead {
+  border-bottom: solid black;
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Multi-chart: dygraphs",
+    "description": "dygraphs for Qlik Sense",
+    "icon": "line-chart",
+    "type": "visualization",
+    "version": "2.2",
+    "preview": "dygraphs-thumb.png",
+    "homepage": "http://branch.qlik.com/#!/project/56728f52d1e497241ae6987f",
+    "author": "Daniel Pierre"
+}

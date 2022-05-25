@@ -1,0 +1,13 @@
+<div style="margin-bottom:20px;">
+
+	<div class="label wiBold">
+		Please select the repository you'd like to use:
+	</div>
+	<div class="value">
+		<select ng-model="WidgetPublisher.SelectedPublishingRepository"
+				ng-options="item.name for item in Main.RepositoryList | filter: {allowsPublishing: true}"
+				ng-change="WidgetPublisher.Repository_OnChange( WidgetPublisher.SelectedPublishingRepository );"
+				class="wui-select"
+				></select>
+	</div>
+</div>

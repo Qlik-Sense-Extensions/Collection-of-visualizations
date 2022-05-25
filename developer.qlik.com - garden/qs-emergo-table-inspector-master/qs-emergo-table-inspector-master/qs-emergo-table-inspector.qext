@@ -1,0 +1,19 @@
+{
+	"title": "E-mergo Table Inspector",
+	"name": "Table Inspector",
+	"type": "visualization",
+	"author": "Laurens Offereins, E-mergo",
+	"version": "1.3.20200918",
+	"description": "Quickly inspect data tables from the app's datamodel.",
+	"preview": "logo-emergo.png",
+	"license": "MIT License",
+	"bundle": {
+		"id": "qs-emergo-tools-bundle",
+		"name": "E-mergo Tools bundle",
+		"url": "https://www.e-mergo.nl/e-mergo-tools-bundle/?utm_medium=download&utm_source=tools_bundle&utm_campaign=E-mergo_Extension&utm_term=toolsbundle&utm_content=sitelink",
+		"description": "A set of tools that assist in the app creation workflow. Created by E-mergo. For limitations and support conditions, see the documentation or www.e-mergo.nl."
+	},
+	"dependencies": {
+		"qlik-sense": ">=5.0.x"
+	}
+}

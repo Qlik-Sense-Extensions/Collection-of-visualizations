@@ -1,0 +1,86 @@
+/* Styles for QS Side Menu */
+
+/* Recommended pattern for styling your objects */
+.qv-object-qssidemenu .hello-world {
+  color:#333;
+  font-weight:bold;
+}
+
+.qs-side-bar{
+	position: fixed;
+    top: 80px;
+    bottom: 0;
+	font-family: 'QlikView Sans',sans-serif;
+    width: 270px;
+    left: -390px;
+    z-index: 90;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+	/*background-color: #545352;*/
+	background-color: #e6e6e6;
+	-webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.16);
+	-moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.16);
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.16);
+}
+
+.qs-side-bar.open{
+    left: 0;
+}
+
+.qs-side-bar .filter{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height:34px;
+}
+
+.qv-object .qv-inner-object{
+	height: 34px !important;
+}
+
+.heading{
+    /*color: white;*/
+	color:#8c8c8c;
+    width: 100%;
+    text-align: center;
+    /*font-size: 18px;*/
+	font-size:15px;
+    margin-top: 5px;
+}
+/* added for compatibility with viridis themes */
+.qsSideFilterTarget .qv-inner-object {
+	background-color: transparent !important; /* title area of side filter pane */
+}
+.viridis-light-theme .qsSideFilterTarget .qv-object-wrapper {
+	-webkit-box-shadow: none;
+			box-shadow: none;
+} 
+.viridis-dark-theme .qv-object-qssidemenu .bootstrap_inside .btn-default,
+.viridis-black-theme .qv-object-qssidemenu .bootstrap_inside .btn-default {
+	background-color:#f2f2f2;
+	color: #595959;
+}
+.qs-side-bar .qv-collapsed-listbox,
+.qs-side-bar .qv-collapsed-listbox .title  {
+	background-color:#ffffff !important;
+	color: #595959!important;
+}
+.bootstrap_inside .btn {
+	font-weight:700 !important;
+	font-size:13px !important;
+	line-height: 26px !important;
+	padding: 0 12px !important;
+}
+.bootstrap_inside .btn-default {
+	color: #595959 !important;
+}
+.viridis-light-theme .bootstrap_inside .btn-default:hover, .viridis-light-theme .bootstrap_inside .btn-default:focus, .viridis-light-theme .bootstrap_inside .btn-default.focus {
+	background-color: #ffffff !important;
+	border: 1px solid #595959 !important;
+}
+.viridis-dark-theme .bootstrap_inside .btn-default:hover, .viridis-dark-theme .bootstrap_inside .btn-default:focus, .viridis-dark-theme .bootstrap_inside .btn-default.focus {
+	background-color: #f2f2f2 !important;
+	border: 1px solid #595959 !important;
+}

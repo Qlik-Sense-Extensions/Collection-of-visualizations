@@ -1,0 +1,104 @@
+.ext-horizontal-listbox {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.ext-horizontal-listbox .custom-label{
+  font-size: 14px;
+  font-weight: 700;
+  color: #595959;
+}
+.ext-horizontal-listbox ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1px;
+  align-content: center;
+  font-family: monospace, Courier, "Courier New";
+  overflow: auto;
+}
+.ext-horizontal-listbox li {
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  white-space: nowrap;
+}
+.ext-horizontal-listbox li.S {
+  border-color: #fff;
+  background-color: #52cc52;
+  color: #fff;
+}
+.ext-horizontal-listbox li.A {
+  border-color: #fff;
+  background-color: #ddd;
+  color: #000;
+}
+.ext-horizontal-listbox li.X,
+.ext-horizontal-listbox li.XL {
+  border-color: #fff;
+  background-color: #a9a9a9;
+  color: #fff;
+}
+.ext-horizontal-listbox li.L {
+  border-color: #fff;
+  background-color: #52cc52;
+  pointer-events: none;
+  color: #fff;
+}
+.ext-horizontal-listbox li.XS {
+  border-color: #fff;
+  background-color: #a9a9a9;
+  color: #fff;
+  font-weight: bold;
+}
+.ext-horizontal-listbox li.active {
+  border-color: #fff;
+  background-color: #61a729;
+  color: #fff;
+}
+.ext-horizontal-listbox li.li-large {
+  padding: 10px 2px;
+  flex-basis: 64px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+.ext-horizontal-listbox li.li-medium {
+  padding: 6px 2px;
+  flex-basis: 50px;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+.ext-horizontal-listbox li.li-small {
+  padding: 5px 2px;
+  flex-basis: 40px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.ext-horizontal-listbox li.li-mini {
+  padding: 1px 1px;
+  flex-basis: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.table-locked {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.table-locked .L::before,
+.table-locked .XL::before {
+  display: inline-block;
+  font-family: "LUI icons";
+  font-size: 10px;
+  vertical-align: middle;
+  margin-right: 2px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  text-transform: none;
+  direction: ltr;
+  content: "lock";
+}

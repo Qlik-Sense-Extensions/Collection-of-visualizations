@@ -1,0 +1,7 @@
+{
+    "name": "Input To Var",
+    "description": "inputs connected to data model",
+    "type": "visualization",
+    "version": "1.0",
+    "author": "Michael clemens"
+}

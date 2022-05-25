@@ -1,0 +1,20 @@
+/* Taken from https://github.com/joujiahe/ng-color-picker and modified by Stefan Walther*/
+ng-color-picker ul {
+    padding: 0;
+    margin: 0;
+}
+
+ng-color-picker li {
+    width:20px;
+    height:20px;
+    box-sizing:border-box;
+    display:inline-block;
+    cursor:pointer; /* swr*/
+    border: 2px transparent; /*swr*/
+    margin-left:1px;/*swr*/
+    margin-right:1px;/*swr*/
+}
+
+ng-color-picker li.selected {
+    border: 2px solid #333; /*swr*/
+}

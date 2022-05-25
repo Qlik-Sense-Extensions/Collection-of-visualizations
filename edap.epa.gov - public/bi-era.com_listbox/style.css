@@ -1,0 +1,259 @@
+/*
+ 	Copyright 2013 Uniclau S.L. (www.uniclau.com)
+ 	
+  	This file is part of jbPivot.
+
+    jbPivot is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    jbPivot is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with jbPivot.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/*body
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}*/
+
+div.bieralistbox label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 20px;
+
+}
+
+
+
+div.bieralistbox input[type=radio],
+div.bieralistbox input[type=checkbox] {
+	display: none;
+	
+}
+
+
+div.bieralistbox label.stateS:before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 4px;
+	background-color:rgb(80,198,80);
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+div.bieralistbox label:before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 4px;
+	background-color: #aaa;
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.radio label:before {
+	border-radius: 8px;
+}
+.checkbox label {
+	margin-bottom: 8px;
+}
+.checkbox label:before {
+    border-radius: 3px;
+}
+
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: rgb(80,198,80);
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+input[type=checkbox]:checked + label:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 15px;
+	color: #f3f3f3;
+	text-align: center;
+    line-height: 15px;
+}
+
+
+.listbox {
+position:absolute;
+overflow:auto !important;
+}
+
+.listbox p{
+list-style:none;
+cursor:pointer;
+
+}
+
+.listbox p{
+    display: block;
+    text-decoration: none;    
+    padding:8px 0px;
+    
+}
+
+
+.listbox p.stateS {
+background:rgb(80,198,80);
+box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+color:#FFFFFF !important;
+}
+.listbox p.stateA{
+	background-image: none;
+	background-color: #ddd;
+	color: #000;
+}
+.listbox p.stateA, .listbox p.stateS{
+border-right:#FFFFFF solid 1px;border-bottom:#CCCCCC 1px solid !important;
+}
+.listbox p.stateO{border-right:#CCCCCC solid 1px;
+}
+/* Hover state */
+
+.listbox p:hover{
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.styled-select select {
+   background: transparent;
+   width: 100%;
+   padding: 5px;
+   
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+   }
+  
+.bieralistboxdb:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #ffaa9f transparent;
+}
+   
+.bieralistboxdb .styled-select:before,
+.bieralistboxdb:before {
+    content: "";
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    border: 1px solid #ffaa9f;
+    border-top: none;
+    border-bottom: none;
+    z-index: 2;
+}
+   
+
+.styled-select{
+   width: 100%;
+   
+   height: 30px;
+   max-height: 34px;
+   overflow: hidden;
+   background: white;
+   border: 1px solid #ccc;
+   }
+   
+   
+/* -------------------- Select Box Styles: danielneumann.com Method */
+/* -------------------- Source: http://danielneumann.com/blog/how-to-style-dropdown-with-css-only/ */
+
+/*
+#mainselection select {
+   border: 0;
+   color: #EEE;
+   background: transparent;
+   font-size: 13px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 99%;
+   *width: 99%;
+   *background: #58B14C;
+   -webkit-appearance: none;
+}
+
+#mainselection {
+   overflow:hidden;
+   width:99%;
+   -moz-border-radius: 9px 9px 9px 9px;
+   -webkit-border-radius: 9px 9px 9px 9px;
+   border-radius: 9px 9px 9px 9px;
+   box-shadow: 1px 1px 11px #330033;
+   background: #58B14C no-repeat scroll 319px center;
+}
+
+   #mainselection:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #ffaa9f transparent;
+}
+   
+   */

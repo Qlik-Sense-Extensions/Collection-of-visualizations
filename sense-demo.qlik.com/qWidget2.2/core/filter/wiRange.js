@@ -1,0 +1,1 @@
+define(["jquery","qvangular"],function(a,b){"use strict";b.filter("wiRange",function(){return function(a){var b,c,d;switch(a.length){case 1:b=0,c=parseInt(a[0])-1,d=1;break;case 2:b=parseInt(a[0]),c=parseInt(a[1]),d=1;break;case 3:b=parseInt(a[0]),c=parseInt(a[1]),d=parseInt(a[2]);break;default:return a}for(var e=[],f=b;c>=f;f+=d)e.push(f);return e}})});

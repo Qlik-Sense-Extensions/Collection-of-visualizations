@@ -1,0 +1,34 @@
+<div class="wi-bs wi-auto-size">
+    <style type="text/css">
+        .wi-bs .btn.disabled, .wi-bs .btn[disabled] {
+            opacity: 0.5;
+        }
+    </style>
+    <div ng-hide="popup">
+        <datepicker ng-model="dt"
+                    datepicker-mode="day"
+                    min-date="minDate"
+                    max-date="maxDate"
+                    show-weeks="showWeeks"
+                    year-range="yearRange"
+                    btn-size="xs"
+                    class="well well-sm"></datepicker>
+    </div>
+    <div ng-show="popup">
+        <p class="input-group">
+            <input type="text"
+                   class="form-control"
+                   ng-model="dt"
+                   datepicker-popup="yyyy-MM-dd"
+                   datepicker-append-to-body="true"
+                   is-open="popOpened"
+                   min-date="minDate"
+                   max-date="maxDate"
+                   show-weeks="showWeeks"
+                   ng-required="true" />
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                  </span>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+//.qv-object-parallelcoordinates div.qv-object-content-container {
+//	overflow: auto;
+//}
+
+.qv-object-parallelcoordinates svg {
+  font: 10px sans-serif;
+}
+
+.qv-object-parallelcoordinates .background path {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-parallelcoordinates .foreground path {
+  fill: none;
+  stroke: steelblue;
+}
+
+.qv-object-parallelcoordinates .brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-parallelcoordinates .axis line,
+.qv-object-parallelcoordinates .axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.qv-object-parallelcoordinates .axis text {
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+  cursor: move;
+}

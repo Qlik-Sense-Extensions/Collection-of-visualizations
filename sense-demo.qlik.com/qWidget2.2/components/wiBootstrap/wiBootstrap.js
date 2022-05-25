@@ -1,0 +1,1 @@
+define(["qvangular","./../../modules/utils/wiUtils"],function(a){"use strict";a.directive("wiBootstrap",function(){return{restrict:"E",replace:!0,transclude:!0,priority:1e3,template:'<div class="wi-bs" ng-transclude></div>'}})});

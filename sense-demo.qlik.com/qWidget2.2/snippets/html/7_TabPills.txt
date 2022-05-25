@@ -1,0 +1,7 @@
+<wi-tab>
+    <tabset type="pills">
+        <tab heading="Tab 1"></tab>
+        <tab heading="Tab 2"></tab>
+        <tab heading="Tab 3"></tab>
+    </tabset>
+</wi-tab>

@@ -1,0 +1,9 @@
+{
+    "name": "SVG Reader",
+    "description": "Visualizing data on custom or built-in SVG images",
+    "icon": "map",
+    "type": "visualization",
+    "version": 1,
+    "preview": "svgReader.png",
+    "author": "Brian Munz"
+}

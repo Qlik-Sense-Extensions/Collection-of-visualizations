@@ -1,0 +1,1 @@
+define(["jquery","underscore","angular","qvangular"],function(a,b,c,d){"use strict";d.directive("wiSpinner",function(){return{restrict:"E",replace:!0,templateUrl:"/extensions/qWidget/components/wiSpinner/wiSpinner.ng.html",link:function(){}}})});

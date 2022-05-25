@@ -1,0 +1,243 @@
+<body>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script>
+	  var row, col, cssfile;
+
+	$(function () {
+	  row = getUrlParameter("row");
+	  col = getUrlParameter("col");
+	  js = getUrlParameter("js");
+	  if (typeof(row) == "undefined") row = '';
+	  if (typeof(col) == "undefined") col = '';
+
+	  $('#selectform').html("<form> Col: <input type=text name=col size=2 value='"+col+"'> Row: <input type=text name=row size=2 value='"+row+"'> JS: <input type=text name=js size=5 value='"+js+"'><input type=submit></form>");
+	  buildTable(row,col,js);
+	  
+	  if (typeof(js) != "undefined") $.getScript( "./"+js);
+	  
+
+	  var isMouseDown = false,
+		isHighlighted;
+	  $(".formattable td")
+		.mousedown(function (evt) {
+		  if(!isMouseDown) {
+			$(".formattable td").removeClass("highlighted")
+		  }
+		  isMouseDown = true;
+		  $(this).toggleClass("highlighted");
+		  isHighlighted = $(this).hasClass("highlighted");
+		  return false; // prevent text selection
+		})
+
+		.mouseover(function () {
+		  if (isMouseDown) {
+			$(this).toggleClass("highlighted", isHighlighted);
+		  }
+		})
+		.bind("selectstart", function () {
+		  return false;
+		})
+		$(document).mouseup(function () {
+			isMouseDown = false;
+		   return false; // prevent text selection
+		})
+		$(".formattable .headsel").click(function (item) {
+			$("."+this.id).toggleClass("highlighted")
+			});
+		$(".formattable .colsel").click(function (item) {
+			$("."+this.id).toggleClass("highlighted")
+			});
+			
+		$(".formattable .rowsel").click(function (item) {
+			$("."+this.id).toggleClass("highlighted")
+			});
+		$(".formattable .unhigh").click(function (item) {
+			isMouseDown = false;
+			$(".formattable td").removeClass("highlighted");
+		});
+		$(".high").click(function (item) {
+			isMouseDown = false;
+			$(".formattable td").addClass("highlighted");
+		});
+	});
+
+	function showSelectionJS () {
+		var s = '',v='';
+		$( ".formattable td" ).each(function( index ) {
+		  v = getCSSval(this);
+		  s += "$('#" + this.id + "').attr('style','" + v + "');\n\r";
+		});
+		$('#css').val(s);
+	}
+
+	function changeCC(attr, val,flag) {
+		$( ".highlighted" ).each(function( index ) {
+			$(this).css(attr,val);	
+		});
+	}
+	function clearStyle() {
+		$( ".highlighted" ).each(function( index ) {
+			$(this).attr("style",'');	
+		});
+	}
+
+	function buildTable(row,col,js) {
+		var s='', id='', head='',column='';
+		if (row == '') row = 10;
+		if (col == '') col = 10;
+		s += '<table class=formattable>';
+		column += "<tr><th class=unhigh></th>";
+		head += "<tr><th class=headsel id=head>h</th>";
+		for (var j = 0; j < col; j++) {
+			h = "head"+j;
+			head += "<td id="+h+" class=head>"+h+"</td>";
+			column += "<th class=colsel id=col"+j+">"+j+"</th>";	
+		}
+		column += "</tr>";
+		head += "</tr>";
+		s += head+column;
+		for (var i = 0; i < row; i++) { 
+			rowclass = 'row'+i;
+			s +='<tr><th class=rowsel id='+rowclass+'>'+i+'</th>\n';
+			for (var j = 0; j < col; j++) { 
+				id = 'cell'+i+'_'+j;
+//					s =+ '  <td id=cell'+id+'>'+id+'</td>\n';
+				colclass = 'col'+j;
+				s += '  <td id='+id +' class="'+colclass+' ' + rowclass +'">'+id+' '+'</td>\n';
+			}
+			s += '</tr>\n';
+		}
+		s += "</table>";
+
+		$('#madetable').html(s);
+
+	}
+	function getCSSval(item) {
+		var val = $(item).attr("style");
+		if (typeof(val) == "undefined") val = '';
+		return(val);
+	}
+
+	var getUrlParameter = function getUrlParameter(sParam) {
+		var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+			sURLVariables = sPageURL.split('&'),
+			sParameterName,
+			i;
+
+		for (i = 0; i < sURLVariables.length; i++) {
+			sParameterName = sURLVariables[i].split('=');
+
+			if (sParameterName[0] === sParam) {
+				return sParameterName[1] === undefined ? true : sParameterName[1];
+			}
+		}
+	};
+	</script>
+	<style>
+
+	table td.highlighted {
+		background-color:#999 !important;
+		opacity: 0.9;
+	}
+	table.formattable .colsel, .rowsel, .headsel {
+		border: 1px solid black;
+		background: lightgrey;
+	}
+
+	table.formattable th:hover, td:hover {
+		cursor: pointer; 
+	}
+	.unhigh {
+		background: red;
+	}
+	#css {
+		width: 100%;
+		height: 150px;
+	}
+	.butfloat {
+		float: left;
+		margin-bottom: 4px;
+	}
+	.cl {
+		clear: both;
+	}
+
+	#madetable {
+		width: 100%;
+		height: 100%;
+	}
+	.floatleft {
+	//	float:left;
+		bottom: 0px;
+	}
+	.title {
+		font-weight: bold;
+		font-size: 32px;
+	}
+	</style>
+</head>
+<body>
+
+<div class='title'>CSS Format Creator</div><div id=selectform ></div>
+
+Highlight cells by clicking on them individually cell, click and drag over several or the click the column or row #<br>
+Click on button to right to add style<br>
+Click on red button top left corner to clear all highlights<br>
+Click on generate css then copy information into the appropriate css file
+
+<table>
+	<tr>
+		<td id=tdw>
+			<div id=madetable>
+			
+			</div>
+		</td>
+		<td nowrap style='border: 1px solid grey; padding-left: 4px;'>
+				<center>Styling Buttons</center><br>
+		<button class=high>Select All</button><br><br>
+		<button onclick="clearStyle(); return(false);" class=butfloat>Clear Style</button><div class=cl></div>
+		<button onclick="changeCC('border','1px solid black',true); return(false);" class=butfloat><img src=./borders.png></button>
+		<button onclick="changeCC('border','',true); return(false);" class=butfloat><img src=./noborders.png></button><div class=cl></div>
+		
+		
+		<button onclick="changeCC('font-weight','bold',true); return(false);" class=butfloat>Bold</button>
+		<button onclick="changeCC('font-weight','',false); return(false);" class=butfloat>UnBold</button><div class=cl></div>
+
+		<button onclick="changeCC('visibility','',true); return(false);" class=butfloat>Show</button>
+		<button onclick="changeCC('visibility','hidden',false); return(false);" class=butfloat>Hide</button><div class=cl></div>
+
+		<button onclick="changeCC('text-align','left',true); return(false);" class=butfloat><img src=./left.png></button>
+		<button onclick="changeCC('text-align','center',true); return(false);" class=butfloat><img src=./center.png></button>
+		<button onclick="changeCC('text-align','right',false); return(false);" class=butfloat><img src=./right.png></button><div class=cl></div>
+
+		<button onclick="changeCC('background-color',document.getElementById('bgd').value,false); return(false);" class=butfloat>Bgd Color</button><input type=text size=4 id=bgd  class=butfloat><div class=cl></div>
+		<button onclick="changeCC('color',document.getElementById('txt').value,false); return(false);" class=butfloat>Txt Color</button><input type=text size=4 id=txt  class=butfloat><div class=cl></div>
+		
+		<table>
+			<tr>
+				<td></td>
+				<td>
+					<button onclick="changeCC(document.getElementById('attr').value,document.getElementById('val').value,false); return(false);">Add Attr</button>
+				</td>
+			</tr>
+			<tr>
+				<td>Attr:</td>
+				<td><input type=text  id=attr></td>
+			</tr>
+			<tr>
+				<td>Val:</td>
+				<td><input type=text id=val></td>
+			</tr>
+		</table>
+
+		</td>
+	</tr>
+</table>
+<button onclick='showSelectionJS(); return(false);'>Generate JS</button>
+
+<div><textarea id=css >CSS Information Comes Here</textarea> </div>
+</body>
+</html>
+		

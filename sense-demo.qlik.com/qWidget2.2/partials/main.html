@@ -1,0 +1,89 @@
+<div qv-extension ng-mouseover="Main.doMouseOver();" ng-mouseleave="Main.doMouseOut();" style="height:100%;">
+
+    <!-- Normal View - Hover Edit-Button -->
+    <div data-ng-include
+         data-src="'/extensions/qwidget/partials/NormalView/wiNormalView.EditIcon.html'"></div>
+
+    <!-- Normal View -->
+    <div data-ng-include data-src="'/extensions/qwidget/partials/NormalView/wiNormalView.html'" style="height:100%;"></div>
+
+
+
+    <!-- Widget Editor -->
+    <!-- NOTE -->
+    <!-- Todo: (AAA) - Change to ng-if !!! -->
+    <!-- Cannot be changed to ng-if, first databinding should be changed to ng-Model, but have to workaround off the ACE9 bug --->
+    <div id="widgetEditor_{{layout.qInfo.qId}}"
+         class="qWidget-Editor"
+         ng-show="Main.showEditor == true"
+         wi-dock-stage="Main.showEditor == true" >
+
+
+
+        <!-- Container for generating the preview image with html2canvas -->
+        <!-- block;height:200px;width:200px; -->
+        <div id="wiWidgetPreviewImg_{{layout.qInfo.qId}}"
+             style="display:none;"></div>
+
+
+        <!-- Toolbar -->
+        <div data-ng-include data-src="'/extensions/qwidget/partials/WidgetEditor/wiWidgetEditor.Toolbar.html'"></div>
+
+        <!-- WidgetEditor -->
+        <!-- Note: cannot be changed to ng-if, first data-binding of the ace-controls must be changed -->
+        <!--=-->
+        <div ng-show="Main.editMode == 'create'" wi-editors-resize wi-editors-resize-enabled="Main.editMode == 'create' && !WidgetEditor.MaximizedMode">
+            <div class="wiEditor_Container">
+                <div id="wiEditor_EditorsContainer_{{layout.qInfo.qId}}" class="wiEditor_ColLeft" ng-show="Main.editMode == 'create'">
+
+                    <!-- WidgetEditor: Html Editor -->
+                    <div data-ng-include data-src="'/extensions/qwidget/partials/WidgetEditor/wiWidgetEditor.HtmlEditor.html'"></div>
+
+                    <!-- WidgetEditor: Less Editor -->
+                    <div data-ng-include data-src="'/extensions/qwidget/partials/WidgetEditor/wiWidgetEditor.LessEditor.html'"></div>
+
+
+                </div>
+
+                <!-- Todo: (B) - Move to separate partials -->
+                <div class="wiEditor_ColRight">
+                    <div class="wiEditor_Bar">
+                        <button class="confirm" qva-activate="WidgetEditor.applyWidgetData()"><span class="fa fa-check" />Apply Visualization</button>
+                        <button qva-activate="Main.closeEditor()"><span class="fa fa-times"/>Cancel</button>
+                    </div>
+                    <!-- WidgetEditor: LivePreview -->
+                    <div data-ng-include data-src="'/extensions/qwidget/partials/WidgetEditor/wiWidgetEditor.LivePreview.html'"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WidgetLoader -->
+        <div data-ng-include data-src="'/extensions/qwidget/partials/WidgetLoader/wiWidgetLoader.Main.html'"></div>
+
+
+        <!-- Update Info - Corner Ribbon -->
+        <div class="qWidget_updateNotification"
+            ng-if="Main.MainRepository.updateInfo.length > 0"
+
+                wi-hide-by="true"
+                target=".qvt-sheet"
+                max-width="860">
+            <div qva-activate="WorkingArea.updateInfo.show()">
+                <map name="ribbon">
+                <area shape="poly" coords="100,0,100,100,0,100" qva-activate="WorkingArea.UpdateInfo.show()" style="cursor:pointer;">
+                </map>
+                <img src="/extensions/qWidget/lib/img/NewVersion.png"
+                     usemap="#ribbon"
+                     alt="A new version of qWidget is available"
+                     style="position:absolute;bottom:0;right:0;border:none;">
+            </div>
+        </div>
+
+        <!-- Update Info Popup -->
+        <wi-update-info ng-if="WorkingArea.UpdateInfo.visible" on-close="WorkingArea.UpdateInfo.hide" current-version="Main.MainRepository.currentVersion"></wi-update-info>
+
+
+
+    </div>
+
+</div>

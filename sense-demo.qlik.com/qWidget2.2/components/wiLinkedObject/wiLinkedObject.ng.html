@@ -1,0 +1,6 @@
+<div style="height:100%;width:100%;">
+        <qs-linked-object ng-if="type == 'qs' && !isSelf()" object="object" type="qs" inEditMode="inEditMode"></qs-linked-object>
+        <qv-linked-object ng-if="type == 'qv' && !isSelf()" type="qs"></qv-linked-object>
+        <div ng-if="isSelf()">Self Referencing is not allowed.</div>
+        <id ng-if="nonExistingObject">An object with the id {{object}} doesn't exist.</id>
+</div>

@@ -1,0 +1,41 @@
+#sis-header {
+    padding: 1rem 0.5rem;
+}
+
+.lui-input {
+    display: inline-block;
+    width: 50%;
+}
+
+#sis-header .row{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-top: 1rem;
+}
+
+#sis-header .row label{
+    margin-right: 1.5rem;
+}
+
+.autoelements-table, .autoelements-table .header-row, .autoelements-table .row{
+    width: 100%;
+}
+
+.autoelements-table th, .autoelements-table td {
+    text-align: left;
+    padding: 0.5rem 0.5rem;
+}
+
+.autoelements-table .header-row {
+    border-bottom: 1px solid #aaa;
+    background-color: #ccc
+}
+
+.autoelements-table .even {
+    background: #ccc;
+}
+
+.autoelements-table .odd {
+    background: #eee;
+}

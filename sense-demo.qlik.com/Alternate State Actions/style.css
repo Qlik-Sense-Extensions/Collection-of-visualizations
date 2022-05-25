@@ -1,0 +1,56 @@
+.qv-object-cswAltStateActions div.qv-object-content-container {
+	overflow: auto;
+}
+.qv-object-cswAltStateActions ul {
+	list-style: none;
+}
+.qv-object-cswAltStateActions li.data {
+	padding: 4px;
+	border-bottom: 1px solid #ddd;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* frequency */
+.qv-object-cswAltStateActions li.data span
+{
+	padding-left: 10px;
+	font-style: italic;
+	float:right;
+}
+/* colors when NOT in selection mode */
+
+.qv-object-cswAltStateActions li.stateS, .qv-object-cswAltStateActions li.stateL {
+	background-image: linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -o-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -moz-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -webkit-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -ms-linear-gradient(top, #52cc52, #4dc04d);
+	color: #fff;
+}
+
+.qv-object-cswAltStateActions li.stateX, .qv-object-cswAltStateActions li.stateXL, .qv-object-cswAltStateActions li.stateXS {
+	background-color: #A9A9A9;
+	color: #fff;
+}
+
+.qv-object-cswAltStateActions li.stateA {
+	background-image: none;
+	background-color: #ddd;
+	color: #000;
+}
+/* colors when in selection mode */
+.qv-object-cswAltStateActions.qv-selections-active li {
+	background-image: none;
+	background-color: #ddd;
+	color: #000;
+}
+
+.qv-object-cswAltStateActions.qv-selections-active li.selected {
+	background-image: linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -o-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -moz-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -webkit-linear-gradient(top, #52cc52, #4dc04d);
+	background-image: -ms-linear-gradient(top, #52cc52, #4dc04d);
+	color: #fff;
+}

@@ -1,0 +1,44 @@
+﻿
+.wiSimpleTile {
+  width: 100%;
+  text-align: center;
+}
+
+.wiSimpleTile .header {
+  text-transform: uppercase;
+}
+
+.wiSimpleTile .measure {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.wiSimpleTile .bar {
+  background-color: #ccc;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.2em;
+  border: 1px solid #999;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; /* future proofing */
+  -khtml-border-radius: 2px; /* for old Konqueror browsers */
+}
+
+.wiSimpleTile .bar-green {
+  background-color: #ACCF39;
+  border: 1px solid #8BAA27;
+}
+
+.wiSimpleTile .bar-orange {
+  background-color: #FE9840;
+  border: 1px solid #D07426;
+}
+
+.wiSimpleTile .bar-red {
+  background-color: #990000;
+  border: 1px solid #D07426;
+  color: #fff;
+}

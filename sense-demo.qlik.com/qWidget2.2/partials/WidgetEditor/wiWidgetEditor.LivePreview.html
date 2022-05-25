@@ -1,0 +1,22 @@
+<div id="qWidget_WidgetEditor_LivePreview" style="height:100%;width:100%;min-height:350px;" >
+    <div id="previewContainer"
+         class="widgetEditor_LivePreview"
+
+         wi-resizer
+         wi-resizer-target=".qvt-sheet"
+         wi-resizer-offset="-112"
+    >
+
+        <!-- WidgetEditor - Preview -->
+        <div id="preview_{{layout.qInfo.qId}}"
+             class="qWidget_WidgetEditor_PreviewContent"
+             ng-hide="Main.editMode == 'load'"
+
+             wi-view="true"
+             wi-view-html="WidgetEditor.html"
+             wi-view-less="WidgetEditor.less"
+             wi-view-use-data="false">
+        </div>
+
+    </div>
+</div>

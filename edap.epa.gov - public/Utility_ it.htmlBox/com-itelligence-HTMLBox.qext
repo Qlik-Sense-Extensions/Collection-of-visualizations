@@ -1,0 +1,10 @@
+{
+    "name": "Utility: it.htmlBox",
+    "description": "Box that can contain a HTML string from itelligence nordic",
+    "icon": "extension",
+    "type": "visualization",
+    "version": "0.1",
+    "preview": "extension",
+    "homepage": "http://branch.qlik.com/#!/project/56728f52d1e497241ae697ac",
+    "author": "Torben Seebach itelligence Nordic"
+}
